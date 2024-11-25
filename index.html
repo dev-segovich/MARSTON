@@ -1,163 +1,234 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>
-        MARSTON PORTAL
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta para responsividad -->
+    <title>MARSTON PORTAL</title>
 
-    <link rel="icon" href="./icon2.png" type="image/png"> <!-- Añadido el favicon -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="icon" href="./icon2.png" type="image/png"> <!-- Favicon -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /> <!-- Bootstrap CSS -->
     <link href="./main.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="#"> <!-- Añadido hipervínculo al logo -->
-                <img src="Logo.png" alt="Logo" style="height: 40px;"> <!-- Cambia la ruta de la imagen aquí -->
-            </a>
-        </div>
-        <div class="menu">
-            <a href="#">
-                About Us
-            </a>
-            <a href="#">
-                Achievements
-            </a>
-            <a href="#">
-                Projects
-            </a>
-            <a href="#">
-                Coming Soon
-            </a>
-            <a href="#">
-                Investor Portal
-            </a>
-            <a class="learn-more" href="#">
-                Sign in
-            </a>
-        </div>
-    </div>
-    <div class="hero">
-        <h1>
-            Empowering Investment Partnerships
-        </h1>
-        <p>
-            We are a dedicated team of real estate development professionals, committed to transforming investment
-            potential into remarkable returns. Our mission is to streamline the investment process, empowering our
-            investors to grow their wealth through innovative and meticulously crafted projects. Experience the future
-            of investment with us.
-        </p>
-    </div>
-    <div class="content">
-        <div class="video">
-            <img alt="Laptop displaying a secure portal interface" src="Award.jpeg" />
-        </div>
-        <div class="text">
-            <h2>
-                Kansas City Business Journal Mixed-UseCapstone Award
-            </h2>
-            <p>
-                One Nine Vine recently received the 2024 Kansas City Business Journal Mixed-Use Capstone Award for its
-                impactful contribution to Kansas City’s 18th and VineDistrict, the historic birthplace of jazz and
-                acenter for African-American businesses.<br><br> Completed in October 2023, One Nine Vineis a six-story,
-                81,550 sq. ft. mixed-usedevelopment featuring 17,500 sq. ft. of retailspace and 80 apartments, with
-                every unit including a balcony, some offering views ofthe Kansas City skyline as the first phase of
-                alarger 400-unit master plan. As the first multi-family market-rate housingproject in the Jazz District
-                since 2006, theproject exceeded its 17% MBE participation goal, achieving 30% MBE and 6% WBE.
-                <br><br>This demonstrates a strong commitment todiversity and community development.
-            </p>
-            <a class="learn-more" href="#">
-                Learn more
-            </a>
-        </div>
-    </div>
-    <div class="carousel">
-        <h2>Our Projects</h2>
-        <div class="carousel-container">
-            <div class="carousel-slide active">
-                <img src="img/project1.png" alt="Proyecto 1">
-                <div class="carousel-caption">
-                    <h3>OneNineVine</h3>
-                    <p>Description</p>
-                </div>
-            </div>
-            <div class="carousel-slide">
-                <img src="img/project2.png" alt="Proyecto 2">
-                <div class="carousel-caption">
-                    <h3>Project Title 2</h3>
-                    <p>Project Description</p>
-                </div>
-            </div>
-            <div class="carousel-slide">
-                <img src="img/project3.png" alt="Proyecto 3">
-                <div class="carousel-caption">
-                    <h3>Project tittle 3</h3>
-                    <p>Description 3</p>
-                </div>
-            </div>
-            <!-- Agrega más proyectos según sea necesario -->
-        </div>
-        <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-    <div class="coming-soon">
-        <div class="cards-container">
-            <div class="card">
-                <img src="img/1.png" class="image">
-                <img src="img/1.png" class="background">
-                <div class="layer">
-                    <div class="info">
-                        <h1>Broaward</h1>
-                        <p>Project Broward</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/2.png" class="image">
-                <img src="img/2.png" class="background">
-                <div class="layer">
-                    <div class="info">
-                        <h1>Garden</h1>
-                        <p>Project Garde example</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/3.png" class="image">
-                <img src="img/3.png" class="background">
-                <div class="layer">
-                    <div class="info">
-                        <h1>Pompano</h1>
-                        <p>Project Pompano massing doing</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </div>
-    <div class="contact-us">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or inquiries, feel free to reach out to us!</p>
-        <form>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <!-- Header (Topbar) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="Logo.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Coming Soon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Investor Portal</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="boton-sign-in">
+                            <a class="btn btn-secondary" href="#">Sign in</a>
+                        </div>
+                        
+                    </li>
+                </ul>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="power">
+            <div class="hero">
+                <div class="texto-hero p-4">
+                    <h1>Empowering Investment Partnerships</h1>
+                    <p>We are a dedicated team of real estate development professionals, committed to transforming investment
+                    potential into remarkable returns. Our mission is to streamline the investment process, empowering our
+                    investors to grow their wealth through innovative and meticulously crafted projects. Experience the future
+                    of investment with us.</p>
+                </div>
+                
             </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+        </section>
+        
+        <section class="achivements">
+            <div class="content mt-4">
+                <div class="row">
+                    <div class="col-md-5 ml-2 mr-2">
+                        <img alt="Laptop displaying a secure portal interface" src="Award.jpeg" class="img-fluid" />
+                    </div>
+                    <div class="col-md-6 m-2 d-flex align-items-center">
+                        <div class="logro">
+                            <h2 style="color: var(--color-primario);">Kansas City Business Journal Mixed-UseCapstone Award</h2>
+                            <p style="color: var(--color-quinto);">One Nine Vine recently received the 2024 Kansas City Business Journal Mixed-Use Capstone Award for its
+                            impactful contribution to Kansas City’s 18th and VineDistrict, the historic birthplace of jazz and
+                            acenter for African-American businesses.<br><br> Completed in October 2023, One Nine Vineis a six-story,
+                            81,550 sq. ft. mixed-usedevelopment featuring 17,500 sq. ft. of retailspace and 80 apartments, with
+                            every unit including a balcony, some offering views ofthe Kansas City skyline as the first phase of
+                            alarger 400-unit master plan. As the first multi-family market-rate housingproject in the Jazz District
+                            since 2006, theproject exceeded its 17% MBE participation goal, achieving 30% MBE and 6% WBE.
+                            <br><br>This demonstrates a strong commitment todiversity and community development.</p>
+                            <div class ="boton-learn">
+                                <a class="btn btn-secondary" href="#">Learn more</a>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="submit-button">Send Message</button>
-        </form>
-    </div>
-    <script src="main.js"></script>
+        </section>
+        
+        <section class="projects">
+            <div class="portfolio">
+                <h2 class="portfolio-title">Our Portfolio</h2>
+                <div class="portfolio-images">
+                    <div class="portfolio-item">
+                        <a href="link1.html">
+                            <img src="img/project1.png" alt="Project 1" />
+                            <div class="overlay">
+                                <div class="text">Project 1</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="link2.html">
+                            <img src="img/project2.png" alt="Project 2" />
+                            <div class="overlay">
+                                <div class="text">Project 2</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="img/3.png">
+                            <img src="img/project2.png" alt="Project 3" />
+                            <div class="overlay">
+                                <div class="text">Project 3</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Añade más items según sea necesario -->
+                </div>
+            </div>
+        </section>
+
+        <section class="coming-soon">
+            <div class="portfolio">
+                <h2 class="portfolio-title">Coming Soon Projects</h2>
+                <div class="portfolio-images">
+                    <div class="portfolio-item">
+                        <a href="link1.html">
+                            <img src="img/1.png" alt="Project 1" />
+                            <div class="overlay">
+                                <div class="text">Project 1</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="link2.html">
+                            <img src="img/2.png" alt="Project 2" />
+                            <div class="overlay">
+                                <div class="text">Project 2</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="img/3.png">
+                            <img src="img/3.png" alt="Project 3" />
+                            <div class="overlay">
+                                <div class="text">Project 3</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Añade más items según sea necesario -->
+                </div>
+            </div>
+        </section>
+
+        <section class="portal">
+            <div class="container">
+                <h2 class="section-title">Investor Portal</h2>
+                <img src="img/Portal_reference.jpg" alt="Investor Portal Reference Image" class="portal-image">
+                <p class="image-caption">This is a reference image</p>
+                <p class="section-description">
+                    Our Investor Portal offers a unique opportunity for our valued investors to stay informed and engaged with their investments. 
+                    With our portal, investors can:
+                </p>
+
+                <ul class="benefits-list row">
+                    <div class="col-md-4">
+                        <li>
+                            <h4 class="benefit-title"><strong>Access Detailed Project Status:</strong></h4>
+                            <p>Review the detailed status of the projects you have invested in, ensuring transparency and trust.</p>
+                        </li>
+                    </div>
+                    <div class="col-md-4">
+                        <li>
+                            <h4 class="benefit-title"><strong>Exclusive Opportunities:</strong></h4>
+                            <p>Gain exclusive access to future projects before they are available to the general public.</p>
+                        </li>
+                    </div>
+                    <div class="col-md-4">
+                        <li>
+                            <h4 class="benefit-title"><strong>Priority Notifications:</strong></h4>
+                            <p>Be the first to receive notifications about new projects and investment opportunities.</p>
+                        </li>
+                    </div>
+                </ul>
+                
+                <p class="section-conclusion">
+                    Join our Investor Portal today and take advantage of these exclusive benefits designed to enhance your investment experience with us.
+                </p>
+            </div>
+        </section>   
+
+        <section class="contact-us">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">We would love to hear from you! Please fill out the form below to get in touch with us.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="text-center p-3" style="color: var(--color-sexto);">
+            © 2024 MARSTON PORTAL. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
