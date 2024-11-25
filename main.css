@@ -14,6 +14,8 @@
     --color-sexto: #2b251c; /* Sexto color */
   }
 
+
+
   .navbar-toggler{
     background-color: var(--color-primario);
   }
@@ -22,10 +24,35 @@
     filter: brightness(0) invert(1); /* Cambiar el color a blanco */
   }
 
-  .power .hero{
-    background-color: var(--color-primario);
+  .power {
+    background-image: url('img/fondo.png');
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: bottom; /* Centra la imagen horizontalmente */
+    height: 100vh; /* Establece la altura de la sección al 100% de la viewport */
     color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-hero{
+  padding: 250px 1.5rem 1.5rem 1.5rem;
+}
+/* Estilos para pantallas grandes */
+@media (min-width: 990px) {
+  .power {
+      height: 600px; /* Establece un límite de altura para pantallas grandes */
+      background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
   }
+
+  .texto-hero{
+    padding: 200px 1.5rem 1.5rem 1.5rem;
+    width: 600px;
+  }
+}
+
+
+
+
 
 /* Estilos para pantallas anchas */
 .navbar-collapse {
