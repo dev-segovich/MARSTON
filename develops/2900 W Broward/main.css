@@ -1,0 +1,117 @@
+.container {
+    margin: 0 auto;
+}
+
+.boton-portfolio{
+    margin: 20px 10px;
+}
+
+.boton-portfolio .btn-secondary{
+    background-color: var(--color-primario);
+}
+
+.boton-portfolio .btn-secondary:hover{
+    background-color: var(--color-terciario);
+}
+
+.titulo-develop {
+    margin-left: 20px;
+}
+
+.location-title h5{
+    display: inline-block;
+    border-bottom: 2px solid var(--color-primario);
+}
+
+.span-primary{
+    background-color: var(--color-primario);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.span-secondary{
+    background-color: var(--color-terciario);
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.span-tertiary{
+    background-color: var(--color-quinto);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 90%;  /* 80% del ancho de la pantalla */
+    max-width: 1200px; /* Tamaño máximo que puede tener el carousel */
+    height: 100%; /* Altura ajustable a un porcentaje de la altura de la pantalla */
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%; /* Cada slide debe ocupar el 100% del ancho del contenedor */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+}
+
+.carousel-slide img {
+    width: 100%; /* La imagen debe ocupar el 100% del ancho del slide */
+    height: 100%; /* La imagen debe ocupar el 100% de la altura del slide */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.carousel-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.item-desc{
+    padding: 5px;
+    color: var(--color-sexto);
+    margin-bottom: 0 !important;
+}
+
+.separador{
+    border-top: 2px solid var(--color-terciario);
+}
+
+.item-desc strong{
+    color: var(--color-primario);
+}

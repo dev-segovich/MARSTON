@@ -1,0 +1,10 @@
+.portfolio-landing {
+    background-image: url('fondo_portfolio.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: bottom; /* Centra la imagen horizontalmente */
+    width: 100%;
+    height: 100%; /* Establece la altura de la sección al 100% de la viewport */
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
