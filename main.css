@@ -51,9 +51,6 @@
 }
 
 
-
-
-
 /* Estilos para pantallas anchas */
 .navbar-collapse {
   background-color: transparent; /* o cualquier otro valor que desees */
@@ -308,4 +305,23 @@
   .section-description {
       font-size: 1em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
   }
+}
+
+.container-about-us {
+  margin: 50px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.boton-about-us{
+  margin-top: 25px;
+}
+
+.btn-link {
+  color: var(--color-primario);
+  align-items: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 11px;
+  margin-left: 0 !important;
 }
