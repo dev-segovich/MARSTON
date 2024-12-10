@@ -117,7 +117,7 @@
 
 .portfolio {
   text-align: center;
-  margin: 40px 0;
+  margin: 40px 50px;
 }
 
 .portfolio-title {
@@ -191,6 +191,8 @@
   margin: 0 auto; /* Centra el contenedor */
 }
 
+
+
 .portal .section-title {
   font-size: 2em; /* Tamaño de fuente para el título */
   color: #333; /* Color del texto */
@@ -259,12 +261,37 @@
 }
 }
 
+.container-contact-us{
+  justify-items: center;
+}
 
 .contact-us {
-  background-color: var(--color-primario); /* Color de fondo usando la variable */
   padding: 40px 20px; /* Espaciado */
   text-align: center; /* Centra el texto */
   color: white;
+}
+
+.formulario{
+  background-color: var(--color-primario); /* Color de fondo usando la variable */
+  padding: 20px ;
+  border-radius: 5%;
+}
+
+@media (max-width: 720px) {
+
+  
+  .formulario{
+    background-color: var(--color-primario); /* Color de fondo usando la variable */
+    max-width: 100% !important;
+  }
+
+
+  .container-contact-us{
+    background-color: var(--color-primario); /* Color de fondo usando la variable */
+    border-radius: 3%;
+  }
+
+
 }
 
 .section-title {
