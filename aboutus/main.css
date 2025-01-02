@@ -1,0 +1,148 @@
+.container{
+    margin: 0 auto;
+}
+
+.portfolio-landing {
+    background-image: url('fondo.png');
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: center; /* Centra la imagen horizontalmente */
+    height: 80vh; /* Establece la altura de la sección al 100% de la viewport */
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-aboutus{
+    background-color: var(--color-primario);
+    color: white;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+  
+
+/* Estilos para pantallas grandes */
+@media (min-width: 990px) {
+    .portfolio-landing {
+        height: 600px; /* Establece un límite de altura para pantallas grandes */
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    }  
+}
+
+.titulo-descripcion{
+    padding: 1.5rem;
+}
+
+.subtitulo-descripcion{
+    padding: 1.5rem;
+    color : var(--color-quinto);
+}
+
+.values {
+    padding: 1.5rem;
+}
+
+.seccion-values{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--color-terciario); /* Cambia el color del subrayado a rojo */
+    text-decoration-thickness: 2px; /* Cambia el grosor del subrayado a 2px */
+}
+
+.values .value-tittle{
+    padding-top: 1.5rem;
+    border-bottom: 2px solid var(--color-terciario);
+}
+
+.values .value-description{
+    padding-top: 1.5rem;  
+    font-weight: 450;  
+}
+
+.columna-values{
+    flex: 0 0 100;
+    max-width: 100%;
+}
+
+@media (min-width: 990px) {
+    .columna-values{
+        flex: 0 0 33.3333333%;
+        max-width: 33.3333333%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+.team{
+    padding: 1.5rem;
+}
+
+.card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 320px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--color-primario);
+    transition: box-shadow 0.3s ease;
+    flex-direction: row;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card-role {
+    font-size: 16px;
+    color: white;
+}
+
+.card-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.personas{
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se apilen si no hay espacio */
+    gap: 15px; /* Espacio entre las tarjetas */
+}
+
+.tarjeta-persona{
+    flex: 1 1 300px; /* Cada tarjeta ocupa al menos 300px, pero se ajusta al espacio disponible */
+    max-width: 100%; /* Evita que las tarjetas se desborden */
+}
+
+@media (max-width: 990px) {
+    .row{
+        margin: 0;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 300px;
+    }
+
+}

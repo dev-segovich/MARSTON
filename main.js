@@ -2,8 +2,6 @@
     $(document).ready(function() {
         // Agregar un evento de clic a los enlaces del navbar
         $('.navbar-nav a').on('click', function(event) {
-            // Prevenir el comportamiento predeterminado del enlace
-            event.preventDefault();
 
             // Obtener el destino del enlace
             var target = $(this).attr('href');
