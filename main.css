@@ -225,3 +225,76 @@
     -webkit-text-fill-color: transparent;
   }
 }
+
+/*  SECCION ABOUT US */
+
+.aboutus {
+  position: relative;
+  padding: 100px 0;
+  background-color: #fff; /* Color de fondo de la sección */
+  overflow: hidden; /* Para asegurar que la marca de agua no se desborde */
+}
+
+.aboutus::before {
+  content: "A    B    O    U    T";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  font-weight: bold;
+  color: rgba(182, 182, 182, 0.1); /* Color de la marca de agua con transparencia */
+  z-index: 1; /* Coloca la marca de agua detrás del contenido */
+  pointer-events: none; /* Evita que la marca de agua interfiera con el contenido */
+  white-space: nowrap;
+}
+
+.aboutus .container {
+  position: relative;
+  z-index: 2; /* Coloca el contenido por encima de la marca de agua */
+}
+
+.aboutus .row {
+  justify-content: center;
+}
+
+.aboutus .col-md-6 {
+  padding: 20px;
+}
+
+.aboutus p {
+  line-height: 1.6;
+  color: #7a7a7a; /* Color del texto */
+}
+
+.titulo-inv{
+  color: transparent;
+}
+
+.boton-about {
+  display: inline-block; /* Hace que el botón ocupe solo el espacio necesario */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  color: var(--color-primario); /* Color del texto (usando la variable de color primario) */
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid var(--color-primario); /* Borde con el color primario */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: left; /* Alineación del texto a la izquierda */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.boton-about:hover {
+  background-color: var(--color-primario); /* Cambia el fondo al color primario al pasar el mouse */
+  color: #fff; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+@media (max-width: 992px) {
+  .aboutus::before{
+    color: transparent;
+  }
+
+  
+
+}
