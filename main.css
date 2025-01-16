@@ -14,15 +14,23 @@
     --color-sexto: #2b251c; /* Sexto color */
   }
 
+  #navbar {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
 
+  #navbar.scrolled {
+    background-color: var(--color-primario); 
+    transition: background-color 0.5s ease;
+}
 
   .navbar-toggler{
-    background-color: var(--color-primario);
+    background-color: transparent;
   }
   
   .navbar-toggler-icon {
-    filter: brightness(0) invert(1); /* Cambiar el color a blanco */
-  }
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="rgba(255, 255, 255, 1)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3e%3c/path%3e%3c/svg%3e');
+}
 
   .power {
     background-image: url('img/fondo.png');
@@ -63,31 +71,17 @@
 }
 
 .navbar-collapse .nav-link {
-  color: #333; /* o cualquier otro valor que desees */
+  color: var(--color-secundario); /* o cualquier otro valor que desees */
   margin-left: 0;
 }
 
-.achivements p {
-  font-weight: 500;
-}
-
-.logro{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.boton-learn{
-  display: flex;
-  justify-content: end;
-  margin-right: 5px;
-}
 
 /* Estilos para pantallas estrechas (menos de 990px) */
 @media (max-width: 990px) {
   .navbar-collapse {
       background-color: var(--color-primario);
       border-radius: 0.5rem;
-      margin: 0;
+      margin: 5px 0 0 0;
       padding: 0.5rem;
   }
 
@@ -115,240 +109,119 @@
 }
 
 
-.portfolio {
-  text-align: center;
-  margin: 40px 50px;
+.portair {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
-.portfolio-title {
-  font-size: 2rem;
-  color: var(--color-primario);
-  margin-bottom: 20px;
-  font-weight: bold; /* Estilo elegante */
+.carousel-inner img {
+  height: 100vh;
+  object-fit: cover;
 }
 
-.portfolio-images {
+.carousel-indicators {
+  bottom: 20px; /* Ajusta la posición vertical */
+  left: 20px; /* Ajusta la posición horizontal */
+  margin-left: 0; /* Elimina el margen izquierdo predeterminado */
+  justify-content: flex-start; /* Alinea los indicadores a la izquierda */
+}
+
+.carousel-indicators li {
+  width: 30px; /* Ancho más grande */
+  height: 30px; /* Alto más grande */
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+  color: var(--color-primario); /* Color del texto */
+  font-size: 104px; /* Tamaño del texto */
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  margin: 0 5px; /* Espacio entre los indicadores */
+  border: none; /* Elimina el borde predeterminado */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
 }
 
-.portfolio-item {
-  position: relative;
-  margin: 10px;
-  overflow: hidden;
-  width: 300px; /* Ancho fijo */
-  height: 300px; /* Alto fijo para mantener la forma cuadrada */
+.carousel-indicators li.active {
+  background-color: rgba(255, 255, 255, 1); /* Fondo más opaco para el indicador activo */
+  color: var(--color-primario); /* Color del texto para el indicador activo */
 }
 
-.portfolio-item img {
-  position: static !important; /* Asegúrate de que no esté en posición absoluta */
-  left: auto !important; /* Anula el desplazamiento */
-  transform: none !important; /* Anula cualquier transformación */
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  height: 100%; /* Ajusta la altura al 100% del contenedor */
-  object-fit: cover; /* Asegura que la imagen cubra el contenedor */
-  transition: transform 0.3s ease;
-  display: block; /* Asegúrate de que la imagen se muestre como un bloque */
-}
-
-.portfolio-item:hover img {
-  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
-}
-
-.overlay {
+.carousel-caption {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Filtro oscuro */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  top: 35%;
+  left: 15%;
+  color: #fff;
+  text-align: left;
 }
 
-.portfolio-item:hover .overlay {
-  opacity: 1; /* Mostrar la superposición al pasar el mouse */
+.carousel-caption h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
 }
 
-.text {
-  color: white;
-  font-size: 1.5rem;
+.carousel-caption a {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-caption a:hover {
+  background-color: var(--color-primario);
+}
+
+/* HASTA ACA LOS CAMBIOS DE LA PRIMERA SECCION
+ */
+
+.filling .row {
+  position: relative;
+}
+
+.filling .text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 1;
+}
+
+.filling img {
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.filling .row .text-center h1 {
+  font-size: 100px;
 }
 
 
-.portal {
-  padding: 40px 20px; /* Espaciado */
-  text-align: center; /* Centra el texto */
-}
 
-.container {
-  max-width: 800px; /* Ancho máximo para mantener el contenido centrado */
-  margin: 0 auto; /* Centra el contenedor */
-}
-
-
-
-.portal .section-title {
-  font-size: 2em; /* Tamaño de fuente para el título */
-  color: #333; /* Color del texto */
-  margin-bottom: 10px; /* Espaciado inferior */
-  font-weight: bold;
-}
-
-.portal-image {
-  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  margin-bottom: 1px; /* Espaciado inferior */
-}
-
-.image-caption {
-  font-size: 0.9em; /* Tamaño de fuente para el texto de referencia */
-  color: #777; /* Color del texto de referencia */
-  margin-bottom: 20px; /* Espaciado inferior */
-}
-
-.section-description,
-.section-conclusion {
-  font-size: 1.1em; /* Tamaño de fuente para descripción */
-  color: #555; /* Color del texto */
-  margin-bottom: 20px; /* Espaciado inferior */
-}
-
-.benefits-list {
-  display: flex; /* Habilita flexbox */
-  flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas si es necesario */
-  justify-content: center; /* Centra los elementos en la línea */
-  list-style-type: none; /* Quita los puntos de la lista */
-  padding: 0; /* Quita el padding */
-}
-
-.benefits-list li {
-  background-color: #e3f2fd; /* Color de fondo de la lista */
-  margin: 10px; /* Espaciado entre elementos de la lista */
-  padding: 15px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 1em; /* Tamaño de fuente para los elementos de la lista */
-  color: #333; /* Color del texto */
-  display: flex; /* Habilita flexbox en el elemento de lista */
-  flex-direction: column; /* Coloca el contenido en columna */
-  justify-content: space-between; /* Asegura que el contenido ocupe todo el espacio disponible */
-  height: 100%; /* Asegura que el elemento ocupe el 100% de la altura disponible */
-}
-
-.benefit-title {
-  text-align: center; /* Centra el texto del título */
-  border-bottom: 2px solid #ccc; /* Línea separadora debajo del título */
-  padding-bottom: 5px; /* Espaciado interno */
-}
-
-@media (max-width: 600px) {
-  .section-title {
-      font-size: 1.5em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+@media (min-width: 992px) {
+  .filling img {
+      padding: 0;
   }
 
-  .section-description,
-  .section-conclusion {
-      font-size: 1em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  .filling .area-izq{
+    padding-right: 0;
   }
 
-  .benefits-list {
-    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-}
-}
-
-.container-contact-us{
-  justify-items: center;
-}
-
-.contact-us {
-  padding: 40px 20px; /* Espaciado */
-  text-align: center; /* Centra el texto */
-  color: white;
-}
-
-.formulario{
-  background-color: var(--color-primario); /* Color de fondo usando la variable */
-  padding: 20px ;
-  border-radius: 5%;
-}
-
-@media (max-width: 720px) {
-
-  
-  .formulario{
-    background-color: var(--color-primario); /* Color de fondo usando la variable */
-    max-width: 100% !important;
+  .filling .area-der{
+    padding-left: 0;
   }
 
-
-  .container-contact-us{
-    background-color: var(--color-primario); /* Color de fondo usando la variable */
-    border-radius: 3%;
+  .filling .text-izq h1 {
+    background-image: linear-gradient(to right, #000 50%, #fff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-
-}
-
-.section-title {
-  font-size: 2em; /* Tamaño de fuente para el título */
-  color: white; /* Color del texto */
-  margin-bottom: 20px; /* Espaciado inferior */
-}
-
-.contact-us .section-description {
-  font-size: 1.1em; /* Tamaño de fuente para la descripción */
-  color: white;
-  margin-bottom: 30px; /* Espaciado inferior */
-}
-
-.contact-form {
-  max-width: 600px; /* Ancho máximo del formulario */
-  margin: 0 auto; /* Centra el formulario */
-}
-
-.form-group {
-  margin-bottom: 15px; /* Espaciado entre campos */
-}
-
-.form-control {
-  width: 100%; /* Ancho completo */
-  padding: 10px; /* Espaciado interno */
-  border: 1px solid white; /* Borde */
-  border-radius: 5px; /* Bordes redondeados */
-}
-
-
-
-@media (max-width: 600px) {
-  .section-title {
-      font-size: 1.5em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  .filling .text-der h1 {
+    background-image: linear-gradient(to right, #fff 50%, #000 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-
-  .section-description {
-      font-size: 1em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-  }
-}
-
-.container-about-us {
-  margin: 50px auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.boton-about-us{
-  margin-top: 25px;
-}
-
-.btn-link {
-  color: var(--color-primario);
-  align-items: center;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-bottom: 11px;
-  margin-left: 0 !important;
 }
