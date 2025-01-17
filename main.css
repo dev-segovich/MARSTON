@@ -198,12 +198,20 @@
   font-size: 100px;
 }
 
-
+.filling video{
+  object-fit: cover;
+}
 
 @media (min-width: 992px) {
   .filling img {
       padding: 0;
+      height: 100vh;
   }
+
+  .filling video {
+    padding: 0;
+    height: 100vh;
+}
 
   .filling .area-izq{
     padding-right: 0;
@@ -295,6 +303,72 @@
     color: transparent;
   }
 
-  
+}
 
+/* SECCION DE PROJECTS */
+
+.projects {
+  margin-top: 15px;
+}
+
+.project-background {
+  position: relative;
+  height: 90vh; /* altura del contenedor de fondo */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.project-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5; /* opacidad de las imágenes de fondo */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project-columns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  color: #000;
+}
+
+.project-column {
+  width: 33.33%; /* ancho de cada columna */
+  height: 90vh;
+  position: relative;
+}
+
+.project-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.project-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-link:hover .project-image {
+  transform: scale(1.2);
+}
+
+.project-link:hover .project-background-image {
+  opacity: 0.8; /* opacidad de las imágenes de fondo al pasar el mouse */
 }
