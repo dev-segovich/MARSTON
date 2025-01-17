@@ -311,12 +311,17 @@
   margin-top: 15px;
 }
 
+.project-container {
+  position: relative;
+  height: 90vh; /* altura del contenedor */
+  background-color: #000;
+}
+
 .project-background {
   position: relative;
-  height: 90vh; /* altura del contenedor de fondo */
+  height: 100%; /* altura del contenedor de fondo */
   background-size: cover;
   background-position: center;
-  z-index: -1;
 }
 
 .project-background-image {
@@ -325,7 +330,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5; /* opacidad de las imágenes de fondo */
+  opacity: 0; /* opacidad de las imágenes de fondo */
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -334,24 +339,27 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 90vh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  opacity: 1;
-  color: #000;
 }
 
 .project-column {
   width: 33.33%; /* ancho de cada columna */
-  height: 90vh;
+  height: 100%;
   position: relative;
+  display: flex; /* agregar display flex para que las columnas se muestren correctamente */
+  justify-content: center; /* centrar el contenido de la columna */
+  align-items: center; /* centrar el contenido de la columna verticalmente */
 }
 
 .project-link {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image {
@@ -362,13 +370,25 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  transition: transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.project-link:hover .project-image {
-  transform: scale(1.2);
+.project-info {
+  position: relative;
+  z-index: 1; /* agregar z-index para que el texto se muestre encima de la imagen */
+  color: #fff; /* agregar color al texto */
+  text-align: center; /* centrar el texto */
 }
 
-.project-link:hover .project-background-image {
-  opacity: 0.8; /* opacidad de las imágenes de fondo al pasar el mouse */
+.proyecto1-link:hover ~ .proyecto1 {
+  opacity: 1;
+  z-index: -1;
+}
+
+.proyecto2-link:hover ~ .proyecto2 {
+  opacity: 1;
+}
+
+.proyecto3-link:hover ~ .proyecto3 {
+  opacity: 1;
 }
