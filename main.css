@@ -321,6 +321,10 @@
   margin-top: 15px;
 }
 
+.projects a:hover {
+  text-decoration: none;
+}
+
 .project-container {
   position: relative;
   height: 90vh; /* altura del contenedor */
