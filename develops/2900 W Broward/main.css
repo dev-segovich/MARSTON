@@ -56,7 +56,6 @@
 
 .carousel-container {
     position: relative;
-    width: 90%;  /* 80% del ancho de la pantalla */
     max-width: 1200px; /* Tamaño máximo que puede tener el carousel */
     height: 100%; /* Altura ajustable a un porcentaje de la altura de la pantalla */
     overflow: hidden;
@@ -123,4 +122,99 @@ button:hover {
 
 .item-desc strong{
     color: var(--color-primario);
+}
+
+
+#navbar {
+    background-color: var(--color-primario);
+    transition: background-color 0.5s ease;
+}
+
+  #navbar.scrolled {
+    background-color: var(--color-primario); 
+    transition: background-color 0.5s ease;
+}
+
+  .navbar-toggler{
+    background-color: var(--color-primario);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="rgba(255, 255, 255, 1)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3e%3c/path%3e%3c/svg%3e');
+}
+
+  .power {
+    background-image: url('img/fondo.png');
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: bottom; /* Centra la imagen horizontalmente */
+    height: 100vh; /* Establece la altura de la sección al 100% de la viewport */
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-hero{
+  padding: 250px 1.5rem 1.5rem 1.5rem;
+}
+/* Estilos para pantallas grandes */
+@media (min-width: 990px) {
+  .power {
+      height: 600px; /* Establece un límite de altura para pantallas grandes */
+      background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+  }
+
+  .texto-hero{
+    padding: 200px 1.5rem 1.5rem 1.5rem;
+    width: 600px;
+  }
+}
+
+
+/* Estilos para pantallas anchas */
+.navbar-collapse {
+  background-color: transparent; /* o cualquier otro valor que desees */
+  border-radius: 0;
+  margin: 10px; /* o cualquier otro valor que desees */
+}
+
+.navbar-nav .nav-item {
+  margin: 10px; /* o cualquier otro valor que desees */
+}
+
+.navbar-collapse .nav-link {
+  color: var(--color-secundario); /* o cualquier otro valor que desees */
+  margin-left: 0;
+}
+
+
+/* Estilos para pantallas estrechas (menos de 990px) */
+@media (max-width: 990px) {
+  .navbar-collapse {
+      background-color: var(--color-primario);
+      border-radius: 0.5rem;
+      margin: 5px 0 0 0;
+      padding: 0.5rem;
+  }
+
+  .navbar-nav .nav-item {
+      margin: 0;
+  }
+
+  .navbar-collapse .nav-link {
+      color: white !important;
+      margin-left: 15px;
+      font-weight: 600; /* Hace el texto más grueso */
+      transition: background-color 0.3s, color 0.3s; /* Suaviza la transición del color */
+  }
+
+  .navbar-nav .nav-item .boton-sign-in{
+    display: flex;
+    justify-content: end;
+  }
+  
+
+  .navbar-collapse .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambia el color de fondo al pasar el mouse */
+    color: var(--color-primario); /* Cambia el color del texto al pasar el mouse */
+  }
 }

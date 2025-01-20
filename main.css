@@ -327,13 +327,14 @@
 
 .project-container {
   position: relative;
+  width: 100vw;
   height: 90vh; /* altura del contenedor */
   background-color: #000;
 }
 
 .project-background {
   position: relative;
-  height: 100%; /* altura del contenedor de fondo */
+  width: 100vw;
   background-size: cover;
   background-position: center;
 }
@@ -342,8 +343,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 90vh;
   opacity: 0; /* opacidad de las imágenes de fondo */
   transition: opacity 0.5s ease-in-out;
 }
@@ -360,7 +361,7 @@
 
 .project-column {
   width: 33.33%; /* ancho de cada columna */
-  height: 100%;
+  height: 90vh;
   position: relative;
   display: flex; /* agregar display flex para que las columnas se muestren correctamente */
   justify-content: center; /* centrar el contenido de la columna */
@@ -370,21 +371,34 @@
 .project-link {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 90vh;
   position: relative;
   align-items: center;
   justify-content: center;
 }
 
 .project-image {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: absolute; /* Mantener como relative */
   width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
+  height: 90vh;
+  background-size: 100vw 90vh;
   transition: opacity 0.5s ease-in-out;
+}
+
+/* Estilos específicos para cada columna */
+.proyecto1-link .project-image {
+  background-image: url('img/fondo.png');
+  background-position: left; /* Muestra el primer tercio */
+}
+
+.proyecto2-link .project-image {
+  background-image: url('img/fondo2.png');
+  background-position: center; /* Muestra el segundo tercio */
+}
+
+.proyecto3-link .project-image {
+  background-image: url('img/fondo3.png');
+  background-position: right; /* Muestra el último tercio */
 }
 
 .project-info {

@@ -75,8 +75,8 @@
       proyecto2Columna.style.opacity = 0;
       proyecto3Columna.style.opacity = 0;
       proyecto1Info.style.opacity = 1;
-      proyecto2Info.style.opacity = 0.1;
-      proyecto3Info.style.opacity = 0.1;
+      proyecto2Info.style.opacity = 0.3;
+      proyecto3Info.style.opacity = 0.3;
     });
     
     proyecto2Link.addEventListener('mouseover', () => {
@@ -86,9 +86,9 @@
       proyecto1Columna.style.opacity = 0;
       proyecto2Columna.style.opacity = 0;
       proyecto3Columna.style.opacity = 0;
-      proyecto1Info.style.opacity = 0.1;
+      proyecto1Info.style.opacity = 0.3;
       proyecto2Info.style.opacity = 1;
-      proyecto3Info.style.opacity = 0.1;
+      proyecto3Info.style.opacity = 0.3;
     });
     
     proyecto3Link.addEventListener('mouseover', () => {
@@ -98,8 +98,8 @@
       proyecto1Columna.style.opacity = 0;
       proyecto2Columna.style.opacity = 0;
       proyecto3Columna.style.opacity = 0;
-      proyecto1Info.style.opacity = 0.1;
-      proyecto2Info.style.opacity = 0.1;
+      proyecto1Info.style.opacity = 0.3;
+      proyecto2Info.style.opacity = 0.3;
       proyecto3Info.style.opacity = 1;
     });
 
