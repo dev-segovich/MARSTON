@@ -128,22 +128,26 @@
 }
 
 .carousel-indicators li {
-  width: 30px; /* Ancho más grande */
-  height: 30px; /* Alto más grande */
-  background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
-  color: var(--color-primario); /* Color del texto */
-  font-size: 104px; /* Tamaño del texto */
+  width: 50px; /* Ancho del indicador */
+  height: 50px; /* Alto del indicador */
+  background-color: transparent; /* Sin fondo */
+  color: rgba(255, 255, 255, 1); /* Color del texto */
+  font-size: 24px; /* Tamaño del texto (ajustado para que se vea bien) */
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 5px; /* Espacio entre los indicadores */
-  border: none; /* Elimina el borde predeterminado */
+  border: none; /* Elimina los bordes predeterminados */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6); /* Solo borde inferior semi-transparente */
   cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  border-radius: 0; /* Sin bordes redondeados */
+  text-indent: 0;
 }
 
 .carousel-indicators li.active {
-  background-color: rgba(255, 255, 255, 1); /* Fondo más opaco para el indicador activo */
-  color: var(--color-primario); /* Color del texto para el indicador activo */
+  background-color: transparent; /* Sin fondo para el indicador activo */
+  color: #fff; /* Color del texto para el indicador activo */
+  border-bottom: 2px solid #fff; /* Borde inferior más opaco para el indicador activo */
 }
 
 .carousel-caption {
