@@ -183,6 +183,45 @@
   position: relative;
 }
 
+.filling-title{
+    display: inline-block;
+    transition: transform 0.5s ease, opacity 2s ease-in-out;
+    position: relative;
+    z-index: 2; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.filling-text{
+  opacity: 0;
+  padding: 15px;
+  color: #777777;
+  transition: opacity 0.5s ease, transform 0.5 ease;
+  text-justify: auto;
+}
+
+.area-izq .filling-text{
+  transform: translateX(100%);
+}
+
+.area-der .filling-text{
+  transform: translateX(-100%);
+}
+
+.filling .text-izq h1 {
+  background-image: linear-gradient(to right, #000 50%, #fff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.filling .text-der h1 {
+  background-image: linear-gradient(to right, #fff 50%, #000 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-center:hover + .area-der .filling-text {
+  transition-delay: 0.5s; /* Esperar a que termine la animación del título */
+}
+
 .filling .text-center {
   position: absolute;
   top: 50%;
@@ -220,34 +259,79 @@
   .filling .area-izq{
     padding-right: 0;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .filling .area-der{
     padding-left: 0;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
 
-  .filling-text{
-    padding: 15px;
-    color: #777777;
-    text-justify: auto;
+}
+
+
+
+.filling-phone {
+  position: relative;
+  overflow: hidden;
+  height: auto; /* Permitir que la altura se ajuste al contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Fondo claro */
+  padding: 20px; /* Espaciado interno */
+}
+
+.content-phone {
+  text-align: justify; /* Centrar el texto */
+  margin-bottom: 20px; /* Espacio entre el contenido y la imagen */
+}
+
+.filling-title-phone {
+  font-size: 2.5rem; /* Tamaño del título */
+}
+
+.filling-text-phone {
+  font-size: 1rem; /* Tamaño del texto */
+  margin-top: 10px; /* Espacio entre el título y el texto */
+}
+
+.image-container-phone {
+  display: block; /* Usar flexbox para alinear las imágenes */
+  width: 100%;
+}
+
+.filling-image-phone {
+  width: 100%; /* Ajustar el ancho de las imágenes */
+  height: auto; /* Mantener la proporción de las imágenes */
+  margin-bottom: 10px;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+
+/* APARTADO PARA MODIFICAR TODO PARA TELEFONOS EN FILLING */
+
+@media (max-width: 991px) {
+  .filling {
+    display: none; /* Ocultar la sección original en móviles */
   }
 
-  .filling .text-izq h1 {
-    background-image: linear-gradient(to right, #000 50%, #fff 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .filling .text-der h1 {
-    background-image: linear-gradient(to right, #fff 50%, #000 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .filling-phone {
+    display: block; /* Mostrar la nueva sección para móviles */
   }
 }
 
+@media (min-width: 992px) {
+  .filling {
+    display: block; /* Mostrar la sección original en pantallas grandes */
+  }
+
+  .filling-phone {
+    display: none; /* Ocultar la sección para móviles en pantallas grandes */
+  }
+}
 /*  SECCION ABOUT US */
 
 .aboutus {
@@ -330,15 +414,17 @@
 }
 
 .project-container {
-  position: relative;
-  width: 100vw;
-  height: 90vh; /* altura del contenedor */
-  background-color: #000;
+    position: relative;
+    width: 100vw;
+    max-width: 100%; /* Agregar esta línea */
+    height: 90vh;
+    background-color: #000;
 }
 
 .project-background {
   position: relative;
   width: 100vw;
+  max-width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -348,6 +434,7 @@
   top: 0;
   left: 0;
   width: 100vw;
+  max-width: 100%;
   height: 90vh;
   opacity: 0; /* opacidad de las imágenes de fondo */
   transition: opacity 0.5s ease-in-out;
@@ -357,8 +444,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
 }
@@ -423,4 +511,56 @@
 
 .proyecto3-link:hover ~ .proyecto3 {
   opacity: 1;
+}
+
+
+/* ACA EMPIEZA EL CONTACT US */
+
+.contactus {
+  background-color: var(--color-primario); /* Color de fondo suave */
+  padding: 50px 20px; /* Espaciado alrededor de la sección */
+  text-align: center; /* Centrar el texto */
+}
+
+.container {
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.section-title {
+  font-size: 2em; /* Tamaño de fuente del título */
+  margin-bottom: 30px; /* Espaciado debajo del título */
+  color: white; /* Color del texto */
+}
+
+.contact-info {
+  display: flex; /* Usar flexbox para alinear los elementos */
+  flex-direction: row; /* Colocar los elementos en columna */
+  gap: 20px; /* Espaciado entre los elementos */
+  justify-content: space-between;
+}
+
+.contact-item {
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+
+.contact-item h3 {
+  margin: 0; /* Eliminar margen del título */
+  font-size: 1.5em; /* Tamaño de fuente del subtítulo */
+  color: white; /* Color del subtítulo */
+}
+
+.contact-item p {
+  margin: 5px 0 0; /* Espaciado del párrafo */
+  color: rgb(197, 197, 197); /* Color del texto del párrafo */
+}
+
+.contact-item a {
+  color: rgb(197, 197, 197); /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.contact-item a:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
 }

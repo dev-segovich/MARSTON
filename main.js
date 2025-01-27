@@ -103,3 +103,49 @@
       proyecto3Info.style.opacity = 1;
     });
 
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const boxes = document.querySelectorAll('.filling-box'); // Selecciona todos los contenedores de títulos
+        boxes.forEach(box => {
+            const title = box.querySelector('.filling-title'); // Selecciona el título dentro del contenedor
+            const fillingText = box.nextElementSibling ? box.nextElementSibling.querySelector('.filling-text') : null; // Selecciona el texto correspondiente
+    
+            box.addEventListener('mouseenter', function() {
+                title.style.transform = 'scaleX(0)'; // Comprime el título
+                
+                // Esperar a que la animación de desaparición del texto termine
+                setTimeout(() => {
+                    if (fillingText) {
+                        fillingText.style.opacity = '1'; // Mostrar el texto
+                        fillingText.style.transform = 'translateX(0)'; // Mover a la posición final
+                    } else {
+                        // Si no hay fillingText, busca el anterior
+                        const prevFillingText = box.previousElementSibling ? box.previousElementSibling.querySelector('.filling-text') : null;
+                        if (prevFillingText) {
+                            prevFillingText.style.opacity = '1'; // Mostrar el texto
+                            prevFillingText.style.transform = 'translateX(0)'; // Mover a la posición final desde la derecha
+                        }
+                    }
+                }, 500); // Esperar 500ms (la duración de la animación)
+            });
+    
+            box.addEventListener('mouseleave', function() {
+                if (fillingText) {
+                    fillingText.style.opacity = '0'; // Ocultar el texto
+                    fillingText.style.transform = 'translateX(-100%)'; // Mover a la posición final
+                } else {
+                    // Si no hay fillingText, busca el anterior
+                    const prevFillingText = box.previousElementSibling ? box.previousElementSibling.querySelector('.filling-text') : null;
+                    if (prevFillingText) {
+                        prevFillingText.style.opacity = '0'; // Ocultar el texto
+                        prevFillingText.style.transform = 'translateX(100%)'; // Mover a la posición final hacia la derecha
+                    }
+                }
+    
+                // Esperar a que la animación de desaparición del texto termine
+                setTimeout(() => {
+                    title.style.transform = 'scaleX(1)'; // Restablecer la transformación del título
+                }, 500); // Esperar 500ms (la duración de la animación)
+            });
+        });
+    });
