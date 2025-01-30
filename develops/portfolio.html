@@ -7,7 +7,7 @@
     <title>MARSTON</title>
 
     <link rel="icon" href="../img/icon2.png" type="image/png"> <!-- Favicon -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link href="../main.css" rel="stylesheet" />
@@ -18,7 +18,7 @@
 
     <!-- Header (Topbar) -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <a class="navbar-brand" href="../">
                 <img src="../img/Logo.png" alt="Logo" style="height: 40px;">
             </a>
@@ -32,100 +32,102 @@
                         <a class="nav-link" href="../aboutus/aboutus.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../aboutus/aboutus.html">Achievements</a>
+                        <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <!-- <a class="nav-link" href="#contactus">Contact Us</a> -->
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#coming-soon">Coming Soon</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portal">Investor Portal</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <div class="boton-sign-in">
-                            <a class="btn btn-secondary" href="#">Sign in</a>
-                        </div>
-
-                    </li> -->
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="main-content" style="margin-top: 66px;">
-        <section class="portfolio-landing" id="about-us">
-            <div class="hero">
-                    <div class="titulo-portfolio">
-                        <h1>Portfolio</h1>
-                    </div>
+    <main class="main-content">
 
-            </div>
-            
-        </section>
-        <section class="projects" id="projects">
-            <div class="portfolio">
-                <div class="portfolio-images">
-                    <div class="portfolio-item">
-                        <a href="2900 W Broward/2900 W Broward.html">
-                            <img src="../img/1.png" alt="Project 1" />
-                            <div class="overlay">
-                                <div class="text">2900 Broward</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="link2.html">
-                            <img src="../img/4.jpg" alt="Project 2" />
-                            <div class="overlay">
-                                <div class="text">B & D Trap</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="img/3.png">
-                            <img src="../img/5.png
-                            " alt="Project 3" />
-                            <div class="overlay">
-                                <div class="text">1207 Pompano</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="img/3.png">
-                            <img src="../img/6.png" alt="Project 3" />
-                            <div class="overlay">
-                                <div class="text">Gardner</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="img/3.png">
-                            <img src="../img/5.png
-                            " alt="Project 3" />
-                            <div class="overlay">
-                                <div class="text">1207 Pompano</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="img/3.png">
-                            <img src="../img/6.png" alt="Project 3" />
-                            <div class="overlay">
-                                <div class="text">Gardner</div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Añade más items según sea necesario -->
-                </div>
+        <!-- Sección en blanco para imagen -->
+        <section class="image-placeholder">
+            <div class="placeholder-content">
             </div>
         </section>
 
-        
+        <!-- Filtro de Proyectos -->
+        <section class="project-filter hidden">
+            <div class="filter-buttons">
+                <button class="filter-button" data-filter="all">All</button>
+                <button class="filter-button" data-filter="commercial">Commercial</button>
+                <button class="filter-button" data-filter="multifamily">Multifamily</button>
+                <button class="filter-button" data-filter="mixed-use">Mixed-use</button>
+            </div>
+        </section>
 
+        <!-- Catálogo de Proyectos -->
+        <section class="project-catalog hidden">
+            <div class="collage-container">
+            </div>
+        </section>
 
+        <!-- Filtro de Proyectos -->
+        <section class="mobile-filter hidden">
+            <div class="filter-buttons">
+                <button class="filter-mobile-button" data-filter="all">All</button>
+                <button class="filter-mobile-button" data-filter="commercial">Commercial</button>
+                <button class="filter-mobile-button" data-filter="multifamily">Multifamily</button>
+                <button class="filter-mobile-button" data-filter="mixed-use">Mixed-use</button>
+            </div>
+        </section>
+
+        <section class="mobile-catalog hidden">
+            <div class="mobile-card" data-category="multifamily">
+                <a href="2900 W Broward/2900 W Broward.html">
+                    <div class="mobile-image" style="background-image: url('img/Broaward.png');"></div>
+                    <div class="mobile-info">
+                        <h5 class="project-title">2900 W Broward</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-card" data-category="commercial">
+                <a href="#">
+                    <div class="mobile-image" style="background-image: url('img/BbD.png');"></div>
+                    <div class="mobile-info">
+                        <h5 class="project-title">B&D Trap</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-card" data-category="mixed-use">
+                <a href="One Nine Vine/One Nine Vine.html">
+                    <div class="mobile-image" style="background-image: url('img/OneNineVine.png');"></div>
+                    <div class="mobile-info">
+                        <h5 class="project-title">One Nine Vine</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-card" data-category="multifamily">
+                <a href="Gardner/Gardner.html">
+                    <div class="mobile-image" style="background-image: url('img/Gardner.png');"></div>
+                    <div class="mobile-info">
+                        <h5 class="project-title">Gardner</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-card" data-category="mixed-use">
+                <a href="#">
+                    <div class="mobile-image" style="background-image: url('img/pompano.jpg');"></div>
+                    <div class="mobile-info">
+                        <h5 class="project-title">1207 Pompano</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-card" data-category="multifamily">
+                <a href="475 Riverland/475 Riverland.html">
+                    <div class="mobile-image" style="background-image: url('img/Riverland.png');"></div>
+                    <div class="mobile-info">
+                        <h5 class="project-title">475 Riverland Apartments</h5>
+                    </div>
+                </a>
+            </div>
+            <!-- Agrega más tarjetas móviles según sea necesario -->
+        </section>
     </main>
 
     <!-- Footer -->
@@ -139,7 +141,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src = "../main.js"></script>
+    <script src = "main.js"></script>
 
 
 </body>

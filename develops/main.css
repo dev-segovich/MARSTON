@@ -1,48 +1,235 @@
-.portfolio-landing {
-    background-image: url('fondo_portfolio.jpg');
-    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
-    background-position: bottom; /* Centra la imagen horizontalmente */
-    height: 100vh; /* Establece la altura de la sección al 100% de la viewport */
-    color: white;
-    align-items: center;
-    justify-content: center;
+.hidden {
+  display: none; /* Ocultar elementos */
 }
 
-.titulo-portfolio{
-    padding-top: 80vh;
-    padding-left: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-right: 1.5rem;
+#navbar {
+    background-color: var(--color-primario);
+    transition: background-color 0.5s ease;
 }
-  
 
-/* Estilos para pantallas grandes */
-@media (min-width: 990px) {
-    .portfolio-landing {
-        height: 600px; /* Establece un límite de altura para pantallas grandes */
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-position: top;
-        background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
-    }
-  
-    .titulo-portfolio{
-        padding-top: 475px;
-        margin-left: auto;
-        padding-right: 20%;
-        padding-bottom: 1.5rem;
-        width: 60dvh;
-      }
+  #navbar.scrolled {
+    background-color: var(--color-primario); 
+    transition: background-color 0.5s ease;
+}
 
-    .titulo-portfolio h1{
-        font-size: 3.5rem;
-    }
+  .navbar-toggler{
+    background-color: var(--color-primario);
   }
   
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="rgba(255, 255, 255, 1)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3e%3c/path%3e%3c/svg%3e');
+}
 
-  /* Estilos para pantallas entre 990px y 1200px */
-@media (min-width: 990px) and (max-width: 1200px) {
-    .titulo-portfolio {
-        width: 40dvh; /* Cambia el valor del width solo para este rango */
-    }
+.image-placeholder {
+  height: 300px; /* Ajusta la altura según sea necesario */
+  background-color: #f0f0f0; /* Color de fondo para la sección en blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio debajo de la sección en blanco */
+}
+
+.project-filter {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio debajo del filtro */
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.filter-button {
+  padding: 10px 20px;
+  background-color: transparent; /* Color de fondo del botón */
+  color: var(--color-quinto);
+  border: solid;
+  border-color: var(--color-quinto);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: var(--color-quinto); /* Color de fondo al pasar el mouse */
+  color: white;
+}
+
+.project-catalog {
+  padding: 0 3%;
+}
+
+.project-card {
+  overflow: hidden; /* Ocultar el desbordamiento */
+  border-radius: 5px; /* Bordes redondeados */
+  aspect-ratio: 1; /* Mantener la relación de aspecto cuadrada */
+  opacity: 0; /* Comienza invisible */
+  transform: translateY(20px); /* Mueve la tarjeta hacia abajo */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.project-card.visible {
+  opacity: 1; /* Hacer visible */
+  transform: translateY(0); /* Regresar a la posición original */
+}
+
+.project-card.hidden {
+  opacity: 0; /* Hacer invisible */
+  transform: translateY(20px); /* Mover hacia abajo */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.project-image {
+  padding: 0.375rem;
+  height: 100%; /* Asegurarse de que la imagen cubra el contenedor */
+  background-size: cover; /* Asegura que la imagen cubra el contenedor */
+  background-position: center; /* Centrar la imagen */
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease; /* Transición suave para el zoom */
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1); /* Aumentar el tamaño de la imagen al 110% */
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+  color: white; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  padding: 0.375rem; /* Espaciado interno */
+  display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Alinear el contenido en columna */
+    justify-content: center; /* Centrar verticalmente */
+    height: 100%; /* Asegurarse de que ocupe toda la altura */
+}
+
+.collage-container {
+  position: relative; /* Contenedor relativo para posicionar tarjetas absolutas */
+  width: 100%; /* Ancho completo */
+}
+
+.large-card {
+  position: absolute; /* Posicionamiento absoluto */
+  width: 49%; /* Ocupa la mitad del contenedor */
+  aspect-ratio: 1;
+  padding: 0.375rem;
+  background-color: #f0f0f0; /* Color de fondo para visualizar */
+}
+
+.small-card {
+  position: absolute; /* Posicionamiento absoluto */
+  width: 24%; /* Ocupa un cuarto del contenedor */
+  aspect-ratio: 1;
+  padding: 0.375rem;
+  background-color: #d0d0d0; /* Color de fondo para visualizar */
+}
+
+/* Posicionamiento específico de las tarjetas */
+#large-card-1 {
+  top: 0; /* Posición en la parte superior */
+  left: 0; /* Posición a la izquierda */
+}
+
+#small-card-1 {
+  top: 0; /* Posición en la parte superior */
+  left: 50%; /* A la derecha de la tarjeta grande */
+}
+
+#small-card-2 {
+  top: 0; /* Posición en la parte superior */
+  left: 75%; /* A la derecha de la tarjeta grande */
+}
+
+#small-card-3 {
+  top: 50%; /* Debajo de la tarjeta grande */
+  left: 0; /* A la izquierda */
+}
+
+#small-card-4 {
+  top: 50%; /* Debajo de la tarjeta grande */
+  left: 25%; /* A la derecha de la tarjeta pequeña de la izquierda */
+}
+
+#large-card-2 {
+  top: 50%; /* Debajo de las pequeñas */
+  left: 50%; /* A la izquierda */
+}
+
+
+
+.mobile-filter {
+  padding: 10px; /* Espaciado alrededor del filtro */
+  background-color: #f8f8f8; /* Color de fondo del filtro */
+  text-align: center; /* Centrar el texto */
+}
+
+.filter-buttons {
+  display: flex; /* Usar flexbox para los botones */
+  justify-content: center; /* Centrar los botones */
+  gap: 10px; /* Espaciado entre botones */
+}
+
+.filter-mobile-button {
+  padding: 5px 10px;
+  background-color: transparent; /* Color de fondo del botón */
+  color: var(--color-quinto);
+  border: solid;
+  border-color: var(--color-quinto);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.filter-mobile-button:hover {
+  background-color: var(--color-quinto); /* Color de fondo al pasar el mouse */
+  color: white;
+}
+
+.mobile-catalog {
+  padding: 0 3%;
+}
+
+.mobile-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+.mobile-card::before {
+  content: ""; /* Necesario para crear el pseudo-elemento */
+  position: absolute; /* Posición absoluta para cubrir la tarjeta */
+  top: 0; /* Alinear al principio */
+  left: 0; /* Alinear a la izquierda */
+  right: 0; /* Alinear a la derecha */
+  bottom: 0; /* Alinear al final */
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.3); /* Color negro con opacidad para oscurecer */
+  z-index: 1; /* Asegurarse de que esté por debajo del contenido */
+}
+
+.mobile-image {
+  width: 100%; /* Asegurarse de que la imagen ocupe todo el ancho */
+  height: 100%; /* Asegurarse de que la imagen ocupe toda la altura */
+  background-size: cover; /* Asegurarse de que la imagen cubra el área */
+  background-position: center; /* Centrar la imagen */
+  z-index: 0; /* Asegurarse de que esté por debajo del contenido */
+}
+
+.mobile-info {
+  position: absolute; /* Posición absoluta para el contenido */
+  bottom: 0; /* Alinear al fondo */
+  left: 0; /* Alinear a la izquierda */
+  right: 0; /* Alinear a la derecha */
+  padding: 0 15px 25px 15px; /* Espaciado interno del contenido */
+  color: white; /* Color del texto */
+  z-index: 1;
 }

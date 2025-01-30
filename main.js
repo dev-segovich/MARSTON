@@ -149,3 +149,18 @@
             });
         });
     });
+
+    document.querySelectorAll('.filter-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            const cards = document.querySelectorAll('.project-card');
+    
+            cards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'block'; // Mostrar tarjeta
+                } else {
+                    card.style.display = 'none'; // Ocultar tarjeta
+                }
+            });
+        });
+    });
