@@ -144,7 +144,7 @@ button:hover {
 }
 
   .power {
-    background-image: url('img/fondo.png');
+    background-image: url('img/fondo.webp');
     background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
     background-position: bottom; /* Centra la imagen horizontalmente */
     height: 100vh; /* Establece la altura de la sección al 100% de la viewport */

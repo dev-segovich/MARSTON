@@ -4,42 +4,42 @@ const projects = [
     {
         category: 'multifamily',
         link: '2900 W Broward/2900 W Broward.html',
-        image: 'img/Broaward.png',
+        image: 'img/Broaward.webp',
         title: '2900 W Broward',
         subtitle: 'City Name'
     },
     {
         category: 'commercial',
         link: '#',
-        image: 'img/BbD.png',
+        image: 'img/BbD.webp',
         title: 'B&D Trap',
         subtitle: 'Another City'
     },
     {
         category: 'mixed-use',
         link: 'One Nine Vine/One Nine Vine.html',
-        image: 'img/OneNineVine.png',
+        image: 'img/OneNineVine.webp',
         title: 'One Nine Vine',
         subtitle: 'Some City'
     },
     {
         category: 'multifamily',
         link: 'Gardner/Gardner.html',
-        image: 'img/Gardner.png',
+        image: 'img/Gardner.webp',
         title: 'Gardner',
         subtitle: 'Some City'
     },
     {
         category: 'mixed-use',
         link: '#',
-        image: 'img/pompano.jpg',
+        image: 'img/pompano.webp',
         title: '1207 Pompano',
         subtitle: 'Some City'
     },
     {
         category: 'multifamily',
         link: '475 Riverland/475 Riverland.html',
-        image: 'img/Riverland.png',
+        image: 'img/Riverland.webp',
         title: '475 Riverland Apartments',
         subtitle: 'Some City'
     },

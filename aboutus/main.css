@@ -3,7 +3,7 @@
 }
 
 .portfolio-landing {
-    background-image: url('fondo.png');
+    background-image: url('fondo.webp');
     background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
     background-position: center; /* Centra la imagen horizontalmente */
     height: 80vh; /* Establece la altura de la sección al 100% de la viewport */
