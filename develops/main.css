@@ -204,6 +204,13 @@
   overflow: hidden;
 }
 
+.mobile-card a {
+  position: absolute;
+  inset: 0; /* Hace que el enlace cubra toda la tarjeta */
+  display: block;
+  z-index: 2;
+}
+
 .mobile-card::before {
   content: ""; /* Necesario para crear el pseudo-elemento */
   position: absolute; /* Posición absoluta para cubrir la tarjeta */

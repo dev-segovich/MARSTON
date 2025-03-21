@@ -6,43 +6,51 @@ const projects = [
         link: '2900 W Broward/2900 W Broward.html',
         image: 'img/Broaward.webp',
         title: '2900 W Broward',
-        subtitle: 'City Name'
+        subtitle: 'Fort Lauderdale, FL'
     },
     {
         category: 'commercial',
-        link: '#',
+        link: 'B&D/B&D.html',
         image: 'img/BbD.webp',
         title: 'B&D Trap',
-        subtitle: 'Another City'
+        subtitle: 'Fort Lauderdale, FL'
     },
     {
         category: 'mixed-use',
         link: 'One Nine Vine/One Nine Vine.html',
         image: 'img/OneNineVine.webp',
         title: 'One Nine Vine',
-        subtitle: 'Some City'
+        subtitle: 'Kansas, MO'
     },
     {
         category: 'multifamily',
         link: 'Gardner/Gardner.html',
         image: 'img/Gardner.webp',
         title: 'Gardner',
-        subtitle: 'Some City'
+        subtitle: 'Kansas, MO'
     },
     {
         category: 'mixed-use',
-        link: '#',
+        link: 'Pompano/1207 Pompano.html',
         image: 'img/pompano.webp',
         title: '1207 Pompano',
-        subtitle: 'Some City'
+        subtitle: 'Pompano Beach, FL'
     },
     {
         category: 'multifamily',
         link: '475 Riverland/475 Riverland.html',
         image: 'img/Riverland.webp',
         title: '475 Riverland Apartments',
-        subtitle: 'Some City'
+        subtitle: 'Fort Lauderdale, FL'
     },
+    {
+        category: 'mixed-use',
+        link: 'One Nine Vine II/One Nine Vine II.html',
+        image: 'img/OneNineVine2.webp',
+        title: 'One Nine Vine II',
+        subtitle: 'Kansas, MO'
+    },
+    
     // Agrega más proyectos según sea necesario
 ];
 
@@ -90,7 +98,7 @@ filterButtons.forEach(button => {
 
 function createProjectCard(id, category, projectLink, image, title, subtitle) {
     // Determinar el tamaño de la tarjeta según el ID
-    const size = (id === 1 || id === 6) ? 'large-card' : 'small-card';
+    const size = (id === 1 || id === 6 || id === 7) ? 'large-card' : 'small-card';
 
     // Crear el contenedor de la tarjeta
     const card = document.createElement('div');
