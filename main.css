@@ -480,7 +480,7 @@
 
 /* Estilos específicos para cada columna */
 .proyecto1-link .project-image {
-  background-image: url('img/fondo.webp');
+  background-image: url('img/fondo-5.webp');
   background-position: left; /* Muestra el primer tercio */
 }
 
@@ -490,7 +490,7 @@
 }
 
 .proyecto3-link .project-image {
-  background-image: url('img/fondo3.webp');
+  background-image: url('img/fondo-4.webp');
   background-position: right; /* Muestra el último tercio */
 }
 
@@ -567,7 +567,7 @@
 
 /* Estilos específicos para cada columna */
 .proyecto1-link .project-image {
-  background-image: url('img/fondo.webp');
+  background-image: url('img/fondo-5.webp');
 }
 
 .proyecto2-link .project-image {
@@ -575,7 +575,7 @@
 }
 
 .proyecto3-link .project-image {
-  background-image: url('img/fondo3.webp');
+  background-image: url('img/fondo-4.webp');
 }
 
 @media (max-width: 991px) {
