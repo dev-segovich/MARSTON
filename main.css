@@ -374,6 +374,31 @@
   color: #7a7a7a; /* Color del texto */
 }
 
+.disclaimer {
+  position: relative;
+  padding: 100px 0;
+  background-color: #fff; /* Color de fondo de la sección */
+  overflow: hidden; /* Para asegurar que la marca de agua no se desborde */
+}
+
+.disclaimer .container {
+  position: relative;
+  z-index: 2; /* Coloca el contenido por encima de la marca de agua */
+}
+
+.disclaimer .row {
+  justify-content: center;
+}
+
+.disclaimer .col-md-6 {
+  padding: 20px;
+}
+
+.disclaimer p {
+  line-height: 1.6;
+  color: #7a7a7a; /* Color del texto */
+}
+
 .titulo-inv{
   color: transparent;
 }

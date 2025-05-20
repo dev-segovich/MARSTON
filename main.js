@@ -1,17 +1,23 @@
 
-    $(document).ready(function() {
-        // Agregar un evento de clic a los enlaces del navbar
-        $('.navbar-nav a').on('click', function(event) {
+$(document).ready(function() {
+    $('.navbar-nav a').on('click', function(event) {
+        const target = $(this).attr('href');
 
-            // Obtener el destino del enlace
-            var target = $(this).attr('href');
+        // Solo si el href es una ancla interna
+        if (target.startsWith('#')) {
+            event.preventDefault();
 
-            // Desplazarse suavemente a la sección correspondiente
-            $('html, body').animate({
-                scrollTop: $(target).offset().top
-            }, 800); // 800 es la duración de la animación en milisegundos
-        });
+            const $target = $(target);
+            if ($target.length) {
+                $('html, body').animate({
+                    scrollTop: $target.offset().top
+                }, 800);
+            }
+        }
+        // Si no es ancla interna (es un link externo), se deja pasar por defecto
     });
+});
+
 
 
     let index = 0;
@@ -39,6 +45,7 @@
 
     const projectContainer = document.querySelector('.project-container');
 
+if (projectContainer) {
     const proyecto1Link = document.querySelector('.proyecto1-link');
     const proyecto2Link = document.querySelector('.proyecto2-link');
     const proyecto3Link = document.querySelector('.proyecto3-link');
@@ -68,40 +75,42 @@
     });
 
     proyecto1Link.addEventListener('mouseover', () => {
-      proyecto1Imagen.style.opacity = 1;
-      proyecto2Imagen.style.opacity = 0;
-      proyecto3Imagen.style.opacity = 0;
-      proyecto1Columna.style.opacity = 0;
-      proyecto2Columna.style.opacity = 0;
-      proyecto3Columna.style.opacity = 0;
-      proyecto1Info.style.opacity = 1;
-      proyecto2Info.style.opacity = 0.3;
-      proyecto3Info.style.opacity = 0.3;
+        proyecto1Imagen.style.opacity = 1;
+        proyecto2Imagen.style.opacity = 0;
+        proyecto3Imagen.style.opacity = 0;
+        proyecto1Columna.style.opacity = 0;
+        proyecto2Columna.style.opacity = 0;
+        proyecto3Columna.style.opacity = 0;
+        proyecto1Info.style.opacity = 1;
+        proyecto2Info.style.opacity = 0.3;
+        proyecto3Info.style.opacity = 0.3;
     });
-    
+
     proyecto2Link.addEventListener('mouseover', () => {
-      proyecto1Imagen.style.opacity = 0;
-      proyecto2Imagen.style.opacity = 1;
-      proyecto3Imagen.style.opacity = 0;
-      proyecto1Columna.style.opacity = 0;
-      proyecto2Columna.style.opacity = 0;
-      proyecto3Columna.style.opacity = 0;
-      proyecto1Info.style.opacity = 0.3;
-      proyecto2Info.style.opacity = 1;
-      proyecto3Info.style.opacity = 0.3;
+        proyecto1Imagen.style.opacity = 0;
+        proyecto2Imagen.style.opacity = 1;
+        proyecto3Imagen.style.opacity = 0;
+        proyecto1Columna.style.opacity = 0;
+        proyecto2Columna.style.opacity = 0;
+        proyecto3Columna.style.opacity = 0;
+        proyecto1Info.style.opacity = 0.3;
+        proyecto2Info.style.opacity = 1;
+        proyecto3Info.style.opacity = 0.3;
     });
-    
+
     proyecto3Link.addEventListener('mouseover', () => {
-      proyecto1Imagen.style.opacity = 0;
-      proyecto2Imagen.style.opacity = 0;
-      proyecto3Imagen.style.opacity = 1;
-      proyecto1Columna.style.opacity = 0;
-      proyecto2Columna.style.opacity = 0;
-      proyecto3Columna.style.opacity = 0;
-      proyecto1Info.style.opacity = 0.3;
-      proyecto2Info.style.opacity = 0.3;
-      proyecto3Info.style.opacity = 1;
+        proyecto1Imagen.style.opacity = 0;
+        proyecto2Imagen.style.opacity = 0;
+        proyecto3Imagen.style.opacity = 1;
+        proyecto1Columna.style.opacity = 0;
+        proyecto2Columna.style.opacity = 0;
+        proyecto3Columna.style.opacity = 0;
+        proyecto1Info.style.opacity = 0.3;
+        proyecto2Info.style.opacity = 0.3;
+        proyecto3Info.style.opacity = 1;
     });
+}
+
 
 
     document.addEventListener('DOMContentLoaded', function() {
