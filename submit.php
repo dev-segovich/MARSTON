@@ -1,9 +1,9 @@
 <?php
 // Configuración de base de datos (ajusta estos valores)
 $host = 'localhost';
-$dbname = 'form_submissions_db';
-$username = 'TU_USUARIO';
-$password = 'TU_PASSWORD';
+$dbname = 'zero9111_landing';
+$username = 'zero9111_jesusrey';
+$password = 'o+[ZdH33O£RhD2/';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
@@ -89,6 +89,6 @@ $stmt->execute([
 ]);
 
 // Redirección o respuesta
-header("Location: thank-you.html");
+header("Location: index.html");
 exit;
 ?>
