@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Investor Intake Form - MARSTON</title>
+  <link rel="icon" href="./img/icon2.webp" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #364350;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .form-container {
+      max-width: 900px;
+      margin: 120px auto 60px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #364350;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .form-control, select {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 0px 15px;
+      font-size: 1rem;
+    }
+
+    .checkbox-group label {
+      font-weight: normal;
+      margin-right: 15px;
+    }
+
+    .form-section {
+      margin-bottom: 30px;
+    }
+
+    .disclaimer {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 20px;
+    }
+
+    .custom-file-input {
+      padding: 10px 15px;
+    }
+
+    .custom-file-label {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  </style>
+  <script>
+    function toggleOtherInput(checkbox) {
+    const input = document.getElementById('investorTypeOtherInput');
+    input.style.display = checkbox.checked ? 'block' : 'none';
+  }
+
+  function toggleRegionOther(select) {
+    const input = document.getElementById('regionOtherInput');
+    input.style.display = select.value === 'Other' ? 'block' : 'none';
+  }
+
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #364350;" id="navbar">
+      <a class="navbar-brand" href="#">
+        <img src="./img/Logo.webp" alt="Logo" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="aboutus/aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="develops/portfolio.html?category=all">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Form Section -->
+  <div class="form-container">
+    <h2 class="form-title">Real Estate Investor Intake Form</h2>
+    <p class="text-muted text-center mb-4">
+      Gain Access to Exclusive In-House Opportunities.<br>
+      We only share real estate investment opportunities that we develop and manage ourselves—each carefully vetted and targeting 20%+ IRR.
+    </p>
+
+    <form action="submit.php" method="POST" enctype="multipart/form-data">
+        <div class="form-section">
+          <h5>1. Basic Information</h5>
+          <div class="form-group">
+            <label>Full Name*</label>
+            <input type="text" class="form-control" name="full_name" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address*</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Phone / WhatsApp</label>
+            <input type="text" class="form-control" name="phone">
+          </div>
+          <div class="form-group">
+            <label>Entity Name (if any)</label>
+            <input type="text" class="form-control" name="entity_name">
+          </div>
+        </div>
+      
+        <div class="form-section">
+          <h5>2. Investor Type*</h5>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="investorType[]" value="Family Office"> Family Office</label><br>
+            <label><input type="checkbox" name="investorType[]" value="Private Equity Fund"> Private Equity Fund</label><br>
+            <label><input type="checkbox" name="investorType[]" value="High Net-Worth Individual (HNW)"> High Net-Worth Individual (HNW)</label><br>
+            <label><input type="checkbox" name="investorType[]" value="Institutional Investor"> Institutional Investor</label><br>
+            <label><input type="checkbox" name="investorType[]" value="Real Estate Syndicator"> Real Estate Syndicator</label><br>
+            <label><input type="checkbox" name="investorType[]" value="Wealth Advisor / Fund Manager"> Wealth Advisor / Fund Manager</label><br>
+            <label><input type="checkbox" name="investorType[]" value="International Investment Group"> International Investment Group</label><br>
+            <label><input type="checkbox" name="investorType[]" value="Other" onclick="toggleOtherInput(this)"> Other</label>
+          </div>
+          <input type="text" id="investorTypeOtherInput" name="investorTypeOther" class="form-control mt-2" placeholder="If Other, please specify" style="display: none;">
+        </div>
+      
+        <div class="form-section">
+          <h5>3. Accreditation Status*</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="accredited" value="1" required>
+            <label class="form-check-label">I confirm I am an accredited investor as defined by the U.S. SEC</label>
+          </div>
+          <div class="form-group mt-2">
+            <label>Upload accreditation document (PDF or link)</label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" name="accreditation_file" id="accreditationFile" accept=".pdf">
+              <label class="custom-file-label" for="accreditationFile">Choose file</label>
+            </div>
+            <input type="url" class="form-control mt-2" name="accreditation_link" placeholder="https://example.com">
+          </div>
+        </div>
+      
+        <div class="form-section">
+          <h5>4. Region of Residence*</h5>
+          <div class="form-group">
+            <select class="form-control" name="region" required onchange="toggleRegionOther(this)">
+              <option value="">Select an option</option>
+              <option value="United States">United States</option>
+              <option value="South America">South America</option>
+              <option value="Central America & Caribbean">Central America & Caribbean</option>
+              <option value="Europe">Europe</option>
+              <option value="Middle East">Middle East</option>
+              <option value="Asia-Pacific">Asia-Pacific</option>
+              <option value="Canada">Canada</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="text" id="regionOtherInput" name="region_other" class="form-control mt-2" placeholder="If Other, please specify" style="display: none;">
+          </div>
+        </div>
+      
+        <div class="form-section">
+          <h5>5. Minimum Investment Confirmation*</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="minimumInvestment" value="1" required>
+            <label class="form-check-label">I confirm that I am interested in investments of $250,000 or more</label>
+          </div>
+        </div>
+      
+        <div class="form-section">
+          <h5>6. Investment Interests</h5>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interests[]" value="Multifamily"> Ground-up Multifamily Development</label><br>
+            <label><input type="checkbox" name="interests[]" value="Mixed-Use"> Mixed-Use Projects</label><br>
+            <label><input type="checkbox" name="interests[]" value="Workforce"> Workforce Housing</label><br>
+            <label><input type="checkbox" name="interests[]" value="Rehab"> Value-Add / Rehab</label><br>
+            <label><input type="checkbox" name="interests[]" value="Co-GP"> Co-GP / JV Participation</label><br>
+            <label><input type="checkbox" name="interests[]" value="Debt"> Debt / Preferred Equity</label>
+          </div>
+        </div>
+      
+        <div class="form-section">
+          <h5>7. How did you hear about us?</h5>
+          <textarea class="form-control" name="referralSource" rows="2" placeholder="Referral, conference, social media, etc."></textarea>
+        </div>
+      
+        <div class="form-section">
+          <h5>8. Message / Questions</h5>
+          <textarea class="form-control" name="message" rows="4" placeholder="Anything else you'd like to share..."></textarea>
+        </div>
+      
+        <p class="disclaimer">
+          <strong>Disclaimer:</strong> This is not an offer to sell or solicitation of an offer to buy any security. All investments are offered only to accredited investors under Regulation D and subject to verification.
+        </p>
+      
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-primary px-5 py-2">Submit</button>
+        </div>
+      </form>
+      
+  </div>
+
+</body>
+</html>

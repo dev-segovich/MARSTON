@@ -12,6 +12,8 @@
     --color-cuarto: #d3dee7; /* Cuarto color */
     --color-quinto: #5b595b; /* Quinto color */
     --color-sexto: #2b251c; /* Sexto color */
+    --color-boton: #5b7085; /* Color del botón */
+    --color-boton-hover: #82a0be; /* Color del botón al pasar el mouse */
   }
 
   #navbar {
@@ -687,4 +689,110 @@
 
 .contact-item a:hover {
   text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+.cta-investor {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn-investor {
+  background-color: var(--color-boton);
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-investor:hover {
+  background-color: var(--color-boton-hover);
+}
+
+.cta-investor a {
+  color: #fff; /* Cambia el color del texto al pasar el ratón */
+  text-decoration: none; /* Elimina el subrayado al pasar el ratón */
+}
+
+.investor-form-section {
+  background-color: var(--color-secundario);
+  padding: 80px 20px;
+}
+
+.investor-form-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.investor-form-section .section-title {
+  text-align: center;
+  color: var(--color-primario);
+  margin-bottom: 30px;
+}
+
+.investor-form-section .form-intro {
+  text-align: justify;
+  color: var(--color-quinto);
+  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.investor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.investor-form fieldset {
+  border: none;
+}
+
+.investor-form legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-primario);
+  margin-bottom: 10px;
+}
+
+.investor-form label {
+  display: block;
+  color: var(--color-quinto);
+  margin: 10px 0 5px;
+}
+
+.investor-form input[type="text"],
+.investor-form input[type="email"],
+.investor-form input[type="url"],
+.investor-form input[type="file"],
+.investor-form select,
+.investor-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: var(--color-cuarto);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--color-sexto);
+}
+
+.investor-form textarea {
+  resize: vertical;
+}
+
+.investor-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.investor-form .disclaimer {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 20px;
+  line-height: 1.6;
 }
