@@ -1,0 +1,179 @@
+/* ====== Intro Section (partnership-style) ====== */
+.intro-section {
+  padding: 80px 20px;
+}
+
+.intro-section h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.intro-section .lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.investment-swiper-section {
+  background-color: #f9f9f9;
+}
+
+.swiper {
+  padding: 40px 0;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-card {
+  width: 420px;
+  height: 500px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.carousel-card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Lista interna */
+.carousel-card ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* List items */
+.carousel-card ul li {
+  margin-bottom: 8px;
+  white-space: normal; /* Permite múltiples líneas bien distribuidas */
+}
+
+/* Flechas personalizadas */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #364350;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 26px;
+  color: #364350;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-card {
+    padding: 20px;
+  }
+
+  .carousel-card h5 {
+    font-size: 1rem;
+  }
+
+  .carousel-card ul {
+    font-size: 0.9rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* opcional: ocultar flechas en móvil */
+  }
+}
+
+/* Estilo de lista interna con íconos */
+.styled-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.styled-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 10px;
+  background-color: #f7f9fb;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.styled-list .icon {
+  font-size: 1.1rem;
+  color: #364350;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.styled-list strong {
+  font-weight: 600;
+  color: #111;
+}
+
+.styled-list div {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.why-marston-section {
+  background: linear-gradient(135deg, #0e1f33, #1f3a56);
+  color: #ffffff;
+}
+
+.why-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.why-marston-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.why-marston-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.why-marston-list .check {
+  color: #00cc99;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.why-marston-closing p {
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  line-height: 1.6;
+}
+

@@ -180,6 +180,61 @@
 
 /* HASTA ACA LOS CAMBIOS DE LA PRIMERA SECCION
  */
+/* SECCION PARTERSHIP */
+
+#partnership {
+  scroll-margin-top: 480px; /* ajusta según la altura real de tu navbar */
+}
+
+
+
+.partnership-section {
+    background-color: #757575; /* Fondo oscuro para diferenciarse */
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.partnership-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.partnership-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.partnership-button{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.partnership-section .btn {
+  background-color: #fff;
+  display: inline-block; /* Hace que el botón ocupe solo el espacio necesario */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  color: var(--color-primario); /* Color del texto (usando la variable de color primario) */
+  border: 2px solid var(--color-primario); /* Borde con el color primario */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: left; /* Alineación del texto a la izquierda */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.partnership-section .btn:hover {
+    background-color: var(--color-primario); /* Cambia el fondo al color primario al pasar el mouse */
+    color: #fff; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+
+/* SECCION FILLING */ 
 
 .filling .row {
   position: relative;
@@ -373,7 +428,7 @@
 
 .aboutus p {
   line-height: 1.6;
-  color: #7a7a7a; /* Color del texto */
+  color: #646464; /* Color del texto */
 }
 
 .disclaimer {
