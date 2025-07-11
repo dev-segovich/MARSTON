@@ -177,3 +177,18 @@
   line-height: 1.6;
 }
 
+/* Desenfoca las tarjetas que no están activas */
+.swiper-slide:not(.swiper-slide-active) .carousel-card {
+  filter: blur(2.5px);
+  opacity: 0.6;
+  transform: scale(0.95);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Tarjeta activa se muestra clara y destacada */
+.swiper-slide-active .carousel-card {
+  filter: none;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
