@@ -79,145 +79,190 @@
 
   </script>
 </head>
-<body>
+<body data-page="form">
   <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #364350;" id="navbar">
-      <a class="navbar-brand" href="#">
-        <img src="./img/Logo.webp" alt="Logo" style="height: 40px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="aboutus/aboutus.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="develops/portfolio.html?category=all">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <header id="navbar-container"></header>
 
   <!-- Form Section -->
   <div class="form-container">
-    <h2 class="form-title">Real Estate Investor Intake Form</h2>
-    <p class="text-muted text-center mb-4">
+    <h2 class="form-title" data-i18n="title">Real Estate Investor Intake Form</h2>
+    <p class="text-muted text-center mb-4" data-i18n="intro_text">
       Gain Access to Exclusive In-House Opportunities.<br>
       We only share real estate investment opportunities that we develop and manage ourselves—each carefully vetted and targeting 20%+ IRR.
     </p>
 
     <form action="submit.php" method="POST" enctype="multipart/form-data">
         <div class="form-section">
-          <h5>1. Basic Information</h5>
+          <h5 data-i18n="section1_title">1. Basic Information</h5>
           <div class="form-group">
-            <label>Full Name*</label>
+            <label data-i18n="full_name">Full Name*</label>
             <input type="text" class="form-control" name="full_name" required>
           </div>
           <div class="form-group">
-            <label>Email Address*</label>
+            <label data-i18n="email_address">Email Address*</label>
             <input type="email" class="form-control" name="email" required>
           </div>
           <div class="form-group">
-            <label>Phone / WhatsApp</label>
+            <label data-i18n="phone_whatsapp">Phone / WhatsApp</label>
             <input type="text" class="form-control" name="phone">
           </div>
           <div class="form-group">
-            <label>Entity Name (if any)</label>
+            <label data-i18n="entity_name">Entity Name (if any)</label>
             <input type="text" class="form-control" name="entity_name">
           </div>
         </div>
       
         <div class="form-section">
-          <h5>2. Investor Type*</h5>
-          <div class="checkbox-group">
-            <label><input type="checkbox" name="investorType[]" value="Family Office"> Family Office</label><br>
-            <label><input type="checkbox" name="investorType[]" value="Private Equity Fund"> Private Equity Fund</label><br>
-            <label><input type="checkbox" name="investorType[]" value="High Net-Worth Individual (HNW)"> High Net-Worth Individual (HNW)</label><br>
-            <label><input type="checkbox" name="investorType[]" value="Institutional Investor"> Institutional Investor</label><br>
-            <label><input type="checkbox" name="investorType[]" value="Real Estate Syndicator"> Real Estate Syndicator</label><br>
-            <label><input type="checkbox" name="investorType[]" value="Wealth Advisor / Fund Manager"> Wealth Advisor / Fund Manager</label><br>
-            <label><input type="checkbox" name="investorType[]" value="International Investment Group"> International Investment Group</label><br>
-            <label><input type="checkbox" name="investorType[]" value="Other" onclick="toggleOtherInput(this)"> Other</label>
+          <h5 data-i18n="section2_title">2. Investor Type*</h5>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="investorType[]" value="Family Office">
+            <label class="form-check-label" data-i18n="family_office">Family Office</label>
           </div>
-          <input type="text" id="investorTypeOtherInput" name="investorTypeOther" class="form-control mt-2" placeholder="If Other, please specify" style="display: none;">
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="investorType[]" value="Private Equity Fund">
+            <label class="form-check-label" data-i18n="private_equity">Private Equity Fund</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="investorType[]" value="High Net-Worth Individual (HNW)" data-i18n="high_net_worth">
+            <label class="form-check-label" data-i18n="high_net_worth">High Net-Worth Individual (HNW)</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="investorType[]" value="Institutional Investor">
+            <label class="form-check-label" data-i18n="institutional_investor">Institutional Investor</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="investorType[]" value="Real Estate Syndicator">
+            <label class="form-check-label" data-i18n="real_estate_syndicator">Real Estate Syndicator</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="investorType[]" value="Wealth Advisor / Fund Manager">
+            <label class="form-check-label" data-i18n="wealth_advisor">Wealth Advisor / Fund Manager</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="investorType[]" value="International Investment Group">
+            <label class="form-check-label" data-i18n="international_group">International Investment Group</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="investorType[]" value="Other" onclick="toggleOtherInput(this)" data-i18n="other">
+            <label class="form-check-label" data-i18n="other">Other</label>
+          </div>
+
+          <input type="text" id="investorTypeOtherInput" name="investorTypeOther"
+                 class="form-control mt-2" 
+                 placeholder="If Other, please specify" 
+                 data-i18n="other_placeholder" 
+                 style="display: none;">
         </div>
       
         <div class="form-section">
-          <h5>3. Accreditation Status*</h5>
+          <h5 data-i18n="section3_title">3. Accreditation Status*</h5>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" name="accredited" value="1" required>
-            <label class="form-check-label">I confirm I am an accredited investor as defined by the U.S. SEC</label>
+            <label class="form-check-label" data-i18n="accreditation_confirm">I confirm I am an accredited investor as defined by the U.S. SEC</label>
           </div>
           <div class="form-group mt-2">
-            <label>Upload accreditation document (PDF or link)</label>
+            <label data-i18n="upload_doc">Upload accreditation document (PDF or link)</label>
             <div class="custom-file">
               <input type="file" class="custom-file-input" name="accreditation_file" id="accreditationFile" accept=".pdf">
-              <label class="custom-file-label" for="accreditationFile">Choose file</label>
+              <label class="custom-file-label" for="accreditationFile" data-i18n="choose_file">Choose file</label>
             </div>
             <input type="url" class="form-control mt-2" name="accreditation_link" placeholder="https://example.com">
           </div>
         </div>
       
         <div class="form-section">
-          <h5>4. Region of Residence*</h5>
+          <h5 data-i18n="section4_title">4. Region of Residence*</h5>
           <div class="form-group">
             <select class="form-control" name="region" required onchange="toggleRegionOther(this)">
-              <option value="">Select an option</option>
-              <option value="United States">United States</option>
-              <option value="South America">South America</option>
-              <option value="Central America & Caribbean">Central America & Caribbean</option>
-              <option value="Europe">Europe</option>
-              <option value="Middle East">Middle East</option>
-              <option value="Asia-Pacific">Asia-Pacific</option>
-              <option value="Canada">Canada</option>
-              <option value="Other">Other</option>
+              <option value="" data-i18n="select_option">Select an option</option>
+              <option value="United States" data-i18n="us">United States</option>
+              <option value="South America" data-i18n="south_america">South America</option>
+              <option value="Central America & Caribbean" data-i18n="central_caribbean">Central America & Caribbean</option>
+              <option value="Europe" data-i18n="europe">Europe</option>
+              <option value="Middle East" data-i18n="middle_east">Middle East</option>
+              <option value="Asia-Pacific" data-i18n="asia_pacific">Asia-Pacific</option>
+              <option value="Canada" data-i18n="canada">Canada</option>
+              <option value="Other" data-i18n="other">Other</option>
             </select>
-            <input type="text" id="regionOtherInput" name="region_other" class="form-control mt-2" placeholder="If Other, please specify" style="display: none;">
+            <input type="text" id="regionOtherInput" name="region_other" class="form-control mt-2" placeholder="If Other, please specify" data-i18n="other_placeholder" style="display: none;">
           </div>
         </div>
       
         <div class="form-section">
-          <h5>5. Minimum Investment Confirmation*</h5>
+          <h5 data-i18n="section5_title">5. Minimum Investment Confirmation*</h5>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" name="minimumInvestment" value="1" required>
-            <label class="form-check-label">I confirm that I am interested in investments of $250,000 or more</label>
+            <label class="form-check-label" data-i18n="investment_confirm">I confirm that I am interested in investments of $250,000 or more</label>
           </div>
         </div>
       
         <div class="form-section">
-          <h5>6. Investment Interests</h5>
-          <div class="checkbox-group">
-            <label><input type="checkbox" name="interests[]" value="Multifamily"> Ground-up Multifamily Development</label><br>
-            <label><input type="checkbox" name="interests[]" value="Mixed-Use"> Mixed-Use Projects</label><br>
-            <label><input type="checkbox" name="interests[]" value="Workforce"> Workforce Housing</label><br>
-            <label><input type="checkbox" name="interests[]" value="Rehab"> Value-Add / Rehab</label><br>
-            <label><input type="checkbox" name="interests[]" value="Co-GP"> Co-GP / JV Participation</label><br>
-            <label><input type="checkbox" name="interests[]" value="Debt"> Debt / Preferred Equity</label>
+          <h5 data-i18n="section6_title">6. Investment Interests</h5>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Multifamily">
+            <label class="form-check-label" data-i18n="ground_up">Ground-up Multifamily Development</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Mixed-Use">
+            <label class="form-check-label" data-i18n="mixed_use_projects">Mixed-Use Projects</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Workforce">
+            <label class="form-check-label" data-i18n="workforce_housing">Workforce Housing</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Rehab">
+            <label class="form-check-label" data-i18n="rehab">Value-Add / Rehab</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Co-GP">
+            <label class="form-check-label" data-i18n="co_gp">Co-GP / JV Participation</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Debt">
+            <label class="form-check-label" data-i18n="debt">Debt / Preferred Equity</label>
           </div>
         </div>
+
       
         <div class="form-section">
-          <h5>7. How did you hear about us?</h5>
-          <textarea class="form-control" name="referralSource" rows="2" placeholder="Referral, conference, social media, etc."></textarea>
+          <h5 data-i18n="section7_title">7. How did you hear about us?</h5>
+          <textarea class="form-control" name="referralSource" rows="2" placeholder="Referral, conference, social media, etc." data-i18n="referral_placeholder"></textarea>
         </div>
       
         <div class="form-section">
-          <h5>8. Message / Questions</h5>
-          <textarea class="form-control" name="message" rows="4" placeholder="Anything else you'd like to share..."></textarea>
+          <h5 data-i18n="section8_title">8. Message / Questions</h5>
+          <textarea class="form-control" name="message" rows="4" placeholder="Anything else you'd like to share..." data-i18n="message_placeholder"></textarea>
         </div>
       
-        <p class="disclaimer">
+        <p class="disclaimer" data-i18n="disclaimer">
           <strong>Disclaimer:</strong> This is not an offer to sell or solicitation of an offer to buy any security. All investments are offered only to accredited investors under Regulation D and subject to verification.
         </p>
       
         <div class="text-center mt-4">
-          <button type="submit" class="btn btn-primary px-5 py-2">Submit</button>
+          <button type="submit" class="boton-about px-5 py-2" data-i18n="submit">Submit</button>
         </div>
       </form>
-      
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
 
 </body>
 </html>

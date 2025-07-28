@@ -14,47 +14,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body data-page="475_riverland">
 
     <!-- Header (Topbar) -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-            <a class="navbar-brand" href="../../">
-                <img src="../../img/Logo.webp" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../aboutus/aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../portfolio.html?category=all">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactus">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
     <!-- Main Content -->
     <main class="main-content" style="margin-top: 100px;">
         <div class="container">
             <section class="boton-portfolio">
-
                 <div class="boton-portfolio">
-                    
                     <a class="btn btn-secondary" href="../portfolio.html?category=all">
                         <i class="fas fa-arrow-left"></i>
-                        Portfolio
+                        <span data-i18n="back_portfolio">Portfolio</span>
                     </a>
                 </div>
             </section>
@@ -67,10 +39,7 @@
                     <h1>475 Riverland Apartments</h1>
                 </div>
                 <div class="tags mt-4 row">
-                    <!-- <span class="span-primary">
-                        MULTI-FAMILY
-                    </span> -->
-                    <span class="span-secondary">
+                    <span class="span-secondary" data-i18n="tag_multi_family">
                         MULTI-FAMILY
                     </span>
                     
@@ -127,56 +96,52 @@
                         <!-- Columna izquierda para varios ítems -->
                         <div class="col-md-6 mb-3">
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>TYPE OF ASSET:</strong> Multifamily</h5>
+                            <h5 class="item-desc" data-i18n="riverland_type"><strong>TYPE OF ASSET:</strong> Multifamily</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>ADDRESS:</strong> 475 SW 27th Ave, Fort Lauderdale, FL 33312</h5>
+                            <h5 class="item-desc" data-i18n="riverland_address"><strong>ADDRESS:</strong> 475 SW 27th Ave, Fort Lauderdale, FL 33312</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>UNITS:</strong> 48</h5>
+                            <h5 class="item-desc" data-i18n="riverland_units"><strong>UNITS:</strong> 48</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>BUILDINGS:</strong> 3</h5>
+                            <h5 class="item-desc" data-i18n="riverland_buildings"><strong>BUILDINGS:</strong> 3</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>CONSTRUCTION START:</strong> Feb 2025</h5>
+                            <h5 class="item-desc" data-i18n="riverland_construction"><strong>CONSTRUCTION START:</strong> Feb 2025</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>COMPLETION:</strong> Mar 2025</h5>
+                            <h5 class="item-desc" data-i18n="riverland_completion"><strong>COMPLETION:</strong> Mar 2025</h5>
                             <div class="separador"></div>
                         </div>
                         <!-- Columna derecha para el párrafo -->
                         <div class="col-md-6 mb-3">
-                            <p class="text-justify">The 475 Riverland Apartments will offer comfortable, modern fixtures and finishes at an affordable price point for renters. All units will feature luxury vinyl tile that give the look and feel of wood coupled with fresh white paint offering the perfect canvas for renters to make their home. Modern, plywood cabinets and solid surface countertops will offer renters utility and storage within the kitchen and restrooms.
-                                
-                                Attractive, ADA compliant, stainless-steel appliances will ensure that renters of all abilities are supported. 
-                                Both bedrooms will feature modern ceiling fans offering additional thermal comfort and lighting. All bathrooms will feature medicine cabinets for additional storage, plentiful lighting, and ADA compliant water closets. Master bathrooms will offer a shower, with ADA compliant fixtures in accessible units. Secondary bathrooms will feature a shower and tub combination. Modern, brushed nickel and matte black hardware will ensure that every detail reflects a timeless design that any renter can call home.</p>
+                            <p class="text-justify" data-i18n="riverland_description">
+                                The 475 Riverland Apartments will offer comfortable, modern fixtures and finishes at an affordable price point for renters. All units will feature luxury vinyl tile that give the look and feel of wood coupled with fresh white paint offering the perfect canvas for renters to make their home. Modern, plywood cabinets and solid surface countertops will offer renters utility and storage within the kitchen and restrooms.
+                                <br><br>
+                                Attractive, ADA compliant, stainless-steel appliances will ensure that renters of all abilities are supported. Both bedrooms will feature modern ceiling fans offering additional thermal comfort and lighting. All bathrooms will feature medicine cabinets for additional storage, plentiful lighting, and ADA compliant water closets. Master bathrooms will offer a shower, with ADA compliant fixtures in accessible units. Secondary bathrooms will feature a shower and tub combination. Modern, brushed nickel and matte black hardware will ensure that every detail reflects a timeless design that any renter can call home.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
+
     
+            <!-- Botón volver al final -->
             <section class="boton-portfolio">
-    
                 <div class="boton-portfolio">
-                    
                     <a class="btn btn-secondary" href="../portfolio.html?category=all">
                         <i class="fas fa-arrow-left"></i>
-                        Portfolio
+                        <span data-i18n="back_portfolio">Portfolio</span>
                     </a>
                 </div>
             </section>
         </div>
-
-        
-
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
         <div class="text-center p-3" style="color: var(--color-sexto);">
-                <p>
-                &copy; 2025 MARSTON Development Group. All rights reserved.
-              </p>
-              <p style="font-size: small; opacity: 0.8;">
-                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>. 
-              </p>
+            <p data-i18n="copyright">&copy; 2025 MARSTON Development Group. All rights reserved.</p>
+            <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+            </p>
         </div>
     </footer>
 

@@ -2,7 +2,7 @@
 
 const projects = [
     {
-        category: 'multifamily',
+        category: 'mixed-use',
         link: '2900 W Broward/2900 W Broward.html',
         image: 'img/Broaward.webp',
         title: '2900 W Broward',
@@ -23,7 +23,7 @@ const projects = [
         subtitle: 'Kansas, MO'
     },
     {
-        category: 'multifamily',
+        category: 'mixed-use',
         link: 'Gardner/Gardner.html',
         image: 'img/Gardner.webp',
         title: 'Gardner',

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta para responsividad -->
     <title>MARSTON</title>
 
-    <link rel="icon" href="../img/icon2.webp" type="image/png"> <!-- Favicon -->
+    <link rel="icon" href="img/icon2.webp" type="image/png"> <!-- Favicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
@@ -17,380 +17,361 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body data-page="investment">
 
     <!-- Header (Topbar) -->
-    <header>
-        <!-- Navbar -->
-        <div id="navbar-container"></div>
-    </header>
+    <header id="navbar-container"></header>
 
     <!-- Main Content -->
     <main class="main-content" style="margin-top: 100px;">
     
         <!-- Intro Section -->
         <section class="intro-section">
-        <div class="container">
-            <h2>Building Smarter, Together</h2>
-            <p class="lead">
-            At Marston Group, we collaborate with forward-thinking partners to develop real estate rooted in precision, sustainability, and long-term value. Every decision is data-driven, every design is human-centered, and every project is built to elevate community and investor outcomes alike.
-            </p>
-        </div>
+            <div class="container">
+                <h2 data-i18n="intro_title">Building Smarter, Together</h2>
+                <p class="lead" data-i18n="intro_text">
+                    At Marston Group, we collaborate with forward-thinking partners to develop real estate rooted in precision, sustainability, and long-term value. Every decision is data-driven, every design is human-centered, and every project is built to elevate community and investor outcomes alike.
+                </p>
+            </div>
         </section>
+
 
         <!-- Investment Criteria Focus Carousel -->
         <section class="investment-swiper-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">What We Look For: Investment Criteria</h2>
+            <div class="container">
+                <h2 class="text-center mb-4" data-i18n="investment_criteria_title">
+                What We Look For: Investment Criteria
+                </h2>
 
-            <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>1. Asset Types</h4>
-                    <ul class="styled-list">
-                    <li>
-                        <span class="icon">🌱</span>
-                        <div>Undeveloped / underutilized land</div>
-                    </li>
-                    <li>
-                        <span class="icon">🏘️</span>
-                        <div>Multifamily & BFR sites</div>
-                    </li>
-                    <li>
-                        <span class="icon">⛪</span>
-                        <div>Church / institutional land</div>
-                    </li>
-                    <li>
-                        <span class="icon">📍</span>
-                        <div>Infill parcels with zoning upside</div>
-                    </li>
-                    <li>
-                        <span class="icon">🏗️</span>
-                        <div>Income properties with potential</div>
-                    </li>
-                    </ul>
-                </div>
-                </div>
+                <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="criteria_asset_types">1. Asset Types</h4>
+                        <ul class="styled-list">
+                        <li>
+                            <span class="emoji">🌱</span>
+                            <div data-i18n="criteria_land">Undeveloped / underutilized land</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🏘️</span>
+                            <div data-i18n="criteria_multifamily">Multifamily & BFR sites</div>
+                        </li>
+                        <li>
+                            <span class="emoji">⛪</span>
+                            <div data-i18n="criteria_church">Church / institutional land</div>
+                        </li>
+                        <li>
+                            <span class="emoji">📍</span>
+                            <div data-i18n="criteria_infill">Infill parcels with zoning upside</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🏗️</span>
+                            <div data-i18n="criteria_income">Income properties with potential</div>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
 
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="criteria_scale_density">2. Scale & Density</h4>
+                        <ul class="styled-list">
+                        <li>
+                            <span class="emoji">📐</span>
+                            <div data-i18n="criteria_units"><strong>Units:</strong> 120–550 (phased)</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🏘️</span>
+                            <div data-i18n="criteria_density"><strong>Density:</strong> 8–25 units/acre</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🌐</span>
+                            <div data-i18n="criteria_land_area"><strong>Land:</strong> 10–60 acres</div>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
 
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>2. Scale & Density</h4>
-                    <ul class="styled-list">
-                    <li>
-                        <span class="icon">📐</span>
-                        <div>
-                        <strong>Units:</strong> 120–550 (phased)
-                        </div>
-                    </li>
-                    <li>
-                        <span class="icon">🏘️</span>
-                        <div>
-                        <strong>Density:</strong> 8–25 units/acre
-                        </div>
-                    </li>
-                    <li>
-                        <span class="icon">🌐</span>
-                        <div>
-                        <strong>Land:</strong> 10–60 acres
-                        </div>
-                    </li>
-                    </ul>
-                </div>
-                </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="criteria_geography">3. Geography</h4>
+                        <ul class="styled-list">
+                        <li>
+                            <span class="emoji">🌴</span>
+                            <div data-i18n="criteria_south_florida"><strong>South Florida:</strong> Fort Lauderdale, Broward</div>
+                        </li>
+                        <li>
+                            <span class="emoji">☀️</span>
+                            <div data-i18n="criteria_central_florida"><strong>Central Florida:</strong> Tampa, Orlando, Ocala</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🏙️</span>
+                            <div data-i18n="criteria_midwest"><strong>Midwest:</strong> Kansas City, St. Louis, Columbus</div>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
 
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>3. Geography</h4>
-                    <ul class="styled-list">
-                    <li>
-                        <span class="icon">🌴</span>
-                        <div><strong>South Florida:</strong> Fort Lauderdale, Broward</div>
-                    </li>
-                    <li>
-                        <span class="icon">☀️</span>
-                        <div><strong>Central Florida:</strong> Tampa, Orlando, Ocala</div>
-                    </li>
-                    <li>
-                        <span class="icon">🏙️</span>
-                        <div><strong>Midwest:</strong> Kansas City, St. Louis, Columbus</div>
-                    </li>
-                    </ul>
-                </div>
-                </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="criteria_performance">4. Performance Targets</h4>
+                        <ul class="styled-list">
+                        <li>
+                            <span class="emoji">📈</span>
+                            <div data-i18n="criteria_irr"><strong>IRR:</strong> 20%+</div>
+                        </li>
+                        <li>
+                            <span class="emoji">💰</span>
+                            <div data-i18n="criteria_equity"><strong>Equity Multiple:</strong> 1.8x+</div>
+                        </li>
+                        <li>
+                            <span class="emoji">⏳</span>
+                            <div data-i18n="criteria_hold"><strong>Hold Period:</strong> 1–10 years</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🚪</span>
+                            <div data-i18n="criteria_exit"><strong>Exit:</strong> Entitlement sale, JV, build, or hold</div>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
 
-
-                <!-- Slide 4 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>4. Performance Targets</h4>
-                    <ul class="styled-list">
-                    <li>
-                        <span class="icon">📈</span>
-                        <div><strong>IRR:</strong> 20%+</div>
-                    </li>
-                    <li>
-                        <span class="icon">💰</span>
-                        <div><strong>Equity Multiple:</strong> 1.8x+</div>
-                    </li>
-                    <li>
-                        <span class="icon">⏳</span>
-                        <div><strong>Hold Period:</strong> 1–10 years</div>
-                    </li>
-                    <li>
-                        <span class="icon">🚪</span>
-                        <div><strong>Exit:</strong> Entitlement sale, JV, build, or hold</div>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-
-
-                <!-- Slide 5 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>5. Land & Location</h4>
-                    <ul class="styled-list">
-                    <li>
-                        <span class="icon">💧</span>
-                        <div><strong>Utilities:</strong> Water, sewer, power access</div>
-                    </li>
-                    <li>
-                        <span class="icon">🧾</span>
-                        <div><strong>Zoning:</strong> By-right or feasible path</div>
-                    </li>
-                    <li>
-                        <span class="icon">🏛️</span>
-                        <div><strong>Public Incentives:</strong> TIF, CRA, HUD, grants</div>
-                    </li>
-                    <li>
-                        <span class="icon">🏢</span>
-                        <div><strong>Employment Drivers:</strong> Near major employers, schools, hospitals</div>
-                    </li>
-                    <li>
-                        <span class="icon">🔄</span>
-                        <div><strong>Exit Flexibility:</strong> Phase, JV, hold or sell</div>
-                    </li>
-                    </ul>
-                </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="criteria_land_location">5. Land & Location</h4>
+                        <ul class="styled-list">
+                        <li>
+                            <span class="emoji">💧</span>
+                            <div data-i18n="criteria_utilities"><strong>Utilities:</strong> Water, sewer, power access</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🧾</span>
+                            <div data-i18n="criteria_zoning"><strong>Zoning:</strong> By-right or feasible path</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🏛️</span>
+                            <div data-i18n="criteria_incentives"><strong>Public Incentives:</strong> TIF, CRA, HUD, grants</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🏢</span>
+                            <div data-i18n="criteria_employment"><strong>Employment Drivers:</strong> Near major employers, schools, hospitals</div>
+                        </li>
+                        <li>
+                            <span class="emoji">🔄</span>
+                            <div data-i18n="criteria_exit_flex"><strong>Exit Flexibility:</strong> Phase, JV, hold or sell</div>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
 
+                <!-- Flechas -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
             </div>
+            </section>
 
-            <!-- Flechas -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            </div>
-        </div>
-        </section>
 
         <section class="execution-swiper-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">How We Execute: Our Operating System</h2>
+            <div class="container">
+                <h2 class="text-center mb-4" data-i18n="execution_title">
+                How We Execute: Our Operating System
+                </h2>
 
-            <div class="swiper executionSwiper">
-            <div class="swiper-wrapper">
+                <div class="swiper executionSwiper">
+                <div class="swiper-wrapper">
 
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>1. Feasibility-Driven by Zero to Plan</h4>
-                    <ul class="styled-list">
-                    <li><span class="icon">🧠</span><div>Zoning & land use modeling</div></li>
-                    <li><span class="icon">📊</span><div>Market & demographic data</div></li>
-                    <li><span class="icon">🏗️</span><div>Construction cost benchmarking (via local GCs & contractors)</div></li>
-                    <li><span class="icon">📈</span><div>Lease-up & absorption projections</div></li>
-                    <li><span class="icon">💸</span><div>Capital stack modeling with TIF, CIDs, grants, etc.</div></li>
-                    <li><span class="icon">🧾</span><div>Third-party underwriting from top U.S. CRE advisory firms</div></li>
-                    </ul>
-                </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="execution_slide1_title">1. Feasibility-Driven by Zero to Plan</h4>
+                        <ul class="styled-list">
+                        <li><span class="emoji">🧠</span><div data-i18n="execution_slide1_item1">Zoning & land use modeling</div></li>
+                        <li><span class="emoji">📊</span><div data-i18n="execution_slide1_item2">Market & demographic data</div></li>
+                        <li><span class="emoji">🏗️</span><div data-i18n="execution_slide1_item3">Construction cost benchmarking (via local GCs & contractors)</div></li>
+                        <li><span class="emoji">📈</span><div data-i18n="execution_slide1_item4">Lease-up & absorption projections</div></li>
+                        <li><span class="emoji">💸</span><div data-i18n="execution_slide1_item5">Capital stack modeling with TIF, CIDs, grants, etc.</div></li>
+                        <li><span class="emoji">🧾</span><div data-i18n="execution_slide1_item6">Third-party underwriting from top U.S. CRE advisory firms</div></li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="execution_slide2_title">2. Strategic Use of Public Incentives</h4>
+                        <ul class="styled-list">
+                        <li><span class="emoji">🏛️</span><div data-i18n="execution_slide2_item1">Tax Increment Financing (TIF)</div></li>
+                        <li><span class="emoji">🏘️</span><div data-i18n="execution_slide2_item2">Community Redevelopment & Improvement Districts</div></li>
+                        <li><span class="emoji">🏙️</span><div data-i18n="execution_slide2_item3">CRA, LIHTC, and affordable overlays</div></li>
+                        <li><span class="emoji">🧾</span><div data-i18n="execution_slide2_item4">State/local tax abatement programs</div></li>
+                        <li><span class="emoji">🙏</span><div data-i18n="execution_slide2_item5">Faith-based/institutional land repositioning grants</div></li>
+                        <li><span class="emoji">🧩</span><div data-i18n="execution_slide2_item6">Aligned with entitlement & incentive approvals</div></li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="execution_slide3_title">3. Team Assembly & Planning Discipline</h4>
+                        <ul class="styled-list">
+                        <li><span class="emoji">👥</span><div data-i18n="execution_slide3_item1">Experienced, credible team</div></li>
+                        <li><span class="emoji">🤝</span><div data-i18n="execution_slide3_item2">Alignment with city, community, and investors</div></li>
+                        <li><span class="emoji">🧭</span><div data-i18n="execution_slide3_item3">Reputation, ethics, long-term mindset</div></li>
+                        <li><span class="emoji">🏛️</span><div data-i18n="execution_slide3_item4">Strong local & municipal relationships</div></li>
+                        <li><span class="emoji">💬</span><div data-i18n="execution_slide3_item5">Clear communication & synergy</div></li>
+                        <li><span class="emoji">📐</span><div data-i18n="execution_slide3_item6">No design changes post-approval to reduce risk</div></li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="execution_slide4_title">4. Design That Serves People</h4>
+                        <ul class="styled-list">
+                        <li><span class="emoji">🚶‍♂️</span><div data-i18n="execution_slide4_item1">Walkable communities with strong connectivity</div></li>
+                        <li><span class="emoji">🚧</span><div data-i18n="execution_slide4_item2">Passive safety separating cars from pedestrians</div></li>
+                        <li><span class="emoji">🌳</span><div data-i18n="execution_slide4_item3">Stormwater amenities as green spaces</div></li>
+                        <li><span class="emoji">🔐</span><div data-i18n="execution_slide4_item4">Secure, smart access environments</div></li>
+                        <li><span class="emoji">🏗️</span><div data-i18n="execution_slide4_item5">High-amenity, high-efficiency communities</div></li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                    <div class="carousel-card">
+                        <h4 data-i18n="execution_slide5_title">5. Technology-Enabled Transparency</h4>
+                        <ul class="styled-list">
+                        <li><span class="emoji">📄</span><div data-i18n="execution_slide5_item1">Quarterly reporting via Juniper Square</div></li>
+                        <li><span class="emoji">🛰️</span><div data-i18n="execution_slide5_item2">Virtual walkthroughs & site previews</div></li>
+                        <li><span class="emoji">📹</span><div data-i18n="execution_slide5_item3">Live on-site cameras for investor visibility</div></li>
+                        <li><span class="emoji">🎥</span><div data-i18n="execution_slide5_item4">Video calls with field team</div></li>
+                        <li><span class="emoji">📡</span><div data-i18n="execution_slide5_item5">Full transparency and real-time updates</div></li>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
 
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>2. Strategic Use of Public Incentives</h4>
-                    <ul class="styled-list">
-                    <li><span class="icon">🏛️</span><div>Tax Increment Financing (TIF)</div></li>
-                    <li><span class="icon">🏘️</span><div>Community Redevelopment & Improvement Districts</div></li>
-                    <li><span class="icon">🏙️</span><div>CRA, LIHTC, and affordable overlays</div></li>
-                    <li><span class="icon">🧾</span><div>State/local tax abatement programs</div></li>
-                    <li><span class="icon">🙏</span><div>Faith-based/institutional land repositioning grants</div></li>
-                    <li><span class="icon">🧩</span><div>Aligned with entitlement & incentive approvals</div></li>
-                    </ul>
+                <!-- Controles -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>3. Team Assembly & Planning Discipline</h4>
-                    <ul class="styled-list">
-                    <li><span class="icon">👥</span><div>Experienced, credible team</div></li>
-                    <li><span class="icon">🤝</span><div>Alignment with city, community, and investors</div></li>
-                    <li><span class="icon">🧭</span><div>Reputation, ethics, long-term mindset</div></li>
-                    <li><span class="icon">🏛️</span><div>Strong local & municipal relationships</div></li>
-                    <li><span class="icon">💬</span><div>Clear communication & synergy</div></li>
-                    <li><span class="icon">📐</span><div>No design changes post-approval to reduce risk</div></li>
-                    </ul>
-                </div>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>4. Design That Serves People</h4>
-                    <ul class="styled-list">
-                    <li><span class="icon">🚶‍♂️</span><div>Walkable communities with strong connectivity</div></li>
-                    <li><span class="icon">🚧</span><div>Passive safety separating cars from pedestrians</div></li>
-                    <li><span class="icon">🌳</span><div>Stormwater amenities as green spaces</div></li>
-                    <li><span class="icon">🔐</span><div>Secure, smart access environments</div></li>
-                    <li><span class="icon">🏗️</span><div>High-amenity, high-efficiency communities</div></li>
-                    </ul>
-                </div>
-                </div>
-
-                <!-- Slide 5 -->
-                <div class="swiper-slide">
-                <div class="carousel-card">
-                    <h4>5. Technology-Enabled Transparency</h4>
-                    <ul class="styled-list">
-                    <li><span class="icon">📄</span><div>Quarterly reporting via Juniper Square</div></li>
-                    <li><span class="icon">🛰️</span><div>Virtual walkthroughs & site previews</div></li>
-                    <li><span class="icon">📹</span><div>Live on-site cameras for investor visibility</div></li>
-                    <li><span class="icon">🎥</span><div>Video calls with field team</div></li>
-                    <li><span class="icon">📡</span><div>Full transparency and real-time updates</div></li>
-                    </ul>
-                </div>
-                </div>
-
             </div>
-
-            <!-- Controles -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            </div>
-        </div>
         </section>
+
 
         <section class="why-marston-section py-5">
-        <div class="container text-white">
-            <div class="text-center mb-4">
-            <h2 class="mb-3">Why Marston Group?</h2>
-            <p class="lead">
-                We are relationship-first developers who earn trust by aligning outcomes with the people behind the capital.
-            </p>
-            </div>
-
-            <div class="row justify-content-center">
-            <div class="col-md-8">
-                <ul class="why-marston-list">
-                <li><span class="check">✔️</span> Early access to high-barrier, often misunderstood opportunities</li>
-                <li><span class="check">✔️</span> Real-time feasibility validation through Zero to Plan</li>
-                <li><span class="check">✔️</span> Deep alignment with public-sector priorities and private-sector standards</li>
-                <li><span class="check">✔️</span> Execution clarity—contracts structured around real milestones</li>
-                <li><span class="check">✔️</span> People-centered design and planning that supports long-term value creation</li>
-                </ul>
-
-                <div class="why-marston-closing mt-4">
-                <p>
-                    Whether you’re a family office, global investor, or private equity group looking for U.S. real estate exposure,
-                    <strong>Marston Group delivers integrity-backed execution</strong> in the places where others hesitate to go.
+            <div class="container text-white">
+                <div class="text-center mb-4">
+                <h2 class="mb-3" data-i18n="why_marston_title">Why Marston Group?</h2>
+                <p class="lead" data-i18n="why_marston_intro">
+                    We are relationship-first developers who earn trust by aligning outcomes with the people behind the capital.
                 </p>
                 </div>
+
+                <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="why-marston-list">
+                    <li data-i18n="why_marston_item1"><span class="check">✔️</span> Early access to high-barrier, often misunderstood opportunities</li>
+                    <li data-i18n="why_marston_item2"><span class="check">✔️</span> Real-time feasibility validation through Zero to Plan</li>
+                    <li data-i18n="why_marston_item3"><span class="check">✔️</span> Deep alignment with public-sector priorities and private-sector standards</li>
+                    <li data-i18n="why_marston_item4"><span class="check">✔️</span> Execution clarity—contracts structured around real milestones</li>
+                    <li data-i18n="why_marston_item5"><span class="check">✔️</span> People-centered design and planning that supports long-term value creation</li>
+                    </ul>
+
+                    <div class="why-marston-closing mt-4">
+                    <p data-i18n="why_marston_closing">
+                        Whether you’re a family office, global investor, or private equity group looking for U.S. real estate exposure,
+                        <strong>Marston Group delivers integrity-backed execution</strong> in the places where others hesitate to go.
+                    </p>
+                    </div>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
         </section>
-
-
-
-
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
-        <div class="text-center p-3" style="color: var(--color-sexto);">
-                <p>
-                &copy; 2025 MARSTON Development Group. All rights reserved.
-              </p>
-              <p style="font-size: small; opacity: 0.8;">
-                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>. 
-              </p>
-        </div>
+    <div class="text-center p-3" style="color: var(--color-sexto);">
+        <p data-i18n="copyright">
+        &copy; 2025 MARSTON Development Group. All rights reserved.
+        </p>
+        <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+        Images are owned by Marston or used with proper rights. For more information, please review our <a href="./disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+        </p>
+    </div>
     </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src = "../main.js"></script>
-    <!-- Final del body -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src = "main.js"></script>
+    <!-- Final del body -->
+     <script>
+        // SWIPER DE INVESTMENT
+        const swiper = new Swiper(".mySwiper", {
+            centeredSlides: true,
+            loop: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // Pantallas pequeñas (móvil)
+                0: {
+                slidesPerView: 1.2,
+                },
+                // Tablets y más grandes
+                768: {
+                slidesPerView: 1.9,
+                },
+                // Escritorio grande (opcional)
+                1024: {
+                slidesPerView: 3,
+                },
+            },
+            });
 
+            const swiperExecution = new Swiper(".executionSwiper", {
+            centeredSlides: true,
+            loop: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".executionSwiper .swiper-button-next",
+                prevEl: ".executionSwiper .swiper-button-prev",
+            },
+            breakpoints: {
+                // Pantallas pequeñas (móvil)
+                0: {
+                slidesPerView: 1.2,
+                },
+                // Tablets y más grandes
+                768: {
+                slidesPerView: 1.9,
+                },
+                // Escritorio grande (opcional)
+                1024: {
+                slidesPerView: 3,
+                },
+            },
+            });
+     </script>
     
-
-    <script>
-    const swiper = new Swiper(".mySwiper", {
-    centeredSlides: true,
-    loop: true,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        // Pantallas pequeñas (móvil)
-        0: {
-        slidesPerView: 1.2,
-        },
-        // Tablets y más grandes
-        768: {
-        slidesPerView: 1.9,
-        },
-        // Escritorio grande (opcional)
-        1024: {
-        slidesPerView: 3,
-        },
-    },
-    });
-
-    const swiperExecution = new Swiper(".executionSwiper", {
-    centeredSlides: true,
-    loop: true,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: ".executionSwiper .swiper-button-next",
-        prevEl: ".executionSwiper .swiper-button-prev",
-    },
-    breakpoints: {
-        // Pantallas pequeñas (móvil)
-        0: {
-        slidesPerView: 1.2,
-        },
-        // Tablets y más grandes
-        768: {
-        slidesPerView: 1.9,
-        },
-        // Escritorio grande (opcional)
-        1024: {
-        slidesPerView: 3,
-        },
-    },
-    });
-
-
-    </script>
-
-
-
-
-
 </body>
 
 </html>

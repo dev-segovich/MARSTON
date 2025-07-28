@@ -14,47 +14,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body data-page="gardner">
 
     <!-- Header (Topbar) -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-            <a class="navbar-brand" href="../../">
-                <img src="../../img/Logo.webp" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../portfolio.html?category=all">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactus">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
     <!-- Main Content -->
     <main class="main-content" style="margin-top: 100px;">
         <div class="container">
             <section class="boton-portfolio">
-
                 <div class="boton-portfolio">
-                    
                     <a class="btn btn-secondary" href="../portfolio.html?category=all">
                         <i class="fas fa-arrow-left"></i>
-                        Portfolio
+                        <span data-i18n="back_portfolio">Portfolio</span>
                     </a>
                 </div>
             </section>
@@ -67,16 +39,13 @@
                     <h1>Gardner</h1>
                 </div>
                 <div class="tags mt-4 row">
-                    <span class="span-primary">
-                        MULTI-FAMILY
-                    </span>
-                    <span class="span-secondary">
+                    <span class="span-secondary" data-i18n="tag_mixed_use">
                         MIXED-USE
                     </span>
-                    <span class="span-tertiary">
+                    <span class="span-tertiary" data-i18n="tag_multi_family">
                         MULTI-FAMILY
                     </span>
-                    <span class="span-tertiary">
+                    <span class="span-tertiary" data-i18n="tag_retail">
                         RETAIL
                     </span>
                     
@@ -127,25 +96,25 @@
                         <!-- Columna izquierda para varios ítems -->
                         <div class="col-md-6 mb-3">
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>ADDRESS</strong> Gardner, KS</h5>
+                            <h5 class="item-desc" data-i18n="waverly_address"><strong>ADDRESS:</strong> Gardner, KS</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>UNITS:</strong> 327</h5>
+                            <h5 class="item-desc" data-i18n="waverly_units"><strong>UNITS:</strong> 327</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>Buildings:</strong> 6 Buildings + Clubhouse</h5>
+                            <h5 class="item-desc" data-i18n="waverly_buildings"><strong>BUILDINGS:</strong> 6 Buildings + Clubhouse</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>TOTAL RETAIL SPACE</strong> 12,000 SF + <br>an adjacent 38,000 SF of retail on the neighboring lot.</h5>
+                            <h5 class="item-desc" data-i18n="waverly_retail"><strong>TOTAL RETAIL SPACE:</strong> 12,000 SF + <br>an adjacent 38,000 SF of retail on the neighboring lot.</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>Master Plan Architecture</strong> NPSK Architecture</h5>
+                            <h5 class="item-desc" data-i18n="waverly_master"><strong>MASTER PLAN ARCHITECTURE:</strong> NPSK Architecture</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>CONSTRUCTION START:</strong> TBD</h5>
+                            <h5 class="item-desc" data-i18n="waverly_construction"><strong>CONSTRUCTION START:</strong> TBD</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>COMPLETION</strong> 2nd quarter 2027</h5>
+                            <h5 class="item-desc" data-i18n="waverly_completion"><strong>COMPLETION:</strong> 2nd Quarter 2027</h5>
                             <div class="separador"></div>
                         </div>
                         <!-- Columna derecha para el párrafo -->
                         <div class="col-md-6 mb-3">
-                            <p class="text-justify">
-                                Waverly Plaza is a two-phase multifamily development located in the rapidly growing community of Gardner, within the Kansas City metropolitan area. Designed to elevate suburban living, Phase I delivers 168 modern residential units, with Phase II adding 159 units across three thoughtfully planned buildings.Residents enjoy a high-quality lifestyle supported by a state-of-the-art clubhouse and curated amenities. The development also includes a future retail component to enhance convenience and create a walkable, mixed-use environment.
+                            <p class="text-justify" data-i18n="waverly_description">
+                                Waverly Plaza is a two-phase multifamily development located in the rapidly growing community of Gardner, within the Kansas City metropolitan area. Designed to elevate suburban living, Phase I delivers 168 modern residential units, with Phase II adding 159 units across three thoughtfully planned buildings. Residents enjoy a high-quality lifestyle supported by a state-of-the-art clubhouse and curated amenities. The development also includes a future retail component to enhance convenience and create a walkable, mixed-use environment.
                                 <br><br>
                                 Marston is working closely with the City of Gardner and multiple public agencies to bring this project to life, utilizing a 75% tax abatement over 15 years and infrastructure cost reimbursement through the implementation of a Community Improvement District (CID) for the retail portion. This approach reflects our proven ability to structure complex public-private partnerships, navigate compliance requirements, and successfully secure and implement local incentives. Waverly Plaza exemplifies our commitment to creating vibrant, functional communities while delivering long-term value for residents, municipalities, and investors alike.
                                 <br><br>
@@ -155,33 +124,27 @@
                     </div>
                 </div>
             </section>
+
     
+            <!-- Botón volver al final -->
             <section class="boton-portfolio">
-    
                 <div class="boton-portfolio">
-                    
                     <a class="btn btn-secondary" href="../portfolio.html?category=all">
                         <i class="fas fa-arrow-left"></i>
-                        Portfolio
+                        <span data-i18n="back_portfolio">Portfolio</span>
                     </a>
                 </div>
             </section>
         </div>
-
-        
-
-
     </main>
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
         <div class="text-center p-3" style="color: var(--color-sexto);">
-                <p>
-                &copy; 2025 MARSTON Development Group. All rights reserved.
-              </p>
-              <p style="font-size: small; opacity: 0.8;">
-                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>. 
-              </p>
+            <p data-i18n="copyright">&copy; 2025 MARSTON Development Group. All rights reserved.</p>
+            <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+            </p>
         </div>
     </footer>
 

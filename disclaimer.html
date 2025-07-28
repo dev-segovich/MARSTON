@@ -11,48 +11,22 @@
     <link href="./main.css" rel="stylesheet" />
 </head>
 
-<body>
+<body data-page="disclaimer">
 
     <!-- Header (Topbar) -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #364350" id="navbar">
-            <a class="navbar-brand" href="../">
-                <img src="img/Logo.webp" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./aboutus/aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./develops/portfolio.html?category=all">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactus">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
     <!-- Main Content -->
     <main class="main-content">
         <!-- Sección About Us -->
-        <section class="disclaimer" >
+        <section class="disclaimer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mt-4 mb-3">
-                        <h2>Disclaimer</h2>
+                        <h2 data-i18n="disclaimer_title">Disclaimer</h2>
                     </div>
                     <div class="col-md-12 text-justify">
-                        <p>
+                        <p data-i18n="disclaimer_text">
                             Marston Development Group is a private real estate development firm. The information presented on this website is intended solely for general informational purposes and should not be construed as an offer to sell or a solicitation of an offer to buy any securities. 
                             <br><br>
                             Any potential investment opportunities described herein are offered exclusively to accredited investors, as defined by Rule 501 of Regulation D under the U.S. Securities Act of 1933. These opportunities, if and when available, will be made solely through a confidential private placement memorandum or other offering documents and will be subject to specific terms, risks, and disclosures outlined therein. 
@@ -67,32 +41,27 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-
-        
 
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
-        <div class="text-center p-3" style="color: var(--color-sexto);">
-                <p>
-                &copy; 2025 MARSTON Development Group. All rights reserved.
-              </p>
-              <p style="font-size: small; opacity: 0.8;">
-                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>. 
-              </p>
-        </div>
+    <div class="text-center p-3" style="color: var(--color-sexto);">
+        <p data-i18n="copyright">
+        &copy; 2025 MARSTON Development Group. All rights reserved.
+        </p>
+        <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+        Images are owned by Marston or used with proper rights. For more information, please review our <a href="./disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+        </p>
+    </div>
     </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src = "./main.js"></script>
+    <script src = "main.js"></script>
 
 
 </body>

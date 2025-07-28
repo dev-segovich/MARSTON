@@ -14,36 +14,10 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body data-page="aboutus">
 
     <!-- Header (Topbar) -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-            <a class="navbar-brand" href="../">
-                <img src="../img/Logo.webp" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../develops/portfolio.html?category=all">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactus">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -52,15 +26,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mt-4">
-                        <h2>Innovation, Quality,<br> and Community Impact</h2>
+                        <h2 data-i18n="aboutus_title">Innovation, Quality,<br> and Community Impact</h2>
                     </div>
                     <div class="col-md-6 text-justify">
                         
-                        <p>Marston is a forward-thinking real estate development firm specializing in multifamily, mixed-use, and ultra-high-end waterfront residential properties. With a strong presence in Florida, Missouri, and beyond, Marston is dedicated to redefining modern living by creating vibrant, community-driven spaces that seamlessly integrate quality, innovation, and sustainability. Guided by a commitment to excellence, our projects are thoughtfully designed to deliver cozy and functional homes that balance investor returns with tenant satisfaction. Whether it’s a luxury waterfront residence or a mixed-use urban development, Marston ensures each project reflects our vision of enhancing both lifestyle and value.</p>
+                        <p data-i18n="aboutus_paragraph1">
+                            Marston is a forward-thinking real estate development firm specializing in multifamily, mixed-use, and ultra-high-end waterfront residential properties. With a strong presence in Florida, Missouri, and beyond, Marston is dedicated to redefining modern living by creating vibrant, community-driven spaces that seamlessly integrate quality, innovation, and sustainability. Guided by a commitment to excellence, our projects are thoughtfully designed to deliver cozy and functional homes that balance investor returns with tenant satisfaction. Whether it’s a luxury waterfront residence or a mixed-use urban development, Marston ensures each project reflects our vision of enhancing both lifestyle and value.</p>
                     </div>
                     <div class="col-md-6 text-justify">
                         <!-- <h2 class="titulo-inv"></h2> -->
-                        <p>At Marston, we approach every development with a focus on community, connectivity, and long-term impact. From incorporating state-of-the-art amenities and sustainable design elements to strategically positioning projects near key employment hubs and services, we deliver properties that stand out in the market. Our developments, such as Waverly Plaza and One Nine Vine, showcase our ability to merge modern architecture with strategic locations, earning accolades like the Capstone Award. By prioritizing the needs of residents, investors, and the communities we serve, Marston continues to set the standard for excellence in real estate development.</p>
+                        <p data-i18n="aboutus_paragraph2">
+                            At Marston, we approach every development with a focus on community, connectivity, and long-term impact. From incorporating state-of-the-art amenities and sustainable design elements to strategically positioning projects near key employment hubs and services, we deliver properties that stand out in the market. Our developments, such as Waverly Plaza and One Nine Vine, showcase our ability to merge modern architecture with strategic locations, earning accolades like the Capstone Award. By prioritizing the needs of residents, investors, and the communities we serve, Marston continues to set the standard for excellence in real estate development.</p>
                     </div>
                 </div>
             </div>
@@ -69,86 +45,92 @@
             <section class="strengths" id="strengths">
                 <div class="row">
                     <div class="col-md-6 mb-5 seccion-values">
-                        <h2>Our Strengths</h2>
+                        <h2 data-i18n="strengths_title">Our Strengths</h2>
                     </div>
+                    <div class="col-md-6 mb-5"></div>
+
                     <div class="col-md-6 mb-5">
-                        
-                    </div>
-                    <!-- <div class="col-md-6"></div>
-                    <div class="col-md-5 mb-5">
-                        <p class="strengths-subtitle">Combining elements that have never been combined - that is our forte and passion.</p>
-                    </div> -->
-                    <div class="col-md-6 mb-5">
-                        <div class="d-flex align-items-center justify-content-center mb-2"> <!-- Contenedor flex para el icono y el título -->
+                        <div class="d-flex align-items-center justify-content-center mb-2">
                             <div class="col-10 row d-flex align-items-center justify-content-center mb-2">
                                 <div class="col-2">
-                                    <i class="fa fa-users fa-3x"></i> <!-- Reemplaza 'fa-icon-name' con el nombre del icono que desees -->
+                                    <i class="fa fa-users fa-3x"></i>
                                 </div>
                                 <div class="col-10">
-                                    <h4 class="text-justify">People-Centric Development</h4> <!-- Título -->
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <div class="col-10">
-                                <p class="strengths-subtitle text-justify">Exceptional living experiences are born from a deep connection with those we serve. By listening to our stakeholders, we create opportunities based on their needs—exceeding expectations project after project.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <div class="d-flex align-items-center justify-content-center mb-2"> <!-- Contenedor flex para el icono y el título -->
-                            <div class="col-10 row d-flex align-items-center justify-content-center mb-2">
-                                <div class="col-2">
-                                    <i class="fas fa-cubes fa-3x"></i> <!-- Reemplaza 'fa-icon-name' con el nombre del icono que desees -->
-                                </div>
-                                <div class="col-10">
-                                    <h4 class="text-justify">Integrated Approach</h4> <!-- Título -->
+                                    <h4 class="text-justify" data-i18n="strengths_people_title">People-Centric Development</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
                             <div class="col-10">
-                                <p class="strengths-subtitle text-justify">Leveraging our legacy as a family business, we provide investors with attractive, long-term opportunities that maximize property value in Florida, Missouri, and beyond.</p>
+                                <p class="strengths-subtitle text-justify" data-i18n="strengths_people_text">
+                                    Exceptional living experiences are born from a deep connection with those we serve. By listening to our stakeholders, we create opportunities based on their needs—exceeding expectations project after project.
+                                </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 mb-5">
-                        <div class="d-flex align-items-center justify-content-center mb-2"> <!-- Contenedor flex para el icono y el título -->
+                        <div class="d-flex align-items-center justify-content-center mb-2">
                             <div class="col-10 row d-flex align-items-center justify-content-center mb-2">
                                 <div class="col-2">
-                                    <i class="fab fa-sketch fa-3x"></i> <!-- Reemplaza 'fa-icon-name' con el nombre del icono que desees -->
+                                    <i class="fas fa-cubes fa-3x"></i>
                                 </div>
                                 <div class="col-10">
-                                    <h4 class="text-justify">Commitment to Quality</h4> <!-- Título -->
+                                    <h4 class="text-justify" data-i18n="strengths_integrated_title">Integrated Approach</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
                             <div class="col-10">
-                                <p class="strengths-subtitle text-justify">By incorporating natural, organic elements into our architecture, we elevate spaces to their maximum potential, providing cozy and warm living environments for tenants.</p>
+                                <p class="strengths-subtitle text-justify" data-i18n="strengths_integrated_text">
+                                    Leveraging our legacy as a family business, we provide investors with attractive, long-term opportunities that maximize property value in Florida, Missouri, and beyond.
+                                </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 mb-5">
-                        <div class="d-flex align-items-center justify-content-center mb-2"> <!-- Contenedor flex para el icono y el título -->
+                        <div class="d-flex align-items-center justify-content-center mb-2">
                             <div class="col-10 row d-flex align-items-center justify-content-center mb-2">
                                 <div class="col-2">
-                                    <i class="fas fa-drafting-compass fa-3x"></i> <!-- Reemplaza 'fa-icon-name' con el nombre del icono que desees -->
+                                    <i class="fab fa-sketch fa-3x"></i>
                                 </div>
                                 <div class="col-10">
-                                    <h4 class="text-justify">Tailored Design Solutions</h4> <!-- Título -->
+                                    <h4 class="text-justify" data-i18n="strengths_quality_title">Commitment to Quality</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
                             <div class="col-10">
-                                <p class="strengths-subtitle text-justify">Offering customized solutions for every project, ensuring each has a unique identity that resonates with its local context.</p>
+                                <p class="strengths-subtitle text-justify" data-i18n="strengths_quality_text">
+                                    By incorporating natural, organic elements into our architecture, we elevate spaces to their maximum potential, providing cozy and warm living environments for tenants.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-2">
+                            <div class="col-10 row d-flex align-items-center justify-content-center mb-2">
+                                <div class="col-2">
+                                    <i class="fas fa-drafting-compass fa-3x"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h4 class="text-justify" data-i18n="strengths_tailored_title">Tailored Design Solutions</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="col-10">
+                                <p class="strengths-subtitle text-justify" data-i18n="strengths_tailored_text">
+                                    Offering customized solutions for every project, ensuring each has a unique identity that resonates with its local context.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <!-- <section class="team" id="team">
                 <h2 class="seccion-values">
                     Our Team
@@ -201,12 +183,12 @@
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
         <div class="text-center p-3" style="color: var(--color-sexto);">
-                <p>
-                &copy; 2025 MARSTON Development Group. All rights reserved.
-              </p>
-              <p style="font-size: small; opacity: 0.8;">
-                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>. 
-              </p>
+            <p data-i18n="copyright">
+            &copy; 2025 MARSTON Development Group. All rights reserved.
+            </p>
+            <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+            Images are owned by Marston or used with proper rights. For more information, please review our <a href="./disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+            </p>
         </div>
     </footer>
 

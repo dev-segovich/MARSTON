@@ -14,47 +14,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body data-page="onv_ii">
 
     <!-- Header (Topbar) -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-            <a class="navbar-brand" href="../../">
-                <img src="../../img/Logo.webp" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../aboutus/aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../portfolio.html?category=all">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactus">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
     <!-- Main Content -->
     <main class="main-content" style="margin-top: 100px;">
         <div class="container">
             <section class="boton-portfolio">
-
                 <div class="boton-portfolio">
-                    
                     <a class="btn btn-secondary" href="../portfolio.html?category=all">
                         <i class="fas fa-arrow-left"></i>
-                        Portfolio
+                        <span data-i18n="back_portfolio">Portfolio</span>
                     </a>
                 </div>
             </section>
@@ -67,16 +39,13 @@
                     <h1>One Nine Vine II</h1>
                 </div>
                 <div class="tags mt-4 row">
-                    <!-- <span class="span-primary">
-                        MULTI-FAMILY
-                    </span> -->
-                    <span class="span-secondary">
+                    <span class="span-secondary" data-i18n="tag_mixed_use">
                         MIXED-USE
                     </span>
-                    <span class="span-tertiary">
+                    <span class="span-tertiary" data-i18n="tag_multi_family">
                         MULTI-FAMILY
                     </span>
-                    <span class="span-tertiary">
+                    <span class="span-tertiary" data-i18n="tag_retail">
                         RETAIL
                     </span>
                     
@@ -109,24 +78,25 @@
                         <!-- Columna izquierda para varios ítems -->
                         <div class="col-md-6 mb-3">
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>TYPE OF ASSET:</strong> Mixed-Use Multifamily/Retail</h5>
+                            <h5 class="item-desc" data-i18n="onevine2_type"><strong>TYPE OF ASSET:</strong> Mixed-Use Multifamily/Retail</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>ADDRESS:</strong> 1900 Vine Street, Kansas City, MO 64108</h5>
+                            <h5 class="item-desc" data-i18n="onevine2_address"><strong>ADDRESS:</strong> 1900 Vine Street, Kansas City, MO 64108</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>UNITS:</strong> 79</h5>
+                            <h5 class="item-desc" data-i18n="onevine2_units"><strong>UNITS:</strong> 79</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>FLOORS:</strong> 3</h5>
+                            <h5 class="item-desc" data-i18n="onevine2_floors"><strong>FLOORS:</strong> 3</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>TOTAL RETAIL SPACE:</strong> 940 sqft</h5>
+                            <h5 class="item-desc" data-i18n="onevine2_retail"><strong>TOTAL RETAIL SPACE:</strong> 940 sqft</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>CONSTRUCTION START:</strong>4th Quarter 2025</h5>
+                            <h5 class="item-desc" data-i18n="onevine2_construction"><strong>CONSTRUCTION START:</strong> 4th Quarter 2025</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>COMPLETION:</strong>1st Quarter 2027</h5>
+                            <h5 class="item-desc" data-i18n="onevine2_completion"><strong>COMPLETION:</strong> 1st Quarter 2027</h5>
                             <div class="separador"></div>
                         </div>
                         <!-- Columna derecha para el párrafo -->
                         <div class="col-md-6 mb-3">
-                            <p class="text-justify">Introducing One Nine Vine Phase II—a visionary mixed-use multifamily project poised to elevate and energize one of Kansas City’s most historic neighborhoods. Building on the momentum of the successful first phase, this next chapter will transform a long-vacant parcel at 1900 Vine Street into a vibrant, community-centered development featuring 79 modern apartment units and 940 square feet of activated retail space.
+                            <p class="text-justify" data-i18n="onevine2_description">
+                                Introducing One Nine Vine Phase II—a visionary mixed-use multifamily project poised to elevate and energize one of Kansas City’s most historic neighborhoods. Building on the momentum of the successful first phase, this next chapter will transform a long-vacant parcel at 1900 Vine Street into a vibrant, community-centered development featuring 79 modern apartment units and 940 square feet of activated retail space.
                                 <br><br>
                                 Located just one block from the Negro Leagues Baseball Museum and the American Jazz Museum, One Nine Vine Phase II is uniquely positioned to contribute to the cultural and economic resurgence of the 18th & Vine Historic District. The project is designed to foster community engagement, walkability, and local pride, offering residents and visitors dynamic spaces to live, connect, and celebrate Kansas City's rich heritage. A highly anticipated corner restaurant, designed during Phase I, will open with the completion of Phase II, serving as a neighborhood anchor that activates the streetscape with food, music, and cultural vibrancy.
                                 <br><br>
@@ -141,32 +111,26 @@
                 </div>
             </section>
     
+            <!-- Botón volver al final -->
             <section class="boton-portfolio">
-    
                 <div class="boton-portfolio">
-                    
                     <a class="btn btn-secondary" href="../portfolio.html?category=all">
                         <i class="fas fa-arrow-left"></i>
-                        Portfolio
+                        <span data-i18n="back_portfolio">Portfolio</span>
                     </a>
                 </div>
             </section>
         </div>
-
-        
-
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
         <div class="text-center p-3" style="color: var(--color-sexto);">
-                <p>
-                &copy; 2025 MARSTON Development Group. All rights reserved.
-              </p>
-              <p style="font-size: small; opacity: 0.8;">
-                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>. 
-              </p>
+            <p data-i18n="copyright">&copy; 2025 MARSTON Development Group. All rights reserved.</p>
+            <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+            </p>
         </div>
     </footer>
 

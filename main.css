@@ -5,6 +5,11 @@
   transition: 0.5s;
 }
 
+.emoji {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+}
+
+
 :root {
     --color-primario: #364350; /* Color primario  364350*/
     --color-secundario: #f4f1e8; /* Color secundario */
@@ -394,7 +399,7 @@
 
 .aboutus {
   position: relative;
-  padding: 100px 0;
+  padding: 80px 0;
   background-color: #fff; /* Color de fondo de la sección */
   overflow: hidden; /* Para asegurar que la marca de agua no se desborde */
 }
@@ -851,3 +856,376 @@
   margin-top: 20px;
   line-height: 1.6;
 }
+
+.investment-guide {
+    padding: 80px 0;
+    background-color: #f9f9f9; /* similar al aboutus si lo necesitas */
+}
+
+.investment-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-primario); /* adaptado a tu esquema de colores */
+}
+
+.investment-subtitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: var(--color-segundo);
+}
+
+.investment-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.sweet-spot {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.sweet-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 30px;
+}
+
+/* Tabla comparativa con diseño tipo "cards" */
+.comparison-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comparison-row {
+    display: table-row;
+}
+
+.comparison-row.header {
+    background: var(--color-primario);
+    color: #fff;
+    font-weight: bold;
+}
+
+.comparison-cell {
+    display: table-cell;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* Última fila sin borde */
+.comparison-row:last-child .comparison-cell {
+    border-bottom: none;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .comparison-table {
+        display: block;
+    }
+    .comparison-row {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ddd;
+    }
+    .comparison-cell {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+        padding: 10px 15px;
+    }
+    .comparison-row.header {
+        display: none;
+    }
+}
+
+.investment-structures {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.investment-structures-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 30px;
+}
+
+/* Tabla Comparativa de 3 Columnas */
+.comparison-table.large {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-row {
+    display: table-row;
+}
+
+.comparison-row.header {
+    background: var(--color-primario);
+    color: #fff;
+    font-weight: bold;
+}
+
+.comparison-cell {
+    display: table-cell;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: left;
+}
+
+/* Última fila sin borde */
+.comparison-row:last-child .comparison-cell {
+    border-bottom: none;
+}
+
+/* Hover en filas */
+.comparison-row:not(.header):hover {
+    background-color: rgba(0, 46, 75, 0.05);
+}
+
+/* Quick Takeaway */
+.quick-takeaway h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color-primario);
+}
+
+.quick-takeaway ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.quick-takeaway li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .comparison-table.large {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .comparison-cell {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.real-world-example {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.real-world-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 30px;
+}
+
+/* Tabla Comparativa 2 Columnas */
+.comparison-table.medium {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-row {
+    display: table-row;
+}
+
+.comparison-row.header {
+    background: var(--color-primario);
+    color: #fff;
+    font-weight: bold;
+}
+
+.comparison-cell {
+    display: table-cell;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: left;
+}
+
+/* Última fila sin borde */
+.comparison-row:last-child .comparison-cell {
+    border-bottom: none;
+}
+
+/* Hover en filas */
+.comparison-row:not(.header):hover {
+    background-color: rgba(0, 46, 75, 0.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .comparison-table.medium {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .comparison-cell {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.forms-needed {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.forms-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 30px;
+}
+
+/* Tabla Comparativa 2 Columnas */
+.comparison-table.small {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-row {
+    display: table-row;
+}
+
+.comparison-row.header {
+    background: var(--color-primario);
+    color: #fff;
+    font-weight: bold;
+}
+
+.comparison-cell {
+    display: table-cell;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: left;
+}
+
+/* Última fila sin borde */
+.comparison-row:last-child .comparison-cell {
+    border-bottom: none;
+}
+
+/* Hover en filas */
+.comparison-row:not(.header):hover {
+    background-color: rgba(0, 46, 75, 0.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .comparison-table.small {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .comparison-cell {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+
+.final-notes {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.final-notes-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 30px;
+}
+
+.final-notes-list {
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+}
+
+.final-notes-cta {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.final-notes-btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--color-primario);
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.final-notes-btn:hover {
+    background-color: var(--color-boton-hover);
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Ajusta la altura de la portada */
+    background-image: url('img/onebigbill.webp'); /* Cambia esta ruta a tu imagen */
+    background-size: contain; /* Ajusta la imagen para que se ajuste al contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Oscurece la imagen para resaltar el texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 0 15px;
+}
+

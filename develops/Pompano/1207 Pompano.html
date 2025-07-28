@@ -14,47 +14,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body data-page="1207_pompano">
 
     <!-- Header (Topbar) -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-            <a class="navbar-brand" href="../../">
-                <img src="../../img/Logo.webp" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../aboutus/aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../portfolio.html?category=all">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactus">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
     <!-- Main Content -->
     <main class="main-content" style="margin-top: 100px;">
         <div class="container">
             <section class="boton-portfolio">
-
                 <div class="boton-portfolio">
-                    
                     <a class="btn btn-secondary" href="../portfolio.html?category=all">
                         <i class="fas fa-arrow-left"></i>
-                        Portfolio
+                        <span data-i18n="back_portfolio">Portfolio</span>
                     </a>
                 </div>
             </section>
@@ -67,16 +39,13 @@
                     <h1>1207 Pompano</h1>
                 </div>
                 <div class="tags mt-4 row">
-                    <!-- <span class="span-primary">
-                        MULTI-FAMILY
-                    </span> -->
-                    <span class="span-secondary">
+                    <span class="span-secondary" data-i18n="tag_mixed_use">
                         MIXED-USE
                     </span>
-                    <span class="span-tertiary">
+                    <span class="span-tertiary" data-i18n="tag_multi_family">
                         MULTI-FAMILY
                     </span>
-                    <span class="span-tertiary">
+                    <span class="span-tertiary" data-i18n="tag_retail">
                         RETAIL
                     </span>
                     
@@ -109,24 +78,25 @@
                         <!-- Columna izquierda para varios ítems -->
                         <div class="col-md-6 mb-3">
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>TYPE OF ASSET:</strong> Mixed-Use Multifamily/Retail</h5>
+                            <h5 class="item-desc" data-i18n="pompano_type"><strong>TYPE OF ASSET:</strong> Mixed-Use Multifamily/Retail</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>ADDRESS:</strong> 1207 E Atlantic Blvd, Pompano Beach, FL 33060</h5>
+                            <h5 class="item-desc" data-i18n="pompano_address"><strong>ADDRESS:</strong> 1207 E Atlantic Blvd, Pompano Beach, FL 33060</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>UNITS:</strong> 100</h5>
+                            <h5 class="item-desc" data-i18n="pompano_units"><strong>UNITS:</strong> 100</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>FLOORS:</strong> 9</h5>
+                            <h5 class="item-desc" data-i18n="pompano_floors"><strong>FLOORS:</strong> 9</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>TOTAL RETAIL SPACE:</strong> 3,634 sqft</h5>
+                            <h5 class="item-desc" data-i18n="pompano_retail"><strong>TOTAL RETAIL SPACE:</strong> 3,634 sqft</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>CONSTRUCTION START:</strong> TBD</h5>
+                            <h5 class="item-desc" data-i18n="pompano_construction"><strong>CONSTRUCTION START:</strong> TBD</h5>
                             <div class="separador"></div>
-                            <h5 class="item-desc"><strong>COMPLETION:</strong> TBD</h5>
+                            <h5 class="item-desc" data-i18n="pompano_completion"><strong>COMPLETION:</strong> TBD</h5>
                             <div class="separador"></div>
                         </div>
                         <!-- Columna derecha para el párrafo -->
                         <div class="col-md-6 mb-3">
-                            <p class="text-justify">Situated at 1207 E Atlantic Blvd in the heart of Pompano Beach, FL, this innovative mixed-use project offers a fresh approach to urban living. 1207 Pompano features a carefully designed layout that maximizes land use and creates an attractive, functional space for both residents and investors. At its core is a centrally located parking area, ensuring accessibility and convenience for all residents. The project seamlessly blends two distinct residential components: a contemporary apartment building at the front and six luxurious townhomes at the back, creating a dynamic and diverse living environment.
+                            <p class="text-justify" data-i18n="pompano_description">
+                                Situated at 1207 E Atlantic Blvd in the heart of Pompano Beach, FL, this innovative mixed-use project offers a fresh approach to urban living. 1207 Pompano features a carefully designed layout that maximizes land use and creates an attractive, functional space for both residents and investors. At its core is a centrally located parking area, ensuring accessibility and convenience for all residents. The project seamlessly blends two distinct residential components: a contemporary apartment building at the front and six luxurious townhomes at the back, creating a dynamic and diverse living environment.
                                 <br><br>
                                 This development is poised to attract residents seeking a balance of modern comfort, strategic location, and community-driven design. Located along E Atlantic Blvd, 1207 Pompano offers unparalleled connectivity to major employment hubs, shopping centers, and recreational amenities. For investors, this project presents a unique opportunity to capitalize on a growing market with strong rental demand. By integrating smart design with an ideal location, 1207 Pompano embodies a lifestyle-focused vision, making it an exceptional addition to Pompano Beach’s real estate landscape.
                             </p>
@@ -134,33 +104,28 @@
                     </div>
                 </div>
             </section>
+
     
+            <!-- Botón volver al final -->
             <section class="boton-portfolio">
-    
                 <div class="boton-portfolio">
-                    
                     <a class="btn btn-secondary" href="../portfolio.html?category=all">
                         <i class="fas fa-arrow-left"></i>
-                        Portfolio
+                        <span data-i18n="back_portfolio">Portfolio</span>
                     </a>
                 </div>
             </section>
         </div>
-
-        
-
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
         <div class="text-center p-3" style="color: var(--color-sexto);">
-                <p>
-                &copy; 2025 MARSTON Development Group. All rights reserved.
-              </p>
-              <p style="font-size: small; opacity: 0.8;">
-                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>. 
-              </p>
+            <p data-i18n="copyright">&copy; 2025 MARSTON Development Group. All rights reserved.</p>
+            <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+            </p>
         </div>
     </footer>
 

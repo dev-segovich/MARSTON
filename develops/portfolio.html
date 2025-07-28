@@ -14,36 +14,10 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body data-page="portfolio">
 
     <!-- Header (Topbar) -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-            <a class="navbar-brand" href="../">
-                <img src="../img/Logo.webp" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../aboutus/aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactus">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://app.junipersquare.com/login">Investor Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -57,10 +31,10 @@
         <!-- Filtro de Proyectos -->
         <section class="project-filter hidden">
             <div class="filter-buttons">
-                <button class="filter-button" data-filter="all">All</button>
-                <button class="filter-button" data-filter="multifamily">Multifamily</button>
-                <button class="filter-button" data-filter="mixed-use">Mixed-use</button>
-                <button class="filter-button" data-filter="commercial">Commercial</button>
+                <button class="filter-button" data-filter="all" data-i18n="portfolio_all">All</button>
+                <button class="filter-button" data-filter="multifamily" data-i18n="portfolio_multifamily">Multifamily</button>
+                <button class="filter-button" data-filter="mixed-use" data-i18n="portfolio_mixed">Mixed-use</button>
+                <button class="filter-button" data-filter="commercial" data-i18n="portfolio_comercial">Commercial</button>
             </div>
         </section>
 
@@ -73,15 +47,15 @@
         <!-- Filtro de Proyectos -->
         <section class="mobile-filter hidden">
             <div class="filter-buttons">
-                <button class="filter-mobile-button" data-filter="all">All</button>
-                <button class="filter-mobile-button" data-filter="multifamily">Multifamily</button>
-                <button class="filter-mobile-button" data-filter="mixed-use">Mixed-use</button>
-                <button class="filter-mobile-button" data-filter="commercial">Commercial</button>
+                <button class="filter-mobile-button" data-filter="all" data-i18n="portfolio_all">All</button>
+                <button class="filter-mobile-button" data-filter="multifamily" data-i18n="portfolio_multifamily">Multifamily</button>
+                <button class="filter-mobile-button" data-filter="mixed-use" data-i18n="portfolio_mixed">Mixed-use</button>
+                <button class="filter-mobile-button" data-filter="commercial" data-i18n="portfolio_comercial">Commercial</button>
             </div>
         </section>
 
         <section class="mobile-catalog hidden">
-            <div class="mobile-card" data-category="multifamily">
+            <div class="mobile-card" data-category="mixed-use">
                     <div class="mobile-image" style="background-image: url('img/Broaward.webp');">
                         <a href="2900 W Broward/2900 W Broward.html"></a>
                     </div>
@@ -105,7 +79,7 @@
                         <h5 class="project-title">One Nine Vine</h5>
                     </div>
             </div>
-            <div class="mobile-card" data-category="multifamily">
+            <div class="mobile-card" data-category="mixed-use">
                     <div class="mobile-image" style="background-image: url('img/Gardner.webp');">
                         <a href="Gardner/Gardner.html"></a>
                     </div>
@@ -144,14 +118,14 @@
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
-        <div class="text-center p-3" style="color: var(--color-sexto);">
-                <p>
-                &copy; 2025 MARSTON Development Group. All rights reserved.
-              </p>
-              <p style="font-size: small; opacity: 0.8;">
-                Images are owned by Marston or used with proper rights. For more information, please review our <a href="/disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>. 
-              </p>
-        </div>
+    <div class="text-center p-3" style="color: var(--color-sexto);">
+        <p data-i18n="copyright">
+        &copy; 2025 MARSTON Development Group. All rights reserved.
+        </p>
+        <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+        Images are owned by Marston or used with proper rights. For more information, please review our <a href="./disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+        </p>
+    </div>
     </footer>
 
 
@@ -159,6 +133,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src = "main.js"></script>
+    <script src = "../main.js"></script>
 
 
 </body>
