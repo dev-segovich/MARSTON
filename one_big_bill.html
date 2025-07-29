@@ -35,9 +35,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="investment-title">One Big Beautiful Bill Act (H.R. 1, 2025)</h2>
-                        <h4 class="investment-subtitle">Three Clear Paths for International Investors in US Rental Real Estate</h4>
-                        <p class="investment-text text-justify">
+                        <h2 class="investment-title" data-i18n="investment_title">One Big Beautiful Bill Act (H.R. 1, 2025)</h2>
+                        <h4 class="investment-subtitle" data-i18n="investment_subtitle">Three Clear Paths for International Investors in US Rental Real Estate</h4>
+                        <p class="investment-text text-justify" data-i18n="investment_text">
                             If you are an investor based outside the United States and looking to tap into one of the strongest rental markets in the world, now is the time.
                             Thanks to the One Big Beautiful Bill Act, US real estate is more attractive, more tax-efficient, and more accessible to global capital than ever before.
                             Here is a simplified guide for international investors.
@@ -47,44 +47,109 @@
             </div>
         </section>
 
+
         <!-- Sección Sweet Spot -->
         <section class="sweet-spot" id="sweet-spot">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="sweet-title">1. Why 2025 to 2030 Is the Sweet Spot</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="sweet-title" data-i18n="sweet_title">1. Why 2025 to 2030 Is the Sweet Spot</h2>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Cuadro Comparativo -->
-                <div class="row justify-content-center mt-4">
-                    <div class="col-md-10">
-                        <div class="comparison-table">
-                            <div class="comparison-row header">
-                                <div class="comparison-cell">Policy or Market Shift</div>
-                                <div class="comparison-cell">Why It Matters</div>
+                    <!-- Cuadro Comparativo -->
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-md-10">
+                            <div class="comparison-table">
+                                <div class="comparison-row header">
+                                    <div class="comparison-cell" data-i18n="sweet_col_policy">Policy or Market Shift</div>
+                                    <div class="comparison-cell" data-i18n="sweet_col_why">Why It Matters</div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-cell" data-i18n="sweet_bonus">100% bonus depreciation (through 2029)</div>
+                                    <div class="comparison-cell" data-i18n="sweet_bonus_desc">Investors can immediately write off the full value of buildings.</div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-cell" data-i18n="sweet_deduction">Permanent 20% pass-through deduction (Section 199A)</div>
+                                    <div class="comparison-cell" data-i18n="sweet_deduction_desc">Lowers taxable income for individuals investing through pass-through structures.</div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-cell" data-i18n="sweet_shortage">US housing shortage of about 3.7 million units</div>
+                                    <div class="comparison-cell" data-i18n="sweet_shortage_desc">High rental demand, low vacancy rates below 5%.</div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-cell" data-i18n="sweet_firpta">No added foreign tax restrictions</div>
+                                    <div class="comparison-cell" data-i18n="sweet_firpta_desc">The US kept FIRPTA rules investor-friendly and preserved tax treaty benefits.</div>
+                                </div>
                             </div>
-                            <div class="comparison-row">
-                                <div class="comparison-cell">100% bonus depreciation (through 2029)</div>
-                                <div class="comparison-cell">Investors can immediately write off the full value of buildings.</div>
+                        </div>
+                    </div>
+
+                    <!-- Cards para Sweet Spot -->
+                    <div class="sweet-spot-cards d-block d-md-none mt-4">
+                        <!-- Card 1 -->
+                        <div class="comparison-card">
+                            <h5 class="card-title" data-i18n="sweet_bonus">100% bonus depreciation (through 2029)</h5>
+                            <div class="row-zone">
+                                <div class="col-5 mx-2 card-col">
+                                    <strong data-i18n="sweet_col_policy">Policy or Market Shift</strong>
+                                    <p data-i18n="sweet_bonus">100% bonus depreciation (through 2029)</p>
+                                </div>
+                                <div class="col-5 mx-2 card-col">
+                                    <strong data-i18n="sweet_col_why">Why It Matters</strong>
+                                    <p data-i18n="sweet_bonus_desc">Investors can immediately write off the full value of buildings.</p>
+                                </div>
                             </div>
-                            <div class="comparison-row">
-                                <div class="comparison-cell">Permanent 20% pass-through deduction (Section 199A)</div>
-                                <div class="comparison-cell">Lowers taxable income for individuals investing through pass-through structures.</div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="comparison-card">
+                            <h5 class="card-title" data-i18n="sweet_deduction">Permanent 20% pass-through deduction (Section 199A)</h5>
+                            <div class="row-zone">
+                                <div class="col-5 mx-2 card-col">
+                                    <strong data-i18n="sweet_col_policy">Policy or Market Shift</strong>
+                                    <p data-i18n="sweet_deduction">Permanent 20% pass-through deduction (Section 199A)</p>
+                                </div>
+                                <div class="col-5 mx-2 card-col">
+                                    <strong data-i18n="sweet_col_why">Why It Matters</strong>
+                                    <p data-i18n="sweet_deduction_desc">Lowers taxable income for individuals investing through pass-through structures.</p>
+                                </div>
                             </div>
-                            <div class="comparison-row">
-                                <div class="comparison-cell">US housing shortage of about 3.7 million units</div>
-                                <div class="comparison-cell">High rental demand, low vacancy rates below 5%.</div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="comparison-card">
+                            <h5 class="card-title" data-i18n="sweet_shortage">US housing shortage of about 3.7 million units</h5>
+                            <div class="row-zone">
+                                <div class="col-5 mx-2 card-col">
+                                    <strong data-i18n="sweet_col_policy">Policy or Market Shift</strong>
+                                    <p data-i18n="sweet_shortage">US housing shortage of about 3.7 million units</p>
+                                </div>
+                                <div class="col-5 mx-2 card-col">
+                                    <strong data-i18n="sweet_col_why">Why It Matters</strong>
+                                    <p data-i18n="sweet_shortage_desc">High rental demand, low vacancy rates below 5%.</p>
+                                </div>
                             </div>
-                            <div class="comparison-row">
-                                <div class="comparison-cell">No added foreign tax restrictions</div>
-                                <div class="comparison-cell">The US kept FIRPTA rules investor-friendly and preserved tax treaty benefits.</div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="comparison-card">
+                            <h5 class="card-title" data-i18n="sweet_firpta">No added foreign tax restrictions</h5>
+                            <div class="row-zone">
+                                <div class="col-5 mx-2 card-col">
+                                    <strong data-i18n="sweet_col_policy">Policy or Market Shift</strong>
+                                    <p data-i18n="sweet_firpta">No added foreign tax restrictions</p>
+                                </div>
+                                <div class="col-5 mx-2 card-col">
+                                    <strong data-i18n="sweet_col_why">Why It Matters</strong>
+                                    <p data-i18n="sweet_firpta_desc">The US kept FIRPTA rules investor-friendly and preserved tax treaty benefits.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
+
 
         <!-- Sección Investment Structures -->
         <section class="investment-structures" id="investment-structures">
@@ -92,7 +157,9 @@
                 <!-- Título -->
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="investment-structures-title">2. Three Investment Structures You Can Use</h2>
+                        <h2 class="investment-structures-title" data-i18n="investment_structures_title">
+                            2. Three Investment Structures You Can Use
+                        </h2>
                     </div>
                 </div>
 
@@ -103,79 +170,234 @@
                             <!-- Encabezados -->
                             <div class="comparison-row header">
                                 <div class="comparison-cell"> </div>
-                                <div class="comparison-cell">Option A: Buy Shares in a Public REIT</div>
-                                <div class="comparison-cell">Option B: Invest in a Direct Joint Venture (pass-through LLC)</div>
-                                <div class="comparison-cell">Option C: Form a New US Company (affiliate of your business abroad)</div>
+                                <div class="comparison-cell" data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</div>
+                                <div class="comparison-cell" data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</div>
+                                <div class="comparison-cell" data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</div>
                             </div>
 
                             <!-- Filas -->
                             <div class="comparison-row">
-                                <div class="comparison-cell">Typical net return</div>
-                                <div class="comparison-cell">9% to 10% per year</div>
-                                <div class="comparison-cell">Up to 40% IRR on select projects</div>
-                                <div class="comparison-cell">Around 15% to 25% IRR after US corporate tax</div>
+                                <div class="comparison-cell" data-i18n="investment_typical_return">Typical net return</div>
+                                <div class="comparison-cell" data-i18n="investment_typical_return_a">9% to 10% per year</div>
+                                <div class="comparison-cell" data-i18n="investment_typical_return_b">Up to 40% IRR on select projects</div>
+                                <div class="comparison-cell" data-i18n="investment_typical_return_c">Around 15% to 25% IRR after US corporate tax</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Who pays US tax</div>
-                                <div class="comparison-cell">The REIT; you receive dividends (with 15% to 30% withholding)</div>
-                                <div class="comparison-cell">You do, but bonus depreciation and 20% deduction can reduce or eliminate it</div>
-                                <div class="comparison-cell">The US company pays 21% corporate tax, then withholds on dividends to the parent</div>
+                                <div class="comparison-cell" data-i18n="investment_tax">Who pays US tax</div>
+                                <div class="comparison-cell" data-i18n="investment_tax_a">The REIT; you receive dividends (with 15% to 30% withholding)</div>
+                                <div class="comparison-cell" data-i18n="investment_tax_b">You do, but bonus depreciation and 20% deduction can reduce or eliminate it</div>
+                                <div class="comparison-cell" data-i18n="investment_tax_c">The US company pays 21% corporate tax, then withholds on dividends to the parent</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Bonus depreciation</div>
-                                <div class="comparison-cell">Stays inside the REIT</div>
-                                <div class="comparison-cell">Passed directly to you as an investor</div>
-                                <div class="comparison-cell">Applied at the US company level to reduce corporate tax</div>
+                                <div class="comparison-cell" data-i18n="investment_bonus">Bonus depreciation</div>
+                                <div class="comparison-cell" data-i18n="investment_bonus_a">Stays inside the REIT</div>
+                                <div class="comparison-cell" data-i18n="investment_bonus_b">Passed directly to you as an investor</div>
+                                <div class="comparison-cell" data-i18n="investment_bonus_c">Applied at the US company level to reduce corporate tax</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">20% Section 199A deduction</div>
-                                <div class="comparison-cell">Only if you file a US tax return</div>
-                                <div class="comparison-cell">Yes, automatically applied</div>
-                                <div class="comparison-cell">Not available to corporations</div>
+                                <div class="comparison-cell" data-i18n="investment_deduction">20% Section 199A deduction</div>
+                                <div class="comparison-cell" data-i18n="investment_deduction_a">Only if you file a US tax return</div>
+                                <div class="comparison-cell" data-i18n="investment_deduction_b">Yes, automatically applied</div>
+                                <div class="comparison-cell" data-i18n="investment_deduction_c">Not available to corporations</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">FIRPTA at exit</div>
-                                <div class="comparison-cell">None if you own less than 10%</div>
-                                <div class="comparison-cell">15% withheld at sale, then reconciled</div>
-                                <div class="comparison-cell">15% withheld unless exemption applies</div>
+                                <div class="comparison-cell" data-i18n="investment_firpta">FIRPTA at exit</div>
+                                <div class="comparison-cell" data-i18n="investment_firpta_a">None if you own less than 10%</div>
+                                <div class="comparison-cell" data-i18n="investment_firpta_b">15% withheld at sale, then reconciled</div>
+                                <div class="comparison-cell" data-i18n="investment_firpta_c">15% withheld unless exemption applies</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Paperwork</div>
-                                <div class="comparison-cell">Broker handles reporting</div>
-                                <div class="comparison-cell">W-8BEN or W-8BEN-E → 8805, K-1, 1040-NR or 1120-F</div>
-                                <div class="comparison-cell">File Form 1120 + 5472, withhold on dividends using Form 1042</div>
+                                <div class="comparison-cell" data-i18n="investment_paperwork">Paperwork</div>
+                                <div class="comparison-cell" data-i18n="investment_paperwork_a">Broker handles reporting</div>
+                                <div class="comparison-cell" data-i18n="investment_paperwork_b">W-8BEN or W-8BEN-E → 8805, K-1, 1040-NR or 1120-F</div>
+                                <div class="comparison-cell" data-i18n="investment_paperwork_c">File Form 1120 + 5472, withhold on dividends using Form 1042</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Control over the investment</div>
-                                <div class="comparison-cell">None</div>
-                                <div class="comparison-cell">Full voting rights on budget, leverage, and sale</div>
-                                <div class="comparison-cell">Full control through your own US entity</div>
+                                <div class="comparison-cell" data-i18n="investment_control">Control over the investment</div>
+                                <div class="comparison-cell" data-i18n="investment_control_a">None</div>
+                                <div class="comparison-cell" data-i18n="investment_control_b">Full voting rights on budget, leverage, and sale</div>
+                                <div class="comparison-cell" data-i18n="investment_control_c">Full control through your own US entity</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Ongoing fees</div>
-                                <div class="comparison-cell">1% management fee every year</div>
-                                <div class="comparison-cell">One-time 4% development fee and a promote after 8% to 12% preferred return</div>
-                                <div class="comparison-cell">Whatever you choose for your affiliate’s overhead</div>
+                                <div class="comparison-cell" data-i18n="investment_fees">Ongoing fees</div>
+                                <div class="comparison-cell" data-i18n="investment_fees_a">1% management fee every year</div>
+                                <div class="comparison-cell" data-i18n="investment_fees_b">One-time 4% development fee and a promote after 8% to 12% preferred return</div>
+                                <div class="comparison-cell" data-i18n="investment_fees_c">Whatever you choose for your affiliate’s overhead</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
+                <!-- Card 1 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="investment_typical_return">Typical net return</h5>
+                    <div class="row-zone">
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</strong>
+                            <p data-i18n="investment_typical_return_a">9% to 10% per year</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</strong>
+                            <p data-i18n="investment_typical_return_b">Up to 40% IRR on select projects</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</strong>
+                            <p data-i18n="investment_typical_return_c">Around 15% to 25% IRR after US corporate tax</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="investment_tax">Who pays US tax</h5>
+                    <div class="row-zone">
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</strong>
+                            <p data-i18n="investment_tax_a">The REIT; you receive dividends (with 15% to 30% withholding)</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</strong>
+                            <p data-i18n="investment_tax_b">You do, but bonus depreciation and 20% deduction can reduce or eliminate it</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</strong>
+                            <p data-i18n="investment_tax_c">The US company pays 21% corporate tax, then withholds on dividends to the parent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="investment_bonus">Bonus depreciation</h5>
+                    <div class="row-zone">
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</strong>
+                            <p data-i18n="investment_bonus_a">Stays inside the REIT</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</strong>
+                            <p data-i18n="investment_bonus_b">Passed directly to you as an investor</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</strong>
+                            <p data-i18n="investment_bonus_c">Applied at the US company level to reduce corporate tax</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="investment_deduction">20% Section 199A deduction</h5>
+                    <div class="row-zone">
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</strong>
+                            <p data-i18n="investment_deduction_a">Only if you file a US tax return</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</strong>
+                            <p data-i18n="investment_deduction_b">Yes, automatically applied</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</strong>
+                            <p data-i18n="investment_deduction_c">Not available to corporations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="investment_firpta">FIRPTA at exit</h5>
+                    <div class="row-zone">
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</strong>
+                            <p data-i18n="investment_firpta_a">None if you own less than 10%</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</strong>
+                            <p data-i18n="investment_firpta_b">15% withheld at sale, then reconciled</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</strong>
+                            <p data-i18n="investment_firpta_c">15% withheld unless exemption applies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="investment_paperwork">Paperwork</h5>
+                    <div class="row-zone">
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</strong>
+                            <p data-i18n="investment_paperwork_a">Broker handles reporting</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</strong>
+                            <p data-i18n="investment_paperwork_b">W-8BEN or W-8BEN-E → 8805, K-1, 1040-NR or 1120-F</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</strong>
+                            <p data-i18n="investment_paperwork_c">File Form 1120 + 5472, withhold on dividends using Form 1042</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="investment_control">Control over the investment</h5>
+                    <div class="row-zone">
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</strong>
+                            <p data-i18n="investment_control_a">None</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</strong>
+                            <p data-i18n="investment_control_b">Full voting rights on budget, leverage, and sale</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</strong>
+                            <p data-i18n="investment_control_c">Full control through your own US entity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="investment_fees">Ongoing fees</h5>
+                    <div class="row-zone">
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_a">Option A: Buy Shares in a Public REIT</strong>
+                            <p data-i18n="investment_fees_a">1% management fee every year</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_b">Option B: Invest in a Direct Joint Venture (pass-through LLC)</strong>
+                            <p data-i18n="investment_fees_b">One-time 4% development fee and a promote after 8% to 12% preferred return</p>
+                        </div>
+                        <div class="col-12 col-md-4 card-col">
+                            <strong data-i18n="investment_option_c">Option C: Form a New US Company (affiliate of your business abroad)</strong>
+                            <p data-i18n="investment_fees_c">Whatever you choose for your affiliate’s overhead</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <!-- Notas Finales -->
                 <div class="row mt-4">
                     <div class="col-md-12 quick-takeaway">
-                        <h5>Quick takeaway:</h5>
+                        <h5 data-i18n="investment_quick_takeaway_title">Quick takeaway:</h5>
                         <ul>
-                            <li>If you want high control and maximum tax benefits, <strong>Option B</strong> is your best route.</li>
-                            <li>If you want low involvement and public market liquidity, go with <strong>Option A</strong>.</li>
-                            <li>If your business prefers to operate fully through a US entity you own, <strong>Option C</strong> offers full autonomy.</li>
+                            <li data-i18n="investment_quick_takeaway_b">If you want high control and maximum tax benefits, <strong>Option B</strong> is your best route.</li>
+                            <li data-i18n="investment_quick_takeaway_a">If you want low involvement and public market liquidity, go with <strong>Option A</strong>.</li>
+                            <li data-i18n="investment_quick_takeaway_c">If your business prefers to operate fully through a US entity you own, <strong>Option C</strong> offers full autonomy.</li>
                         </ul>
                     </div>
                 </div>
@@ -188,7 +410,7 @@
                 <!-- Título -->
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="real-world-title">3. Real-World Example (Same Project, Different Structures)</h2>
+                        <h2 class="real-world-title" data-i18n="real_world_title">3. Real-World Example (Same Project, Different Structures)</h2>
                     </div>
                 </div>
 
@@ -198,67 +420,205 @@
                         <div class="comparison-table medium">
                             <!-- Encabezados -->
                             <div class="comparison-row header">
-                                <div class="comparison-cell"> </div>
-                                <div class="comparison-cell">Option B: Direct JV</div>
-                                <div class="comparison-cell">Option C: US Affiliate Corporation</div>
+                                <div class="comparison-cell"></div>
+                                <div class="comparison-cell" data-i18n="real_world_option_b">Option B: Direct JV</div>
+                                <div class="comparison-cell" data-i18n="real_world_option_c">Option C: US Affiliate Corporation</div>
                             </div>
 
                             <!-- Filas -->
                             <div class="comparison-row">
-                                <div class="comparison-cell">Net rent (before tax)</div>
-                                <div class="comparison-cell">$100,000</div>
-                                <div class="comparison-cell">$100,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_row1">Net rent (before tax)</div>
+                                <div class="comparison-cell" data-i18n="real_world_b1">$100,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_c1">$100,000</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Bonus depreciation (Year 1)</div>
-                                <div class="comparison-cell">-$100,000</div>
-                                <div class="comparison-cell">-$100,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_row2">Bonus depreciation (Year 1)</div>
+                                <div class="comparison-cell" data-i18n="real_world_b2">-$100,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_c2">-$100,000</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Taxable income (Year 1)</div>
-                                <div class="comparison-cell">$0 → no US tax</div>
-                                <div class="comparison-cell">$0 → no corporate tax</div>
+                                <div class="comparison-cell" data-i18n="real_world_row3">Taxable income (Year 1)</div>
+                                <div class="comparison-cell" data-i18n="real_world_b3">$0 → no US tax</div>
+                                <div class="comparison-cell" data-i18n="real_world_c3">$0 → no corporate tax</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Year 4 income (after bonus used up)</div>
-                                <div class="comparison-cell">$100,000</div>
-                                <div class="comparison-cell">$100,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_row4">Year 4 income (after bonus used up)</div>
+                                <div class="comparison-cell" data-i18n="real_world_b4">$100,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_c4">$100,000</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">20% Section 199A deduction</div>
-                                <div class="comparison-cell">-$20,000</div>
-                                <div class="comparison-cell">Not applicable</div>
+                                <div class="comparison-cell" data-i18n="real_world_row5">20% Section 199A deduction</div>
+                                <div class="comparison-cell" data-i18n="real_world_b5">-$20,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_c5">Not applicable</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Final tax base</div>
-                                <div class="comparison-cell">$80,000</div>
-                                <div class="comparison-cell">$100,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_row6">Final tax base</div>
+                                <div class="comparison-cell" data-i18n="real_world_b6">$80,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_c6">$100,000</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Tax rate</div>
-                                <div class="comparison-cell">37% (individual)</div>
-                                <div class="comparison-cell">21% (corporation)</div>
+                                <div class="comparison-cell" data-i18n="real_world_row7">Tax rate</div>
+                                <div class="comparison-cell" data-i18n="real_world_b7">37% (individual)</div>
+                                <div class="comparison-cell" data-i18n="real_world_c7">21% (corporation)</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">US tax owed</div>
-                                <div class="comparison-cell">$29,600</div>
-                                <div class="comparison-cell">$21,000</div>
+                                <div class="comparison-cell" data-i18n="real_world_row8">US tax owed</div>
+                                <div class="comparison-cell" data-i18n="real_world_b8">$29,600</div>
+                                <div class="comparison-cell" data-i18n="real_world_c8">$21,000</div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Withholding when cash is repatriated</div>
-                                <div class="comparison-cell">0% to 30% depending on treaty</div>
-                                <div class="comparison-cell">0% to 30% on dividends to the international parent</div>
+                                <div class="comparison-cell" data-i18n="real_world_row9">Withholding when cash is repatriated</div>
+                                <div class="comparison-cell" data-i18n="real_world_b9">0% to 30% depending on treaty</div>
+                                <div class="comparison-cell" data-i18n="real_world_c9">0% to 30% on dividends to the international parent</div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row1">Net rent (before tax)</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b1">$100,000</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c1">$100,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row2">Bonus depreciation (Year 1)</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b2">-$100,000</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c2">-$100,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row3">Taxable income (Year 1)</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b3">$0 → no US tax</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c3">$0 → no corporate tax</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row4">Year 4 income (after bonus used up)</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b4">$100,000</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c4">$100,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row5">20% Section 199A deduction</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b5">-$20,000</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c5">Not applicable</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row6">Final tax base</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b6">$80,000</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c6">$100,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row7">Tax rate</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b7">37% (individual)</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c7">21% (corporation)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row8">US tax owed</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b8">$29,600</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c8">$21,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="real_world_row9">Withholding when cash is repatriated</h5>
+                    <div class="row-zone">
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_b">Option B: Direct JV</strong>
+                            <p data-i18n="real_world_b9">0% to 30% depending on treaty</p>
+                        </div>
+                        <div class="col-5 mx-2 card-col">
+                            <strong data-i18n="real_world_option_c">Option C: US Affiliate Corporation</strong>
+                            <p data-i18n="real_world_c9">0% to 30% on dividends to the international parent</p>
+                        </div>
+                    </div>
+                </div>
+
+
                 </div>
             </div>
         </section>
@@ -269,7 +629,7 @@
                 <!-- Título -->
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="forms-title">4. Forms You’ll Need</h2>
+                        <h2 class="forms-title" data-i18n="forms_title">4. Forms You’ll Need</h2>
                     </div>
                 </div>
 
@@ -279,36 +639,72 @@
                         <div class="comparison-table small">
                             <!-- Encabezados -->
                             <div class="comparison-row header">
-                                <div class="comparison-cell">Structure</div>
-                                <div class="comparison-cell">Key IRS Forms</div>
+                                <div class="comparison-cell" data-i18n="forms_table_col1">Structure</div>
+                                <div class="comparison-cell" data-i18n="forms_table_col2">Key IRS Forms</div>
                             </div>
 
                             <!-- Filas -->
                             <div class="comparison-row">
-                                <div class="comparison-cell">Direct JV as foreign partner</div>
-                                <div class="comparison-cell">
+                                <div class="comparison-cell" data-i18n="forms_row1_title">Direct JV as foreign partner</div>
+                                <div class="comparison-cell" data-i18n="forms_row1_text">
                                     W-8BEN or W-8BEN-E, Form 8813, Form 8805, Schedule K-1, 1040-NR (individual) or 1120-F (foreign corporation)
                                 </div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">US affiliate company (you own it)</div>
-                                <div class="comparison-cell">
+                                <div class="comparison-cell" data-i18n="forms_row2_title">US affiliate company (you own it)</div>
+                                <div class="comparison-cell" data-i18n="forms_row2_text">
                                     Form 1120 (corporate tax return), Form 5472 (foreign-owned US company), Form 1042 and 1042-S for dividends sent home
                                 </div>
                             </div>
 
                             <div class="comparison-row">
-                                <div class="comparison-cell">Public REIT shares</div>
-                                <div class="comparison-cell">
+                                <div class="comparison-cell" data-i18n="forms_row3_title">Public REIT shares</div>
+                                <div class="comparison-cell" data-i18n="forms_row3_text">
                                     W-8BEN, broker handles Form 1042-S
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Card 1 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="forms_row1_title">Direct JV as foreign partner</h5>
+                    <div class="row-zone">
+                        <div class="col-12 card-col">
+                            <p data-i18n="forms_row1_text">
+                                W-8BEN or W-8BEN-E, Form 8813, Form 8805, Schedule K-1, 1040-NR (individual) or 1120-F (foreign corporation)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="forms_row2_title">US affiliate company (you own it)</h5>
+                    <div class="row-zone">
+                        <div class="col-12 card-col">
+                            <p data-i18n="forms_row2_text">
+                                Form 1120 (corporate tax return), Form 5472 (foreign-owned US company), Form 1042 and 1042-S for dividends sent home
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="comparison-card">
+                    <h5 class="card-title" data-i18n="forms_row3_title">Public REIT shares</h5>
+                    <div class="row-zone">
+                        <div class="col-12 card-col">
+                            <p data-i18n="forms_row3_text">W-8BEN, broker handles Form 1042-S</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
+
 
         <!-- Sección Final Notes -->
         <section class="final-notes" id="final-notes">
@@ -316,7 +712,9 @@
                 <!-- Título -->
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="final-notes-title">5. Final Notes for International Investors</h2>
+                        <h2 class="final-notes-title" data-i18n="final_notes_title">
+                            5. Final Notes for International Investors
+                        </h2>
                     </div>
                 </div>
 
@@ -324,11 +722,21 @@
                 <div class="row mt-4">
                     <div class="col-md-10 offset-md-1">
                         <ul class="final-notes-list">
-                            <li>Bonus depreciation is your biggest tax shield. Use it to delay or cancel out early-year tax bills.</li>
-                            <li>Section 199A works only through pass-through LLCs, not C corporations.</li>
-                            <li>Tax treaties between the US and your country may lower dividend and interest withholding, check with your CPA.</li>
-                            <li>Corporations add flexibility but may reduce after-tax returns due to corporate tax plus dividend tax.</li>
-                            <li>Work with experienced CPAs and attorneys who understand cross-border real estate deals and IRS forms.</li>
+                            <li data-i18n="final_notes_item1">
+                                Bonus depreciation is your biggest tax shield. Use it to delay or cancel out early-year tax bills.
+                            </li>
+                            <li data-i18n="final_notes_item2">
+                                Section 199A works only through pass-through LLCs, not C corporations.
+                            </li>
+                            <li data-i18n="final_notes_item3">
+                                Tax treaties between the US and your country may lower dividend and interest withholding, check with your CPA.
+                            </li>
+                            <li data-i18n="final_notes_item4">
+                                Corporations add flexibility but may reduce after-tax returns due to corporate tax plus dividend tax.
+                            </li>
+                            <li data-i18n="final_notes_item5">
+                                Work with experienced CPAs and attorneys who understand cross-border real estate deals and IRS forms.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -336,15 +744,18 @@
                 <!-- Call to Action -->
                 <div class="row mt-4 text-center">
                     <div class="col-md-12">
-                        <p class="final-notes-cta">
+                        <p class="final-notes-cta" data-i18n="final_notes_cta">
                             📩 Ready to structure your first US investment or affiliate company? 
                             Let us know and we can walk you through project options and setup.
                         </p>
-                        <a href="/form.html" class="btn btn-primary final-notes-btn">Contact Us</a>
+                        <a href="/form.html" class="btn btn-primary final-notes-btn" data-i18n="final_notes_btn">
+                            Contact Us
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
 
         
     </main>

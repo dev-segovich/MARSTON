@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta para responsividad -->
+    <title>MARSTON</title>
+
+    <link rel="icon" href="img/icon2.webp" type="image/png"> <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom-sections.css">
+    <link rel="stylesheet" href="aboutus/main.css">
+    <!-- Head -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body data-page="oportunity_zone">
+
+    <!-- Header (Topbar) -->
+    <header id="navbar-container"></header>
+
+    <!-- Main Content -->
+    <main class="main-content" style="margin-top: 100px;">
+        <section class="oportunity-hero">
+            <div class="oportunity-hero-overlay">
+            </div>
+        </section>
+
+        <!-- Sección Investment Guide -->
+        <section class="investment-guide" id="investment-guide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="investment-title" data-i18n="boosters_title">Two U.S. “boosters” for your money</h2>
+                        <h4 class="investment-subtitle" data-i18n="boosters_subtitle">(and how we make them work for overseas investors)</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="oportunity-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="oportunity-title" data-i18n="oportunity_title">
+                            Opportunity Zones vs. LIHTC (Low-Income Housing Tax Credits)
+                        </h2>
+                    </div>
+                </div>
+
+
+                <!-- Tabla para PC -->
+                <div class="table-responsive d-none d-md-block">
+                    <table class="table table-bordered table-striped comparison-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th data-i18n="oz_column">Opportunity Zone pass (“OZ”)</th>
+                                <th data-i18n="lihtc_column">Low‑Income Housing Tax Credit coupon book (“LIHTC”)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong data-i18n="big_picture">Big picture</strong></td>
+                                <td data-i18n="oz_big_picture">Press pause on U.S. capital‑gains tax now and possibly erase it later.</td>
+                                <td data-i18n="lihtc_big_picture">Get a stack of 10 yearly coupons that wipe dollars off your U.S. income‑tax bill.</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n="government_goal">Government goal</strong></td>
+                                <td data-i18n="oz_government_goal">Pull long‑term money into under‑served ZIP codes.</td>
+                                <td data-i18n="lihtc_government_goal">Keep rents affordable for local workers.</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n="typical_project">Typical project</strong></td>
+                                <td data-i18n="oz_typical_project">Remodel a factory, build fibre internet, add mixed‑use housing.</td>
+                                <td data-i18n="lihtc_typical_project">Ground‑up or rehab apartment block with rent caps.</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n="your_reward">Your reward</strong></td>
+                                <td data-i18n="oz_your_reward">
+                                    • 5‑year tax holiday on the gain you roll in.<br>
+                                    • Extra 10 % – 30 % of that gain never gets taxed.<br>
+                                    • Any profit after 10 years = tax‑free.
+                                </td>
+                                <td data-i18n="lihtc_your_reward">
+                                    • Credits worth roughly 90 c per $1 of U.S. tax you owe, paid out over 10 yrs.<br>
+                                    • Cash flow from the rents (usually small but steady).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n="hold_period">Hold period</strong></td>
+                                <td data-i18n="oz_hold_period">Stay at least 10 years to grab the full prize.</td>
+                                <td data-i18n="lihtc_hold_period">Stay 15 years so the IRS doesn’t claw the credits back.</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n="combine_question">Can you combine them?</strong></td>
+                                <td colspan="2" data-i18n="combine_answer">
+                                    Yes, the same building can sit in an OZ and get LIHTC financing; each investor picks the flavour they want.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- Tarjetas para móvil -->
+                <div class="cards-mobile d-md-none">
+                    <!-- Card 1 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="big_picture">Big picture</h5>
+                        <div class="row-zone">
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="oz_column_short">Opportunity Zone</strong>
+                                <p data-i18n="oz_big_picture">Press pause on U.S. capital‑gains tax now and possibly erase it later.</p>
+                            </div>
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="lihtc_column_short">LIHTC</strong>
+                                <p data-i18n="lihtc_big_picture">Get a stack of 10 yearly coupons that wipe dollars off your U.S. income‑tax bill.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="government_goal">Government goal</h5>
+                        <div class="row-zone">
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="oz_column_short">Opportunity Zone</strong>
+                                <p data-i18n="oz_government_goal">Pull long‑term money into under‑served ZIP codes.</p>
+                            </div>
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="lihtc_column_short">LIHTC</strong>
+                                <p data-i18n="lihtc_government_goal">Keep rents affordable for local workers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="typical_project">Typical project</h5>
+                        <div class="row-zone">
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="oz_column_short">Opportunity Zone</strong>
+                                <p data-i18n="oz_typical_project">Remodel a factory, build fibre internet, add mixed‑use housing.</p>
+                            </div>
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="lihtc_column_short">LIHTC</strong>
+                                <p data-i18n="lihtc_typical_project">Ground‑up or rehab apartment block with rent caps.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="your_reward">Your reward</h5>
+                        <div class="row-zone">
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="oz_column_short">Opportunity Zone</strong>
+                                <p data-i18n="oz_your_reward">
+                                    • 5‑year tax holiday on the gain you roll in.<br>
+                                    • Extra 10 % – 30 % of that gain never gets taxed.<br>
+                                    • Any profit after 10 years = tax‑free.
+                                </p>
+                            </div>
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="lihtc_column_short">LIHTC</strong>
+                                <p data-i18n="lihtc_your_reward">
+                                    • Credits worth roughly 90 c per $1 of U.S. tax you owe, paid out over 10 yrs.<br>
+                                    • Cash flow from the rents (usually small but steady).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="hold_period">Hold period</h5>
+                        <div class="row-zone">
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="oz_column_short">Opportunity Zone</strong>
+                                <p data-i18n="oz_hold_period">Stay at least 10 years to grab the full prize.</p>
+                            </div>
+                            <div class="col-6 mx-2 card-col">
+                                <strong data-i18n="lihtc_column_short">LIHTC</strong>
+                                <p data-i18n="lihtc_hold_period">Stay 15 years so the IRS doesn’t claw the credits back.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="combine_question">Can you combine them?</h5>
+                        <div class="row-zone">
+                            <div class="col-12 card-col text-center">
+                                <p data-i18n="combine_answer">
+                                    Yes, the same building can sit in an OZ and get LIHTC financing; each investor picks the flavour they want.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="investor-section py-5">
+            <div class="container">
+                <h2 class="oportunity-title text-center mb-4" data-i18n="investor_title">
+                    How an international investor actually plugs in
+                </h2>
+
+                <!-- Step 1 -->
+                <div class="investor-step mb-5">
+                    <h4 data-i18n="investor_step1_title">1. Set up (or use) a U.S. affiliate company</h4>
+                    <p data-i18n="investor_step1_text">
+                        We usually form a Delaware LLC that you own.<br>
+                        • Keeps U.S. bookkeeping separate from your home‑country books.<br>
+                        • Helps manage FIRPTA (the special U.S. withholding on real‑estate gains).
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="investor-step mb-5">
+                    <h4 data-i18n="investor_step2_title">2. Choose your “booster”</h4>
+
+                    <!-- Card 1 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="investor_step2a">Step a</h5>
+                        <div class="row-zone">
+                            <div class="col-5 mx-2 card-col">
+                                <strong data-i18n="oz_route">OZ route</strong>
+                                <p data-i18n="oz_step2a">Your affiliate sells an asset inside or outside the U.S. and shows a capital gain that is subject to U.S. tax.</p>
+                            </div>
+                            <div class="col-5 mx-2 card-col">
+                                <strong data-i18n="lihtc_route">LIHTC route</strong>
+                                <p data-i18n="lihtc_step2a">We bid for a slice of LIHTC credits in a project already awarded by the state housing agency.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="investor_step2b">Step b</h5>
+                        <div class="row-zone">
+                            <div class="col-5 mx-2 card-col">
+                                <strong data-i18n="oz_route">OZ route</strong>
+                                <p data-i18n="oz_step2b">Within 180 days it wires the gain into a Qualified Opportunity Fund (QOF).</p>
+                            </div>
+                            <div class="col-5 mx-2 card-col">
+                                <strong data-i18n="lihtc_route">LIHTC route</strong>
+                                <p data-i18n="lihtc_step2b">Your affiliate buys a limited‑partner stake; credits pass through to its tax return each year.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="comparison-card">
+                        <h5 class="card-title" data-i18n="investor_step2c">Step c</h5>
+                        <div class="row-zone">
+                            <div class="col-5 mx-2 card-col">
+                                <strong data-i18n="oz_route">OZ route</strong>
+                                <p data-i18n="oz_step2c">We draft the legal docs, file the QOF registration and monitor the 90 % asset test each June and December.</p>
+                            </div>
+                            <div class="col-5 mx-2 card-col">
+                                <strong data-i18n="lihtc_route">LIHTC route</strong>
+                                <p data-i18n="lihtc_step2c">Our CPA files Form 8609 and yearly compliance reports so the credits stay safe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="investor-step">
+                    <h4 data-i18n="investor_step3_title">3. Enjoy the benefits — without the paperwork headache</h4>
+                    <p data-i18n="investor_step3_text">
+                        Our in‑house CPA + real‑estate attorney do the heavy lifting:<br><br>
+                        • Quarterly statements in your currency and English.<br>
+                        • IRS, state, and lender filings handled on time.<br>
+                        • Treaty analysis so you don’t pay the same tax twice back home.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tiny-numbers-section py-5">
+        <div class="container">
+            <h2 class="oportunity-title text-center mb-4" data-i18n="tiny_tittle">Tiny Number Snaps <br> (U.S. top rates, no state tax)</h2>
+
+            <div class="table-responsive comparison-table">
+                <table class="table table-bordered table-striped comparison-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th data-i18n="tiny_oz_example">OZ example</th>
+                            <th data-i18n="tiny_lihtc_example">LIHTC example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong data-i18n="tiny_dollars_in">Dollars in</strong></td>
+                            <td data-i18n="tiny_oz_dollars">Roll $1 m capital gain (2027).</td>
+                            <td data-i18n="tiny_lihtc_dollars">Invest $100 k cash to buy credits.</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n="tiny_years_1_5">Years 1–5</strong></td>
+                            <td data-i18n="tiny_oz_years1_5">Pay $0 U.S. tax.</td>
+                            <td data-i18n="tiny_lihtc_years1_5">Collect $11 k credit each year; offsets tax on any U.S. income the affiliate has.</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n="tiny_year_5">Year 5</strong></td>
+                            <td data-i18n="tiny_oz_year5">Only 70 % of that $1 m gain is now taxable → tax = $140 k (instead of $200 k you would have paid up‑front).</td>
+                            <td data-i18n="tiny_lihtc_year5">Same $11 k credit; if affiliate owes less than that, the unused balance carries forward.</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n="tiny_year_10_exit">Year 10 exit</strong></td>
+                            <td data-i18n="tiny_oz_exit">Property sells; extra $1 m profit is tax‑free.</td>
+                            <td data-i18n="tiny_lihtc_exit">Usually sell your LP stake back to the developer around Year 11; credits already banked.</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n="tiny_total_saved">Total federal tax saved</strong></td>
+                            <td data-i18n="tiny_oz_saved">About $260 k.</td>
+                            <td data-i18n="tiny_lihtc_saved">About $111 k over 10 yrs on a $100 k outlay.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-center mt-3" style="font-size: 0.95rem; color: #555;" data-i18n="tiny_note">
+                    (Results vary; we run the spreadsheet for each deal.)
+                </p>
+            </div>
+
+            <div class="cards-mobile">
+            <!-- Card 1 -->
+            <div class="comparison-card">
+                <h5 class="card-title" data-i18n="tiny_dollars_in">Dollars in</h5>
+                <div class="row-zone">
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_oz_example">OZ example</strong>
+                        <p data-i18n="tiny_oz_dollars">Roll $1 m capital gain (2027).</p>
+                    </div>
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_lihtc_example">LIHTC example</strong>
+                        <p data-i18n="tiny_lihtc_dollars">Invest $100 k cash to buy credits.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="comparison-card">
+                <h5 class="card-title" data-i18n="tiny_years_1_5">Years 1–5</h5>
+                <div class="row-zone">
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_oz_example">OZ example</strong>
+                        <p data-i18n="tiny_oz_years1_5">Pay $0 U.S. tax.</p>
+                    </div>
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_lihtc_example">LIHTC example</strong>
+                        <p data-i18n="tiny_lihtc_years1_5">Collect $11 k credit each year; offsets tax on any U.S. income the affiliate has.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="comparison-card">
+                <h5 class="card-title" data-i18n="tiny_year_5">Year 5</h5>
+                <div class="row-zone">
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_oz_example">OZ example</strong>
+                        <p data-i18n="tiny_oz_year5">Only 70 % of that $1 m gain is now taxable → tax = $140 k (instead of $200 k you would have paid up‑front).</p>
+                    </div>
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_lihtc_example">LIHTC example</strong>
+                        <p data-i18n="tiny_lihtc_year5">Same $11 k credit; if affiliate owes less than that, the unused balance carries forward.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="comparison-card">
+                <h5 class="card-title" data-i18n="tiny_year_10_exit">Year 10 exit</h5>
+                <div class="row-zone">
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_oz_example">OZ example</strong>
+                        <p data-i18n="tiny_oz_exit">Property sells; extra $1 m profit is tax‑free.</p>
+                    </div>
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_lihtc_example">LIHTC example</strong>
+                        <p data-i18n="tiny_lihtc_exit">Usually sell your LP stake back to the developer around Year 11; credits already banked.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="comparison-card">
+                <h5 class="card-title" data-i18n="tiny_total_saved">Total federal tax saved</h5>
+                <div class="row-zone">
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_oz_example">OZ example</strong>
+                        <p data-i18n="tiny_oz_saved">About $260 k.</p>
+                    </div>
+                    <div class="col-5 mx-2 card-col">
+                        <strong data-i18n="tiny_lihtc_example">LIHTC example</strong>
+                        <p data-i18n="tiny_lihtc_saved">About $111 k over 10 yrs on a $100 k outlay.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center mt-3" style="font-size: 0.95rem; color: #555;" data-i18n="tiny_note">
+                (Results vary; we run the spreadsheet for each deal.)
+            </p>
+        </div>
+ 
+        </div>
+        </section>
+
+        <section class="why-work-section py-5">
+            <div class="container text-white">
+                <h2 class="text-center mb-4" data-i18n="why_work_title">Why Work With Us</h2>
+                <ul class="why-list">
+                    <li data-i18n="why_work_item_1">
+                        <strong>One‑stop team:</strong> U.S. CPA + cross‑border tax lawyer who speak both codes.
+                    </li>
+                    <li data-i18n="why_work_item_2">
+                        <strong>Turnkey structure:</strong> We create the affiliate, open U.S. bank accounts, handle EIN, FATCA, treaty forms.
+                    </li>
+                    <li data-i18n="why_work_item_3">
+                        <strong>Deal flow you can trust:</strong> Projects pre‑vetted for OZ map, LIHTC allocation, and lender terms.
+                    </li>
+                    <li data-i18n="why_work_item_4">
+                        <strong>Clear reports:</strong> All docs uploaded to your portal; quarterly Zoom walk‑through in your time zone.
+                    </li>
+                    <li data-i18n="why_work_item_5">
+                        <strong>Exit strategy baked in:</strong> We plan Year‑11 refinance or sale from day one, so you know how you’ll get paid.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bottom-line-section py-5">
+            <div class="container">
+                <div class="bottom-line-content">
+                    <p data-i18n="bottom_line_1">
+                        <strong>Pick the OZ pass</strong> if you’re chasing long‑term growth with a big tax‑free pop.
+                    </p>
+                    <p data-i18n="bottom_line_2">
+                        <strong>Pick the LIHTC coupon book</strong> if you want predictable annual tax savings plus social impact.
+                    </p>
+                    <p data-i18n="bottom_line_3">
+                        Either way, our job is to steer your affiliate through the U.S. legal maze while you focus on the bigger picture.
+                    </p>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+    <div class="text-center p-3" style="color: var(--color-sexto);">
+        <p data-i18n="copyright">
+        &copy; 2025 MARSTON Development Group. All rights reserved.
+        </p>
+        <p style="font-size: small; opacity: 0.8;" data-i18n="footer_disclaimer">
+        Images are owned by Marston or used with proper rights. For more information, please review our <a href="./disclaimer.html" style="color: #002e4b">[Full Disclaimer]</a>.
+        </p>
+    </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src = "main.js"></script>
+
+    
+</body>
+
+</html>
