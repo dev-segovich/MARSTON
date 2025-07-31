@@ -4,6 +4,7 @@
     "projects": "Projects",
     "investment": "Investment Strategy",
     "contact": "Contact Us",
+    "contact_nav": "Become an Investor",
     "login": "Investor Login",
     "discover_more": "Discover More",
     "learn_more": "Learn More",
@@ -23,7 +24,10 @@
     "tag_mixed_use": "MIXED-USE",
     "tag_multi_family": "MULTI-FAMILY",
     "tag_office": "OFFICE",
-    "tag_retail": "RETAIL"
+    "tag_retail": "RETAIL",
+    "final_notes_ready": "📩 Ready to Invest?",
+    "final_notes_cta": "Contact us or join our investor mailing list to access current opportunities.<br> Please review our disclaimer below.",
+    "final_notes_btn": "Contact Us"
   },
   "index": {
     "aboutus_title": "Innovation, Quality,<br> and Community Impact",
@@ -375,11 +379,7 @@
   "final_notes_item2": "Section 199A works only through pass-through LLCs, not C corporations.",
   "final_notes_item3": "Tax treaties between the US and your country may lower dividend and interest withholding, check with your CPA.",
   "final_notes_item4": "Corporations add flexibility but may reduce after-tax returns due to corporate tax plus dividend tax.",
-  "final_notes_item5": "Work with experienced CPAs and attorneys who understand cross-border real estate deals and IRS forms.",
-  
-  "final_notes_ready": "📩 Ready to Invest?",
-  "final_notes_cta": "Contact us or join our investor mailing list to access current opportunities.<br> Please review our disclaimer below.",
-  "final_notes_btn": "Contact Us"
+  "final_notes_item5": "Work with experienced CPAs and attorneys who understand cross-border real estate deals and IRS forms."
   },
   "oportunity_zone": {
     "boosters_title": "Two U.S. Tax Boosters, One Smart Strategy",

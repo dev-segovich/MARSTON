@@ -4,6 +4,7 @@
     "projects": "Proyectos",
     "investment": "Estrategia de Inversión",
     "contact": "Contáctanos",
+    "contact_nav": "Conviértete en Inversor",
     "login": "Acceso Inversores",
     "discover_more": "Descubrir Más",
     "learn_more": "Aprender Más",
@@ -23,7 +24,10 @@
     "tag_mixed_use": "USO MIXTO",
     "tag_multi_family": "MULTIFAMILIAR",
     "tag_office": "OFICINAS",
-    "tag_retail": "COMERCIO"
+    "tag_retail": "COMERCIO",
+    "final_notes_ready": "📩 ¿Listo para invertir?",
+    "final_notes_cta": "Contáctanos o únete a nuestra lista de inversores para acceder y recibir correos a oportunidades actuales.<br> Por favor, revisa nuestro aviso legal al final de la página.",
+    "final_notes_btn": "Contáctanos"
   },
   "index":{
     "aboutus_title": "Innovación, Calidad,<br> e Impacto Comunitario",
@@ -374,11 +378,8 @@
   "final_notes_item2": "La Sección 199A funciona solo a través de LLCs de tipo pass-through, no en corporaciones C.",
   "final_notes_item3": "Los tratados fiscales entre EE.UU. y tu país pueden reducir las retenciones de dividendos e intereses; consulta con tu CPA.",
   "final_notes_item4": "Las corporaciones ofrecen flexibilidad, pero pueden reducir los rendimientos netos debido al impuesto corporativo más el impuesto sobre dividendos.",
-  "final_notes_item5": "Trabaja con CPAs y abogados experimentados que entiendan los acuerdos inmobiliarios transfronterizos y los formularios del IRS.",
+  "final_notes_item5": "Trabaja con CPAs y abogados experimentados que entiendan los acuerdos inmobiliarios transfronterizos y los formularios del IRS."
   
-  "final_notes_ready": "📩 ¿Listo para invertir?",
-  "final_notes_cta": "Contáctanos o únete a nuestra lista de inversores para acceder y recibir correos a oportunidades actuales.<br> Por favor, revisa nuestro aviso legal al final de la página.",
-  "final_notes_btn": "Contáctanos"
   },
   "oportunity_zone": {
   "boosters_title": "Dos “impulsores” de EE.UU. para tu dinero",
