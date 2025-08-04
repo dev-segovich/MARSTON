@@ -870,10 +870,10 @@
 }
 
 .investment-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 30px;
-    color: var(--color-segundo);
+    color: var(--color-primario);
 }
 
 .protect-subtitle {
@@ -1490,6 +1490,11 @@ body[data-page="one_big_bill"] .investment-structures .comparison-card .card-col
 }
 
 .why-work-section h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.upper-tittle {
   font-weight: bold;
   text-transform: uppercase;
 }

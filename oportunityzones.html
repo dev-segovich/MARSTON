@@ -29,12 +29,87 @@
             </div>
         </section>
 
+        <section class="interactive-map-section py-5">
+            <div class="container">
+                <h2 class="oportunity-title text-center mb-4" data-i18n="interactive_map_title">
+                    Interactive OZ Map
+                </h2>
+
+                <div class="embed-responsive mx-auto mb-4" style="max-width: 900px;">
+                    <iframe
+                        src="https://hud.maps.arcgis.com/apps/Embed/index.html?webmap=605f19bdc1594a9d99e72c478a01a8ac&extent=-127.3008,24.4482,-62.0703,52.6438&zoom=true&scale=true&search=true&searchextent=true&disable_scroll=true&theme=light"
+                        title="HUD Interactive Map"
+                        loading="lazy"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+
+                <p class="text-center mb-5" data-i18n="interactive_map_subtitle">
+                    LIHTC developments can be located anywhere in the U.S. where the demographics make sense, with certain designated areas receiving a 1.3x boost in eligible basis.
+                </p>
+
+                <div class="text-center mb-4">
+                    <a href="https://www.huduser.gov/portal/sadda/sadda_qct.html" class="btn btn-primary final-notes-btn" data-i18n="link_to_lihtc_button">
+                    <i class="fas fa-map-mark"></i> Explore Eligible LIHTC Incentive booster Areas
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eligible Gains Section -->
+        <section class="eligible-gains-section py-5 bg-light">
+        <div class="container">
+            <h2 class="oportunity-title text-center mb-4" data-i18n="eligible_gains_title">
+            Which Gains Are Eligible?
+            </h2>
+
+            <p class="text-center mb-5 lead" data-i18n="eligible_gains_subtitle">
+            Many types of capital gain are eligible for Opportunity Zone deferral, including stocks, bonds, commodities, partnership K-1s, business sale, real estate, personal residence, cryptocurrency and art.
+            </p>
+
+            <div class="row text-center">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="/img/icons/stocks.png" alt="Stocks" class="mb-2" width="60" />
+                <p data-i18n="eligible_gains_stocks">Stocks, Options</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="/img/icons/bonds.png" alt="Bonds" class="mb-2" width="60" />
+                <p data-i18n="eligible_gains_bonds">Bonds</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="/img/icons/commodities.png" alt="Commodities" class="mb-2" width="60" />
+                <p data-i18n="eligible_gains_commodities">Commodities</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="/img/icons/partnership.png" alt="Partnership K-1s" class="mb-2" width="60" />
+                <p data-i18n="eligible_gains_partnership">Partnership K-1s</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="/img/icons/business.png" alt="Business Sale" class="mb-2" width="60" />
+                <p data-i18n="eligible_gains_business">Business Sale</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="/img/icons/realestate.png" alt="Real Estate" class="mb-2" width="60" />
+                <p data-i18n="eligible_gains_realestate">Real Estate</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="/img/icons/crypto.png" alt="Cryptocurrencies" class="mb-2" width="60" />
+                <p data-i18n="eligible_gains_crypto">Cryptocurrencies</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="/img/icons/art.png" alt="Art" class="mb-2" width="60" />
+                <p data-i18n="eligible_gains_art">Art</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
         <!-- Sección Investment Guide -->
         <section class="investment-guide" id="investment-guide">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="investment-title" data-i18n="boosters_title">Two U.S. “boosters” for your money</h2>
+                        <h2 class="oportunity-title text-center mb-1" data-i18n="boosters_title">Two U.S. “boosters” for your money</h2>
                         <h4 class="investment-subtitle" data-i18n="boosters_subtitle">(and how we make them work for overseas investors)</h4>
                         <p class="investment-text mb-1 text-justify" data-i18n="boosters_text">
                             At MARSTON Development Group, we help international investors participate directly in U.S. real estate development — as Limited Partners (LPs) — by leveraging the two most powerful federal tax incentive programs:
@@ -212,7 +287,7 @@
         <section class="investor-section py-5">
         <div class="container">
             <!-- Sección de introducción -->
-            <h2 class="text-center mb-4" data-i18n="investor_intro_title">
+            <h2 class="oportunity-title text-center mb-4" data-i18n="investor_intro_title">
             You Invest Directly in the Project, Not in a Fund
             </h2>
             <p class="text-center mb-5" data-i18n="investor_intro_text">
@@ -331,7 +406,7 @@
         <section class="qof-section">
             <div class="container">
                 <!-- Sección de introducción -->
-                <h2 class="text-center mb-4" data-i18n="qof_intro_title">
+                <h2 class="text-center upper-tittle mb-4" data-i18n="qof_intro_title">
                     What Is a “QOF-Compliant” Project?
                 </h2>
                 <p class="mb-5 text-justify" data-i18n="qof_intro_text">
@@ -482,26 +557,6 @@
             </ul>
         </div>
         </section>
-
-        <section class="interactive-map-section py-5">
-            <div class="container">
-                <h2 class="text-center mb-4" data-i18n="interactive_map_title">
-                    Interactive OZ Map
-                </h2>
-
-                <div class="embed-responsive mx-auto" style="max-width: 900px;">
-                    <iframe
-                        src="https://hud.maps.arcgis.com/apps/Embed/index.html?webmap=605f19bdc1594a9d99e72c478a01a8ac&extent=-127.3008,24.4482,-62.0703,52.6438&zoom=true&scale=true&search=true&searchextent=true&disable_scroll=true&theme=light"
-                        title="HUD Interactive Map"
-                        loading="lazy"
-                        allowfullscreen
-                    ></iframe>
-                </div>
-            </div>
-        </section>
-
-
-
 
         <section class="bottom-line-section py-5">
             <div class="container">

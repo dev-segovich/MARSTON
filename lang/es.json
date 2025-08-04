@@ -182,7 +182,7 @@
     "why_marston_title": "¿Por qué Marston Group?",
     "why_marston_intro": "Somos desarrolladores centrados en las relaciones, que ganan la confianza alineando resultados con las personas detrás del capital.",
     "why_marston_item1": "<span class='check'>✔️</span> Acceso temprano a oportunidades de alto umbral, a menudo mal entendidas",
-    "why_marston_item2": "<span class='check'>✔️</span> Validación de viabilidad en tiempo real a través de Zero to Plan",
+    "why_marston_item2": "<span class='check'>✔️</span> Validación de factibilidad en tiempo real a través de&nbsp;<a href='https://zerotoplan.com' style='color: var(--color-terciario);' target='_blank' rel='noopener noreferrer'><strong> Zero to Plan</strong></a>",
     "why_marston_item3": "<span class='check'>✔️</span> Sólida alineación con prioridades del sector público y estándares del sector privado",
     "why_marston_item4": "<span class='check'>✔️</span> Claridad en la ejecución: contratos estructurados en torno a hitos reales",
     "why_marston_item5": "<span class='check'>✔️</span> Diseño y planificación centrados en las personas que impulsan la creación de valor a largo plazo",
@@ -190,6 +190,10 @@
 
     "one_big_bill_title": "Explora la Ley One Big Beautiful Bill",
     "one_big_bill_text": "Descubre cómo la Ley One Big Beautiful Bill (H.R. 1, 2025) está creando nuevas oportunidades para los inversionistas internacionales en bienes raíces de alquiler en EE.UU.",
+
+    "how_protect_title": "Cómo protegemos su inversión: Seguridad de capital y supervisión",
+    "how_protect_text": "En MARSTON Development Group, entendemos lo que más les importa a los inversionistas serios: la preservación del capital y la protección frente a pérdidas.",
+
 
     "boosters_title": "Dos \"impulsores\" en EE. UU. para tu dinero",
     "boosters_text": "Descubre cómo los programas Opportunity Zone (OZ) y Low-Income Housing Tax Credit (LIHTC) pueden maximizar tus rendimientos mientras apoyan el desarrollo de vivienda en EE. UU."
@@ -382,6 +386,9 @@
   
   },
   "oportunity_zone": {
+  "link_to_lihtc_title": "Enlace a Áreas impulsadas por LIHTC",
+  "interactive_map_subtitle": "Los desarrollos LIHTC pueden ubicarse en cualquier lugar de EE. UU. donde la demografía lo justifique, con ciertas zonas designadas que reciben un aumento de 1.3 veces en la base elegible.",
+  "link_to_lihtc_button": "Explorar zonas con incentivos LIHTC aumentados",
   "boosters_title": "Dos “impulsores” de EE.UU. para tu dinero",
   "boosters_subtitle": "(y cómo los hacemos funcionar para inversores extranjeros)",
   "oportunity_title": "Zonas de Oportunidad vs. LIHTC (Créditos Fiscales para Viviendas de Bajos Ingresos)",
@@ -406,15 +413,15 @@
   "combine_answer": "Sí, el mismo edificio puede estar en una OZ y recibir financiamiento LIHTC; cada inversor elige el tipo que prefiera.",
   "oz_column_short": "Zonas de Oportunidad",
   "lihtc_column_short": "LIHTC",
-  "investor_intro_title": "Usted invierte directamente en el proyecto — no en un fondo",
-  "investor_intro_text": "Su filial estadounidense invierte directamente en la LLC que posee el proyecto inmobiliario. Ese proyecto está estructurado para cumplir con los requisitos de la Ley de Zonas de Oportunidad, lo que le permite acceder a todos los beneficios fiscales — sin pasar por un fondo tradicional QOF.",
+  "investor_intro_title": "Usted invierte directamente en el proyecto, no en un fondo",
+  "investor_intro_text": "Su filial estadounidense invierte directamente en la LLC que posee el proyecto inmobiliario. Ese proyecto está estructurado para cumplir con los requisitos de la Ley de Zonas de Oportunidad, lo que le permite acceder a todos los beneficios fiscales, sin pasar por un fondo tradicional QOF.",
 
   "investor_step1_title": "1. Creamos su filial en EE.UU.",
   "investor_step1_item1": "Mantiene su inversión separada y ordenada",
   "investor_step1_item2": "Permite aprovechar los créditos fiscales estadounidenses",
   "investor_step1_item3": "Cumple con FIRPTA y las normativas del IRS",
 
-  "investor_step2_title": "2. Fondos en custodia — indexados y protegidos",
+  "investor_step2_title": "2. Fondos en custodia, indexados y protegidos",
   "investor_step2_text": "Su capital se deposita en una cuenta de custodia segregada y con intereses, que solo se libera cuando:",
   "investor_step2_item1": "Se verifica el cumplimiento de OZ o LIHTC",
   "investor_step2_item2": "El proyecto obtiene los permisos, adjudicaciones y financiamiento final",
@@ -427,7 +434,7 @@
   "oz_card_1": "Invierta en un proyecto único que cumple con las reglas de Zona de Oportunidad",
   "oz_card_2": "Mantenga 10+ años: 100% libre de impuestos sobre las ganancias de reventa",
   "oz_card_3": "Rolle una ganancia existente y reciba una exención parcial después del año 5",
-  "oz_card_4": "La LLC del proyecto califica como QOF — sin necesidad de entrar en un fondo agrupado",
+  "oz_card_4": "La LLC del proyecto califica como QOF, sin necesidad de entrar en un fondo agrupado",
 
   "lihtc_card_title": "Proyectos LIHTC",
   "lihtc_card_1": "Proyectos con créditos fiscales otorgados por agencias estatales de vivienda",
@@ -497,7 +504,7 @@
   "protect": {
   "safetyPage_title": "Primero seguridad, luego generamos valor",
   "safetyPage_subtitle": "¿Qué hace que los proyectos multifamiliares de MARSTON <br> sean diferentes y más seguros?",
-  "safetyPage_text": "En MARSTON Development Group, entendemos lo que más importa a los inversionistas serios: la preservación del capital y la protección frente a riesgos. <br><br> Por eso nos enfocamos exclusivamente en desarrollos multifamiliares y de uso mixto. Se trata de activos inmobiliarios esenciales, fundamentados en una demanda sostenida a largo plazo, respaldados por sólidos factores demográficos y evaluados mediante múltiples capas de supervisión para reducir la incertidumbre. <br><br> A diferencia de desarrollos como condominios, centros comerciales, proyectos logísticos o tecnológicos, nuestros proyectos están basados en una necesidad habitacional real, con respaldo público y modelos de financiamiento comprobados.",
+  "safetyPage_text": "En MARSTON Development Group, entendemos lo que más valoran los inversionistas serios:<br><div style='text-align:center; font-weight:bold; text-decoration:underline;'>Preservación del capital y protección ante pérdidas.</div><br>Por eso nos enfocamos exclusivamente en desarrollos multifamiliares y de uso mixto. Estos son activos inmobiliarios esenciales, con demanda sostenida a largo plazo, respaldados por fundamentos demográficos sólidos y revisados a través de múltiples capas de supervisión para reducir la incertidumbre.<br><br>A diferencia de desarrollos especulativos como condominios, centros comerciales, logística o activos tecnológicos, nuestros proyectos están basados en necesidades habitacionales, apoyo público y modelos de financiamiento comprobados.",
   "safety_whyMultifamilyTitle": "Por qué el multifamiliar ofrece un camino más seguro para tu capital",
   "safety_keyFactor": "Factor clave",
 
@@ -559,7 +566,7 @@
   "safetyPage_oversight_standard_4": "Evaluación financiera a nivel bancario",
 
   "safetyPage_oversight_city_title": "Proyectos con incentivos municipales",
-  "safetyPage_oversight_city_1": "Todo lo anterior",
+  "safetyPage_oversight_city_1": "Todos los anteriores, todos los proyectos incentivados a nivel estatal y federal.",
   "safetyPage_oversight_city_2": "Exoneraciones o incentivos fiscales locales",
   "safetyPage_oversight_city_3": "Estudios de mercado y viabilidad externos",
   "safetyPage_oversight_city_4": "Revisión por la junta de desarrollo económico",
