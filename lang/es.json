@@ -566,12 +566,13 @@
   "safetyPage_oversight_standard_4": "Evaluación financiera a nivel bancario",
 
   "safetyPage_oversight_city_title": "Proyectos con incentivos municipales",
-  "safetyPage_oversight_city_1": "Todos los anteriores, todos los proyectos incentivados a nivel estatal y federal.",
+  "safetyPage_oversight_city_1": "Todos los anteriores.",
   "safetyPage_oversight_city_2": "Exoneraciones o incentivos fiscales locales",
   "safetyPage_oversight_city_3": "Estudios de mercado y viabilidad externos",
   "safetyPage_oversight_city_4": "Revisión por la junta de desarrollo económico",
 
   "safetyPage_oversight_federal_title": "Proyectos con incentivos estatales y federales (LIHTC y OZ)",
+  "safetyPage_oversight_federal_0": "Todos los requerimientos de los proyectos estándar.",
   "safetyPage_oversight_federal_1": "Aplicaciones competitivas a nivel estatal",
   "safetyPage_oversight_federal_2": "Cumplimiento con el IRS y regulaciones federales",
   "safetyPage_oversight_federal_3": "Informes ambientales y de ingeniería",

@@ -411,7 +411,7 @@
     "oz_column_short": "Opportunity Zone",
     "lihtc_column_short": "LIHTC",
     "investor_intro_title": "You Invest Directly in the Project. Not in a Fund",
-    "investor_intro_text": "Your U.S. affiliate invests directly into the LLC that owns the real estate project. That project is structured to meet Opportunity Zone compliance, qualifying you for the full tax benefits, without going through a traditional QOF fund.",
+    "investor_intro_text": "Your U.S. affiliate invests directly into the LLC that owns the real estate project. That project is structured to meet Opportunity Zone compliance, qualifying you for the full tax benefits, without going through a traditional QOZ fund.",
     
     "investor_step1_title": "1. Form a U.S. Affiliate — We Handle It",
     "investor_step1_item1": "Keep your investment separate and clean",
@@ -431,7 +431,7 @@
     "oz_card_1": "Invest in a single project that complies with Opportunity Zone rules",
     "oz_card_2": "Hold 10+ years: 100% of your capital gains on resale are tax-free",
     "oz_card_3": "Roll over an existing capital gain and receive partial exemption after Year 5",
-    "oz_card_4": "Project LLC qualifies as a QOF-compliant entity, no pooled fund required",
+    "oz_card_4": "Project LLC qualifies as a QOZ-compliant entity, no pooled fund required",
 
     "lihtc_card_title": "LIHTC Projects",
     "lihtc_card_1": "Projects awarded tax credits by state housing agencies",
@@ -555,12 +555,13 @@
     "safetyPage_oversight_standard_4": "Bank-level financial underwriting",
 
     "safetyPage_oversight_city_title": "City-Incentivized Projects",
-    "safetyPage_oversight_city_1": "All of the above, all state and federal incentivized projects",
+    "safetyPage_oversight_city_1": "All of the above",
     "safetyPage_oversight_city_2": "Local tax abatements or incentives",
     "safetyPage_oversight_city_3": "External market and feasibility studies",
     "safetyPage_oversight_city_4": "Economic development board review",
 
     "safetyPage_oversight_federal_title": "State and Federal-Incentivized Projects (LIHTC and OZ)",
+    "safetyPage_oversight_federal_0": "All standard project requirements",
     "safetyPage_oversight_federal_1": "Competitive applications at the state level",
     "safetyPage_oversight_federal_2": "IRS and federal compliance",
     "safetyPage_oversight_federal_3": "Environmental and engineering reports",
