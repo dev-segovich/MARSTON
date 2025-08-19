@@ -572,9 +572,55 @@
     "safetyPage_final_2": "Oversight protects against execution and compliance risk",
     "safetyPage_final_3": "We prioritize reducing uncertainty before pursuing returns",
     "safetyPage_final_closing": "With MARSTON, you are not speculating. You are investing in verified housing infrastructure built for long-term security."
+  },
+  "live_local":{
+    "live_intro_title": "Unlocking Value with <br> Florida’s Live Local Act",
+    "live_intro_subtitle": "How We Double Density, Lower Costs, and Deliver High-Demand Housing",
+    "live_law_title": "A Law Built for Developers Who Move Fast",
+    "live_law_p1": "Florida’s Live Local Act was designed to accelerate housing production, particularly for the workforce and mixed-income segments. The opportunity for developers is straightforward: if you commit a portion of your project to workforce housing, you gain access to the highest density and height allowed anywhere in the city, without a rezoning fight and without public hearings.",
+    "live_law_p2": "The baseline requirement is at least 40 percent of units reserved for households earning up to 120 percent of the Area Median Income (AMI) for 30 years. Meeting that threshold unlocks substantial entitlements, streamlined approvals, and parking flexibility.",
+    "live_returns_title": "Why It’s a Game Changer for Returns",
+    "live_benefit_density_title": "Density Without the Drama",
+    "live_benefit_density_desc": "Build to the city’s top allowable density and height with administrative approvals.",
+    "live_benefit_parking_title": "Cost Savings Through Parking Reduction",
+    "live_benefit_parking_desc": "Lower parking minimums mean less structured parking, freeing millions in hard costs.",
+    "live_benefit_mixeduse_title": "Mixed-Use Potential",
+    "live_benefit_mixeduse_desc": "Up to half of the building can be commercial space without losing residential entitlements.",
+    "live_benefit_speed_title": "Speed to Market",
+    "live_benefit_speed_desc": "No public hearings → faster path from concept to construction, capturing demand first.",
+    "live_amend_title": "Recent Amendment Expands the Playing Field",
+    "live_amend_text": "A new amendment now makes Planned Development (PD) zoning eligible for Live Local benefits. That means large master-planned and PD-governed sites (previously excluded) can now be unlocked for the same high-density, high-yield opportunities.",
+    "live_case_title": "Case Study: Fort Lauderdale Project — 85 Units to 162 Units",
+    "live_case_stat_from": "85 units",
+    "live_case_stat_to": "162 units",
+    "live_case_stat_delta": "+77 units",
 
+    "live_case_original_title": "Original Position",
+    "live_case_original_zoning": "Zoning: Business General (B1)",
+    "live_case_original_cap": "Cap: 85 units",
+    "live_case_original_constraints": "Constraints: Height limits, expensive structured parking, and traditional approval timelines.",
+
+    "live_case_move_title": "Our Move",
+    "live_case_move_commitment": "We went beyond the 40% requirement, committing 100% of units to workforce housing at up to 120% AMI for 30 years.",
+    "live_case_move_parking": "That decision triggered maximum parking reductions, removing the need for structural parking and freeing budget for more units and amenities.",
+    "live_case_move_density": "The Live Local Act allowed us to nearly double the density to 162 units—all workforce housing—without a rezoning battle or a single public hearing.",
+
+    "live_case_outcome_title": "The Outcome",
+    "live_case_outcome_units": "+77 units of income-producing space",
+    "live_case_outcome_savings": "Millions saved in construction costs by avoiding structural parking",
+    "live_case_outcome_speed": "Faster approvals and earlier market entry",
+    "live_case_outcome_performance": "Strong NOI growth potential and higher projected IRR",
+    "strategy_title": "Why We Use This Strategy",
+    "strategy_intro": "The Live Local Act is one of the most powerful entitlement tools in Florida right now. By pairing high-affordability commitments with reduced parking requirements, we can create more units, at lower cost, and deliver them to market faster. For investors, that means:",
+    "strategy_benefit_1": "More rentable space on the same land",
+    "strategy_benefit_2": "Lower per-unit construction costs",
+    "strategy_benefit_3": "Accelerated timelines and quicker returns",
+    "strategy_benefit_4": "Access to stable, undersupplied demand in the workforce housing segment",
+    "strategy_outro": "When deployed strategically, this law turns zoning constraints into competitive advantages—and we’ve already proven it works."
+
+
+  }
 
   
-  }
 
 }

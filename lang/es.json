@@ -583,9 +583,55 @@
   "safetyPage_final_2": "La supervisión protege contra riesgos de ejecución y cumplimiento",
   "safetyPage_final_3": "Priorizamos reducir la incertidumbre antes de buscar rentabilidad",
   "safetyPage_final_closing": "Con MARSTON, usted no está especulando. Está invirtiendo en infraestructura habitacional verificada, diseñada para seguridad a largo plazo."
+},
+"live_local":{
+  "live_intro_title": "Desbloqueando valor con la <br> Live Local Act de Florida",
+  "live_intro_subtitle": "Cómo duplicamos la densidad, bajamos costos y entregamos vivienda de alta demanda",
+  "live_law_title": "Una ley hecha para desarrolladores que se mueven rápido",
+  "live_law_p1": "La Live Local Act de Florida fue diseñada para acelerar la producción de vivienda, especialmente para trabajadores y esquemas de ingresos mixtos. La oportunidad para los desarrolladores es directa: si destinas una parte del proyecto a vivienda para la fuerza laboral, obtienes acceso a la mayor densidad y altura permitidas en toda la ciudad—sin pelear una rezonificación y sin audiencias públicas.",
+  "live_law_p2": "El requisito base es reservar al menos el 40% de las unidades para hogares con ingresos de hasta el 120% del Ingreso Medio del Área (AMI) durante 30 años. Cumplir ese umbral desbloquea derechos sustanciales, aprobaciones ágiles y flexibilidad en estacionamiento.",
+  "live_returns_title": "Por qué cambia las reglas del juego para los rendimientos",
+  "live_benefit_density_title": "Densidad sin drama",
+  "live_benefit_density_desc": "Construye con la mayor densidad y altura permitidas por la ciudad mediante aprobaciones administrativas.",
+  "live_benefit_parking_title": "Ahorro de costos al reducir estacionamiento",
+  "live_benefit_parking_desc": "Menores mínimos de estacionamiento implican menos parqueaderos estructurados, liberando millones en costos de obra.",
+  "live_benefit_mixeduse_title": "Potencial de uso mixto",
+  "live_benefit_mixeduse_desc": "Hasta la mitad del edificio puede ser área comercial sin perder los derechos residenciales.",
+  "live_benefit_speed_title": "Velocidad al mercado",
+  "live_benefit_speed_desc": "Sin audiencias públicas → camino más rápido del concepto a la construcción, capturando la demanda antes que la competencia.",
+  "live_amend_title": "Enmienda reciente amplía el campo de juego",
+  "live_amend_text": "Una nueva enmienda ahora hace que la zonificación de Desarrollo Planificado (PD) sea elegible para los beneficios de Live Local. Esto significa que los grandes sitios con planes maestros y bajo régimen PD (previamente excluidos) ahora pueden habilitarse para las mismas oportunidades de alta densidad y alto rendimiento.",
+  "live_case_title": "Caso de estudio: Proyecto en Fort Lauderdale — de 85 a 162 unidades",
+  "live_case_stat_from": "85 unidades",
+  "live_case_stat_to": "162 unidades",
+  "live_case_stat_delta": "+77 unidades",
+
+  "live_case_original_title": "Situación inicial",
+  "live_case_original_zoning": "Zonificación: Business General (B1)",
+  "live_case_original_cap": "Tope: 85 unidades",
+  "live_case_original_constraints": "Restricciones: límites de altura, costos elevados por estacionamiento estructural y cronogramas tradicionales de aprobación.",
+
+  "live_case_move_title": "Nuestra jugada",
+  "live_case_move_commitment": "Fuimos más allá del requisito del 40%, destinando el 100% de las unidades a vivienda para la fuerza laboral hasta el 120% del AMI por 30 años.",
+  "live_case_move_parking": "Esa decisión activó la máxima reducción de estacionamientos, eliminando la necesidad de parking estructural y liberando presupuesto para más unidades y amenidades.",
+  "live_case_move_density": "La Live Local Act nos permitió casi duplicar la densidad a 162 unidades —todas de fuerza laboral— sin una batalla de rezonificación ni una sola audiencia pública.",
+
+  "live_case_outcome_title": "El resultado",
+  "live_case_outcome_units": "+77 unidades productoras de renta",
+  "live_case_outcome_savings": "Millones ahorrados en costos de construcción al evitar estacionamiento estructural",
+  "live_case_outcome_speed": "Aprobaciones más rápidas y entrada al mercado anticipada",
+  "live_case_outcome_performance": "Fuerte potencial de crecimiento del NOI y mayor IRR proyectada",
+  "strategy_title": "Por qué usamos esta estrategia",
+  "strategy_intro": "La Live Local Act es hoy una de las herramientas de habilitación más potentes en Florida. Al combinar compromisos de alta asequibilidad con la reducción de estacionamientos, podemos crear más unidades, a menor costo y llevarlas al mercado más rápido. Para los inversionistas, eso significa:",
+  "strategy_benefit_1": "Más superficie rentable en el mismo terreno",
+  "strategy_benefit_2": "Menor costo de construcción por unidad",
+  "strategy_benefit_3": "Cronogramas acelerados y retornos más rápidos",
+  "strategy_benefit_4": "Acceso a una demanda estable y desabastecida en vivienda para trabajadores",
+  "strategy_outro": "Aplicada estratégicamente, esta ley convierte las restricciones de zonificación en ventajas competitivas — y ya demostramos que funciona."
 
 
 }
+
 
 
 }

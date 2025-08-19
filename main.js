@@ -273,3 +273,50 @@ function loadLanguage(lang) {
 }
 
 
+(function () {
+  const sliders = document.querySelectorAll('.ba-compare');
+
+  sliders.forEach(el => {
+    const range  = el.querySelector('.ba-range');
+    const reveal = el.querySelector('.ba-reveal');
+    const handle = el.querySelector('.ba-handle');
+
+    function setPos(pct){
+      pct = Math.max(0, Math.min(100, pct));
+      el.style.setProperty('--ba-pos', pct + '%');
+      reveal.style.width = pct + '%';
+      range.value = pct;
+    }
+    setPos(range.value);
+
+    function moveFromClientX(clientX){
+      const rect = el.getBoundingClientRect();
+      const pct  = ((clientX - rect.left) / rect.width) * 100;
+      setPos(pct);
+    }
+
+    let dragging = false;
+
+    el.addEventListener('pointerdown', (e) => {
+      dragging = true;
+      el.setPointerCapture(e.pointerId);
+      moveFromClientX(e.clientX);
+    });
+
+    el.addEventListener('pointermove', (e) => {
+      if (!dragging) return;
+      moveFromClientX(e.clientX);
+    });
+
+    el.addEventListener('pointerup',   () => dragging = false);
+    el.addEventListener('pointercancel', () => dragging = false);
+
+    // Teclado / accesibilidad
+    range.addEventListener('input', e => setPos(e.target.value));
+    window.addEventListener('resize',  () => setPos(range.value));
+  });
+})();
+
+
+
+
