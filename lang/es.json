@@ -118,14 +118,14 @@
     "criteria_income": "Propiedades con potencial de ingresos",
 
     "criteria_scale_density": "2. Escala y Densidad",
-    "criteria_units": "<strong>Unidades:</strong> 120–550 (por fases)",
-    "criteria_density": "<strong>Densidad:</strong> 8–25 unidades/acre",
-    "criteria_land_area": "<strong>Terreno:</strong> 10–60 acres",
+    "criteria_units": "<strong>Unidades:</strong> 200–350 (por fases)",
+    "criteria_density": "<strong>Densidad:</strong> 4–25 unidades/acre",
+    "criteria_land_area": "<strong>Terreno:</strong> 10–50 acres",
 
     "criteria_geography": "3. Geografía",
     "criteria_south_florida": "<strong>Sur de Florida:</strong> Fort Lauderdale, Broward",
-    "criteria_central_florida": "<strong>Centro de Florida:</strong> Tampa, Orlando, Ocala",
-    "criteria_midwest": "<strong>Medio Oeste:</strong> Kansas City, St. Louis, Columbus",
+    "criteria_central_florida": "<strong>Sunbelt</strong>",
+    "criteria_midwest": "<strong>Midwest</strong>",
 
     "criteria_performance": "4. Objetivos de Rendimiento",
     "criteria_irr": "<strong>IRR:</strong> 20%+",
@@ -265,7 +265,7 @@
   "riverland_buildings": "<strong>EDIFICIOS:</strong> 3",
   "riverland_construction": "<strong>INICIO DE CONSTRUCCIÓN:</strong> Febrero 2025",
   "riverland_completion": "<strong>FINALIZACIÓN:</strong> Marzo 2025",
-  "riverland_description": "Los apartamentos 475 Riverland ofrecerán acabados y accesorios modernos y cómodos a un precio asequible para los inquilinos. Todas las unidades contarán con suelos de vinilo de lujo que imitan el aspecto de la madera, combinados con pintura blanca fresca que ofrece el lienzo perfecto para que los inquilinos personalicen su hogar. Los gabinetes de madera contrachapada modernos y las encimeras de superficie sólida brindarán funcionalidad y almacenamiento en la cocina y los baños.<br><br>Electrodomésticos de acero inoxidable atractivos y compatibles con la ADA garantizarán que los inquilinos de todas las capacidades estén bien atendidos. Ambos dormitorios tendrán ventiladores de techo modernos para mayor confort térmico e iluminación. Todos los baños contarán con botiquines para almacenamiento adicional, iluminación abundante y sanitarios compatibles con la ADA. Los baños principales dispondrán de ducha, con accesorios accesibles en las unidades adaptadas, mientras que los baños secundarios contarán con combinación de bañera y ducha. Los herrajes modernos en níquel cepillado y negro mate asegurarán que cada detalle refleje un diseño atemporal que cualquier inquilino pueda llamar hogar."
+  "riverland_description": "Los apartamentos de SORA ofrecerán acabados y accesorios modernos y cómodos a un precio asequible para los inquilinos. Todas las unidades contarán con suelos de vinilo de lujo que imitan el aspecto de la madera, combinados con pintura blanca fresca que ofrece el lienzo perfecto para que los inquilinos personalicen su hogar. Los gabinetes de madera contrachapada modernos y las encimeras de superficie sólida brindarán funcionalidad y almacenamiento en la cocina y los baños.<br><br>Electrodomésticos de acero inoxidable atractivos y compatibles con la ADA garantizarán que los inquilinos de todas las capacidades estén bien atendidos. Ambos dormitorios tendrán ventiladores de techo modernos para mayor confort térmico e iluminación. Todos los baños contarán con botiquines para almacenamiento adicional, iluminación abundante y sanitarios compatibles con la ADA. Los baños principales dispondrán de ducha, con accesorios accesibles en las unidades adaptadas, mientras que los baños secundarios contarán con combinación de bañera y ducha. Los herrajes modernos en níquel cepillado y negro mate asegurarán que cada detalle refleje un diseño atemporal que cualquier inquilino pueda llamar hogar."
   },
   "gardner":{
   "waverly_address": "<strong>DIRECCIÓN:</strong> Gardner, KS",
