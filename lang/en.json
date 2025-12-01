@@ -116,14 +116,14 @@
     "criteria_income": "Income properties with potential",
 
     "criteria_scale_density": "2. Scale & Density",
-    "criteria_units": "<strong>Units:</strong> 120–550 (phased)",
-    "criteria_density": "<strong>Density:</strong> 8–25 units/acre",
-    "criteria_land_area": "<strong>Land:</strong> 10–60 acres",
+    "criteria_units": "<strong>Units:</strong> 200–350 (phased)",
+    "criteria_density": "<strong>Density:</strong> 4–25 units/acre",
+    "criteria_land_area": "<strong>Land:</strong> 10–50 acres",
 
     "criteria_geography": "3. Geography",
-    "criteria_south_florida": "<strong>South Florida:</strong> Fort Lauderdale, Broward",
-    "criteria_central_florida": "<strong>Central Florida:</strong> Tampa, Orlando, Ocala",
-    "criteria_midwest": "<strong>Midwest:</strong> Kansas City, St. Louis, Columbus",
+    "criteria_south_florida": "<strong>Sunbelt</strong> Fort Lauderdale, Broward",
+    "criteria_central_florida": "<strong>Sunbelt</strong>",
+    "criteria_midwest": "<strong>Midwest</strong>",
 
     "criteria_performance": "4. Performance Targets",
     "criteria_irr": "<strong>IRR:</strong> 20%+",
@@ -260,7 +260,7 @@
   "riverland_buildings": "<strong>BUILDINGS:</strong> 3",
   "riverland_construction": "<strong>CONSTRUCTION START:</strong> Feb 2025",
   "riverland_completion": "<strong>COMPLETION:</strong> Mar 2025",
-  "riverland_description": "The 475 Riverland Apartments will offer comfortable, modern fixtures and finishes at an affordable price point for renters. All units will feature luxury vinyl tile that give the look and feel of wood coupled with fresh white paint offering the perfect canvas for renters to make their home. Modern, plywood cabinets and solid surface countertops will offer renters utility and storage within the kitchen and restrooms.<br><br>Attractive, ADA compliant, stainless-steel appliances will ensure that renters of all abilities are supported. Both bedrooms will feature modern ceiling fans offering additional thermal comfort and lighting. All bathrooms will feature medicine cabinets for additional storage, plentiful lighting, and ADA compliant water closets. Master bathrooms will offer a shower, with ADA compliant fixtures in accessible units. Secondary bathrooms will feature a shower and tub combination. Modern, brushed nickel and matte black hardware will ensure that every detail reflects a timeless design that any renter can call home."
+  "riverland_description": "The SORA Apartments will offer comfortable, modern fixtures and finishes at an affordable price point for renters. All units will feature luxury vinyl tile that give the look and feel of wood coupled with fresh white paint offering the perfect canvas for renters to make their home. Modern, plywood cabinets and solid surface countertops will offer renters utility and storage within the kitchen and restrooms.<br><br>Attractive, ADA compliant, stainless-steel appliances will ensure that renters of all abilities are supported. Both bedrooms will feature modern ceiling fans offering additional thermal comfort and lighting. All bathrooms will feature medicine cabinets for additional storage, plentiful lighting, and ADA compliant water closets. Master bathrooms will offer a shower, with ADA compliant fixtures in accessible units. Secondary bathrooms will feature a shower and tub combination. Modern, brushed nickel and matte black hardware will ensure that every detail reflects a timeless design that any renter can call home."
   },
   "gardner":{
   "waverly_address": "<strong>ADDRESS:</strong> Gardner, KS",

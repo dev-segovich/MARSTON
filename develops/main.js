@@ -40,7 +40,7 @@ const projects = [
         category: 'multifamily',
         link: '475 Riverland/475 Riverland.html',
         image: 'img/Riverland.webp',
-        title: '475 Riverland Apartments',
+        title: 'SORA Apartments',
         subtitle: 'Fort Lauderdale, FL'
     },
     {
