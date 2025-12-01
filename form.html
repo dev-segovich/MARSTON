@@ -92,6 +92,16 @@
     </p>
 
     <form action="submit.php" method="POST" enctype="multipart/form-data">
+        <!-- Anti-bot fields -->
+        <div style="display:none;">
+            <label>Keep this field blank</label>
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" name="timestamp" id="timestamp_field">
+        
+        <script>
+            document.getElementById('timestamp_field').value = Math.floor(Date.now() / 1000);
+        </script>
         <div class="form-section">
           <h5 data-i18n="section1_title">1. Basic Information</h5>
           <div class="form-group">
