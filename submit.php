@@ -117,6 +117,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if ($fullName && $email) {
+        $dbError = null;
+        $mailError = null;
+
+        // ====================================
+        // 1. INTENTO DE GUARDADO EN BD
+        // ====================================
         try {
             // Insertar en base de datos (Tabla marston_contact)
             $stmt = $pdo->prepare("
@@ -148,10 +154,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 ":hear_about_us" => $hearAboutUs,
                 ":message" => $message
             ]);
+        } catch (PDOException $e) {
+            $dbError = $e->getMessage();
+        }
 
-            // ====================================
+        // ====================================
+        // 2. INTENTO DE ENVÍO DE CORREO
+        // ====================================
+        try {
             // CONFIGURAR CORREO (PHPMailer)
-            // ====================================
             $mail = new PHPMailer(true);
             $mail->isSMTP();
             $mail->Host = $smtpHost;
@@ -162,9 +173,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $mail->Port = $smtpPort;
             $mail->CharSet = 'UTF-8';
 
-            // ====================================
             // ENVÍO AL CLIENTE
-            // ====================================
             $mail->setFrom($smtpUser, 'Marston Real Estate');
             $mail->addAddress($email, $fullName);
             $mail->Subject = "Welcome to Marston: Your Request is Confirmed";
@@ -193,11 +202,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             $mail->send();
 
-            // ====================================
             // ENVÍO INTERNO AL EQUIPO
-            // ====================================
             $mail->clearAddresses();
-            $mail->addAddress("info@zerotoplan.com"); // Usando el mismo correo de recepción por ahora
+            $mail->addAddress("info@zerotoplan.com"); 
             // Si hay otro correo para Marston, se debería cambiar aquí.
             
             $mail->Subject = "📩 New Investor Form Submission - {$fullName}";
@@ -222,24 +229,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             $mail->send();
 
-            // ====================================
-            // CONFIRMACIÓN VISUAL AL USUARIO
-            // ====================================
-            echo "<script>
-                alert('✅ Thank you! Your submission has been received.');
-                window.location.href='index.html';
-            </script>";
-
         } catch (Exception $e) {
-            echo "<script>
-                alert('⚠️ Mail error: " . addslashes($e->getMessage()) . "');
+            $mailError = $e->getMessage();
+        }
+
+        // ====================================
+        // 3. RESPUESTA FINAL
+        // ====================================
+        if ($dbError && $mailError) {
+             // Ambos fallaron
+             echo "<script>
+                alert('⚠️ Critical: Database error (" . addslashes($dbError) . ") AND Mail error (" . addslashes($mailError) . "). Please contact support.');
                 window.history.back();
             </script>";
-        } catch (PDOException $e) {
-            echo "<script>
-                alert('⚠️ Database error: " . addslashes($e->getMessage()) . "');
-                window.history.back();
-            </script>";
+        } else {
+             $msg = '✅ Thank you! Your submission has been received.';
+             if ($dbError) $msg .= '\\n⚠️ Note: Database save failed (' . addslashes($dbError) . ') but email was processed.';
+             if ($mailError) $msg .= '\\n⚠️ Note: Email sending failed (' . addslashes($mailError) . ') but data was saved.';
+             
+             echo "<script>
+                alert('$msg');
+                window.location.href='index.html';
+             </script>";
         }
     } else {
         echo "<script>alert('Please fill in all required fields.'); window.history.back();</script>";
